@@ -1,0 +1,61 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Наркология';
+    - let servicesTitle = 'Медицинские услуги нашего центра';
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_1 = 'Наркология';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.banner-page
+            .container 
+                .banner-page__block
+                    h1 Наркологическая помощь в Тольятти
+                    p Центр наркологии «Генезис» в своей работе применяет различные методы 
+                        |лечения в зависимости от индивидуальных особенностей человека, стадии 
+                        |болезни и личных предпочтений пациента – на что он внутренне готов.
+        .container
+            include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+            .content-block.content-block--narcology
+                .content-block__img.gradient
+                        img(src="./wp-content/themes/genesis/assets/img/alcoholism.jpg" alt="С чего начинается алкогольная зависимость" width="579" height="300")
+                .content-block__text.text
+                    h2.content-block__text-title С чего начинается алкогольная зависимость
+                    p Бытует мнение, что алкоголизм развивается у людей, которые злоупотребляют алкоголем. 
+                        | Пьют много и часто. Это верно. Но ответьте сами себе на вопрос: разве сразу человек 
+                        | начинает пить водку, вино, пиво помногу и часто? Ответ очевиден – нет. 
+                        | Знакомство с алкоголем начинается в раннем детстве.
+            include ./../components/bem-blocks/video/video.pug
+            include ./../components/sections/narcology-text/narcology-text.pug
+            .content-block.content-block--narcology
+                .content-block__img.gradient
+                        img(src="./wp-content/themes/genesis/assets/img/alcohol.jpg" alt="Формирование идеи возможености употребления алкоголя" width="579" height="368")
+                .content-block__text.text
+                    h2.content-block__text-title Формирование идеи возможености употребления алкоголя
+                    p В подростковом возрасте 14-17 лет, обычно, происходит первая проба алкоголя. 
+                        | Мотив – любопытство, желание войти в мир взрослых, попробовать делать то, 
+                        | что для детей недоступно и находится под запретом. Критики к факту возможности 
+                        | употребления алкоголя у детей, как правило, нет. Ведь родители, родственники, общество, 
+                        | средства массовой информации, важнейшим из которых в деле распространения образцов 
+                        | человеческого поведения, является кино, буквально навязывают детям идею о возможности 
+                        | употребления алкоголя, вплоть до необходимости это делать в некоторых случаях. 
+                        | Программирование алкоголизма продолжается.
+            include ./../components/bem-blocks/narcology-text/narcology-text.pug
+            .gray-block.gray-block--guarantees 
+                .section__subtitle.section__subtitle--guarantees По определению В.Г.Белинского: #[i «Толпа есть собрание людей, живущих по преданию и рассуждающих по авторитету…»] 
+                    | Основное качество толпы — нежелание и неумение самостоятельно думать и приходить ко мнениям,
+                    | соответствующим реальному положению дел и направленности течения событий. 
+        section.narcology 
+            .container
+                .boxs
+                    include ./../components/bem-blocks/box-content/box-content-2.pug
+                    include ./../components/bem-blocks/box-content/box-content.pug
+        include ./../components/sections/narcology-text/narcology-text-2.pug
+        include ./../components/sections/form-down/form-down.pug
+        include ./../components/sections/services/services.pug
+        include ./../components/sections/footer/footer.pug

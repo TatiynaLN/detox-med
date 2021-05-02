@@ -1,0 +1,34 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Вызов врача на дом';
+    - let servicesTitle = 'Медицинские услуги нашего центра';
+
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_1 = 'Вызов врача на дом';
+    - let breadcrumbsText_2 = '';
+    - let breadcrumbsText_3 = '';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/banner-home/banner-home.pug
+        .container
+            include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        include ./../components/sections/about-us-doctor-call/about-us-doctor-call.pug
+        include ./../components/sections/medical-help/medical-help.pug
+        include ./../components/sections/prices/prices-2.pug
+        .container
+            include ./../components/bem-blocks/guarantees/guarantees.pug
+            include ./../components/bem-blocks/advantages/advantages.pug
+        include ./../components/sections/specialists/specialists.pug
+        include ./../components/sections/about-us-numbers/about-us-numbers.pug
+        include ./../components/sections/licenses/licenses.pug
+        include ./../components/sections/reviews/reviews.pug
+        include ./../components/sections/questions/questions.pug
+        include ./../components/sections/form-down/form-down.pug
+        include ./../components/sections/services/services.pug
+        include ./../components/sections/footer/footer.pug
