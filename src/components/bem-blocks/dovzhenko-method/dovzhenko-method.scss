@@ -1,0 +1,105 @@
+.method-block--dovzhenko {
+
+    .btn--green {
+        align-self: center;
+    }
+
+    .method-block__inner {
+
+        .method-block__img--dovzhenko {
+            width: 100%;
+            max-width: 29rem;
+            height: 16.2rem;
+            margin-bottom: 2.9rem;
+            // border-radius: .5rem;
+
+            @media screen and (min-width: 414px) {
+                max-width: 35.5rem;
+                height: 19.6rem;
+            }
+
+            @media screen and (min-width: 768px) {
+                max-width: 55rem;
+                height: 30.7rem;
+                margin-bottom: 3.4rem;
+            }
+
+            @media screen and (min-width: 1024px) {
+                max-width: 52rem;
+                height: 28.9rem;
+                margin: 0 2rem 0 0;
+            }
+
+            @media screen and (min-width: 1320px) {
+                margin-right: 2.6rem;
+                width: 59.2rem;
+                height: 33rem;
+            }
+
+            // img {
+            //     border-radius: .5rem;
+            // }
+        }
+
+        .method-block__text--dovzhenko {
+            max-width: 55.1rem;
+
+            @media screen and (min-width: 1024px) {
+                max-width: 38rem;
+            }
+
+            @media screen and (min-width: 1200px) {
+                max-width: 55.1rem;
+            }
+        }
+    }
+
+    .treatment-steps {
+        margin: 3.1rem 0 5.2rem 0;
+
+        @media screen and (min-width: 1320px) {
+            align-items: baseline;
+        }
+
+        .step {
+
+            .step__content {
+                padding-bottom: 4.6rem;
+            }
+
+            .step__text:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .step__list-title {
+                margin: 0;
+            }
+
+            .step__list {
+                margin: 1.3rem 0;
+            }
+
+            &:last-of-type::after {
+                right: 3.3rem;
+            }
+        }
+    }
+}
+
+.section__title-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.85rem;
+    padding: 1.7rem 2.5rem;
+    border-radius: .5rem;
+    background: url(../img/title-bg.jpg) 100%/cover no-repeat;
+
+    @media screen and (min-width: 1320px) {
+        padding: 3.35rem 5rem;
+        margin-bottom: 3.7rem;
+    }
+}
+

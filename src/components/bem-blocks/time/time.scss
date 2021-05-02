@@ -1,0 +1,24 @@
+.time {
+    span {
+        position: relative;
+        padding-left: 2.9rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-feature-settings: "case" on, "cpsp" on;
+        color: #828282;
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/icons/alarm.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 2rem;
+            height: 2rem;
+            top: 0;
+            left: 0;
+        }
+    }
+}

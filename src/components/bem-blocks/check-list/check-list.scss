@@ -1,0 +1,89 @@
+.chronic-alcoholism,
+.reception__left,
+.medical-help {
+    ul {
+
+        li {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 1.5rem 2.3rem 1.5rem 4.35rem;
+            @include OpenSans-Regular();
+            font-size: 1.6rem;
+            line-height: 2.3rem;
+            color: $gray2;
+            border-radius: .5rem;
+            background: $gray6;
+        
+            @media screen and (min-width: 1320px) {
+                padding: 2.25rem 3.3rem 2.25rem 8.7rem;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+        
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+            }
+        
+            &::after {
+                top: calc(50% - 1.3rem);
+                left: 1rem;
+                width: 2.6rem;
+                height: 2.6rem;
+                border-radius: 50%;
+                background: $green;
+        
+                @media screen and (min-width: 1320px) {
+                    left: 2.4rem;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                }
+            }
+        
+            &::before {
+                z-index: 1;
+                top: calc(50% - .5rem);
+                left: 1.7rem;
+                transform: rotate(-45deg);
+                width: .8rem;
+                height: .9rem;
+                border: solid #fff;
+                border-width: 0 .2rem .2rem 0;
+        
+                @media screen and (min-width: 1320px) {
+                    top: 50%;
+                    left: 3.5rem;
+                    width: 1rem;
+                    height: 1.1rem;
+                }
+            }
+        
+            &:not(:last-of-type) {
+                margin-bottom: 2rem;
+        
+                @media screen and (min-width: 1024px) {
+                    margin-bottom: 4.1rem;
+                }
+        
+                @media screen and (min-width: 1200px) {
+                    margin-bottom: 4.15rem;
+                }
+        
+                @media screen and (min-width: 1320px) {
+                    margin-bottom: 2.13rem;
+                }
+            }
+        
+            &:last-of-type {
+                margin-bottom: 2.5rem;
+        
+                @media screen and (min-width: 1024px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

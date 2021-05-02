@@ -1,0 +1,16 @@
+.medical-help {
+    padding: 2.2rem 0 0 0;
+
+    @media screen and (min-width: 1320px) {
+        padding: 4.4rem 0 0 0;
+    }
+}
+
+.section__title--medical-help {
+    margin: 1.1rem 0;
+
+    @media screen and (min-width: 1320px) {
+        max-width: 78.2rem;
+        margin: 2.4rem 0 2.3rem 0;
+    }
+}

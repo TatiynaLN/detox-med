@@ -1,0 +1,17 @@
+section.form
+    .container
+        .btn.btn--green Консультация
+        h2.section__title.section__title--form Запишитесь на консультацию
+        .section__description.section__description--form Расскажите вкратце о проблеме в форме обратной связи. #[br] На 
+            | ваши вопросы ответит нарколог в процессе личной консультации.
+        form(id="form__upper" action="#" method="post").main-form.main-form--upper
+            .inputs-wrap 
+                input(type="text" name="user-name" placeholder="Ваше имя" required="required")._req.main-form__user-name
+                input(id="phone-input-upper" type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")._req.phone-input.main-form__user-phone
+                input(type="email" name="user-email" placeholder="Электронная почта" required="required")._req.main-form__user-email
+            textarea(name="user-message" placeholder="Напишите ваш вопрос")._req.main-form__user-message
+            button(type="submit").btn.btn--blue.btn-send Отправить заявку
+            .checkbox-wrap 
+                input(type="checkbox" id="policy-upper" name="policy" checked)
+                label(for="policy-upper").form__policy-text Вы соглашаетесь с &#160;
+                    a(href="#!" target="_blank").form__policy-link условиями обработки персональных данных

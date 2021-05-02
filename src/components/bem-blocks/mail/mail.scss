@@ -1,0 +1,33 @@
+.mail {
+    a {
+        position: relative;
+        padding-left: 2.8rem;
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-feature-settings: "case" on, "cpsp" on;
+        color: #828282;
+        transition: all 0.5s;
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/icons/mail.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 2rem;
+            height: 1.6rem;
+            top: 0.3rem;
+            left: 0;
+        }
+        &:hover,
+        &:focus {
+            color: #009136;
+            transition: all 0.5s;
+            transform: scale(1.1);
+            transform: translateY(-0.3rem);
+        }
+    }
+}

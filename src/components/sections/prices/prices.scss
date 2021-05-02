@@ -1,0 +1,145 @@
+.prices {
+    padding: 0rem 0 2rem 0;
+    @media (min-width: 1320px) {
+        padding: 0rem 0 3.4rem 0;
+    }
+    .btn--green {
+        margin-bottom: 1.4rem;
+    }
+    .section__title {
+        margin-bottom: 2.7rem;
+    }
+    table {
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+        tr {
+            margin-bottom: 0.5rem;
+            background-color: $gray6;
+            border-collapse: separate;
+            border-bottom: 0.5rem solid rgba(255, 255, 255, 0.8);
+            &:first-child {
+                background: $green;
+                border-radius: 10px 0px 0 0;
+                border-bottom: 0.5rem solid rgba(255, 255, 255, 1);
+                @include OpenSans-Bold();
+                font-style: normal;
+                font-size: 1.4rem;
+                line-height: 2.5rem;
+                color: $gray6;
+                text-align: left;
+                margin-bottom: 5rem;
+                @media (min-width: 768px) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        th {
+            padding: 1.2rem 1rem;
+            @media (min-width: 768px) {
+                padding: 1.2rem 1.9rem;
+            }
+            &:nth-child(1) {
+                border-radius: 5px 0px 0 0;
+            }
+            &:nth-child(2) {
+                border-radius: 0 5px 0 0;
+            }
+        }
+        td {
+            padding: 0.9rem 1rem;
+            @include OpenSans-Regular();
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: $gray2;
+            vertical-align: top;
+            @media (min-width: 768px) {
+                padding: 1.2rem 1.9rem;
+                min-height: 5.7rem;
+            }
+            p {
+                margin-bottom: 0.7rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                @media (min-width: 1024px) {
+                    margin-right: 1.5rem;
+                }
+            }
+            &:nth-child(2n) {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                width: 100%;
+                min-width: 14.2rem;
+                padding: 0.9rem 0.7rem 0.9rem 0.5rem;
+                @media (min-width: 375px) {
+                    min-width: 20rem;
+                }
+                @media (min-width: 1024px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    padding: 0.9rem 1rem;
+                    min-width: 42rem;
+                }
+            }
+            &:nth-child(1) {
+                padding: 1.9rem 1rem;
+                @media (min-width: 768px) {
+                    padding: 1.9rem 1.9rem;
+                }
+            }
+            &:nth-child(2) {
+                font-style: normal;
+                font-size: 1.4rem;
+                line-height: 2.5rem;
+                @media (min-width: 768px) {
+                    font-size: 1.8rem;
+                }
+                strong {
+                    @include OpenSans-Bold();
+                    font-weight: bold;
+                    color: $green;
+                }
+            }
+            button {
+                @include OpenSans-Bold();
+                padding: 1rem 0.5rem;
+                align-self: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                color: #ffffff;
+                width: 100%;
+                max-width: 12.5rem;
+                margin-top: 1rem;
+                @media (min-width: 1024px) {
+                    margin-top: 0;
+                    align-self: flex-start;
+                }
+            }
+            p {
+                white-space: pre-wrap;
+                @media (min-width: 1024px) {
+                    min-width: 15rem;
+                }
+            }
+            strong {
+                display: inline;
+            }
+        }
+    }
+}
+.prices-doctor {
+    padding: 4rem 0 5rem 0;
+    @media (min-width: 1320px) {
+        padding: 4rem 0 9.1rem 0;
+    }
+}

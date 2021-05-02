@@ -1,0 +1,115 @@
+.chronic-alcoholism,
+.alcoholism-causes,
+.alcoholism-factors {
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 4.4rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        margin-bottom: 8.8rem;
+    }
+}
+
+.chronic-alcoholism {
+    
+    @media screen and (min-width: 1320px) {
+        padding-top: 2.5rem;
+    }
+}
+
+.medical-help,
+.chronic-alcoholism {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    
+        @media screen and (min-width: 1024px) {
+            margin: 0 -1.5rem;
+        }
+    
+        li {
+    
+            @media screen and (min-width: 1024px) {
+                width: 46.75%;
+                max-width: 59.5rem;
+                margin: 1rem 1.5rem !important;
+            }
+    
+            @media screen and (min-width: 1200px) {
+                width: 47.35%;
+            }
+    
+            @media screen and (min-width: 1320px) {
+                width: 47.55%;
+            }
+        }
+    }
+}
+
+.medical-help,
+.reception__left {
+    ul {
+        li:last-of-type {
+            width: 100%;
+            max-width: initial;
+            position: relative;
+            padding: 1.5rem 2.3rem 1.5rem 4.35rem;
+            margin-top: 1.25rem;
+            display: block;
+            @include OpenSans-Regular();
+            font-size: 1.6rem;
+            line-height: 2.3rem;
+            color: $gray6;
+            background: $green;
+    
+            @media screen and (min-width: 1320px) {
+                padding: 2.7rem 3.3rem 2.7rem 8.7rem;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+    
+            &::before {
+                position: absolute;
+                content: "!";
+                top: calc(50% - 1.4rem);
+                transform: rotate(0) !important;
+                left: 1rem;
+                width: 2.6rem;
+                height: 2.6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include OpenSans-Bold();
+                font-size: 1.6rem;
+                line-height: 2.3rem;
+                color: $gray2;
+                border-radius: 50%;
+                background: #fff;
+    
+                @media screen and (min-width: 1320px) {
+                    top: calc(50% - 1.8rem);
+                    left: 2.4rem;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.section__title--alcoholism-treatment {
+    margin: 1.1rem 0;    
+}
+
+.section__description--alcoholism-treatment {
+    margin-bottom: 2.1rem;
+
+    @media screen and (min-width: 1320px) {
+        max-width: 61rem;
+        margin-bottom: 4.2rem;
+    }
+}

@@ -1,0 +1,30 @@
+header.header
+    .container
+        .header__top
+            include ./../../bem-blocks/logo/logo.pug
+            .header__top-block
+                .contacts.mn   
+                    a(href="tel:+7(8482)21-03-03") +7 (8482) 21-03-03
+                include ./../../bem-blocks/addres/addres.pug
+            .header__top-block
+                .contacts.mn   
+                    a(href="tel:+7(902)373-32-94") +7 (902) 373-32-94
+                include ./../../bem-blocks/time/time.pug
+            .header__top-block.header__top-blocks
+                nav.social.mn 
+                    ul  
+                        li: a(href="//api.whatsapp.com/send?phone=79023733294")
+                            img(src="./wp-content/themes/genesis/assets/img/icons/whatsapp.svg", alt="Whatsapp")
+                        li: a(href="https://vk.com/club31456944") 
+                            img(src="./wp-content/themes/genesis/assets/img/icons/vk.svg", alt="VK")
+                        li: a(href="viber://chat?number=79023733294") 
+                            img(src="./wp-content/themes/genesis/assets/img/icons/viber.svg", alt="Viber")
+                button.header__btn-ring.mn.btn-call Обратный звонок
+            button.header__btn-version Версия для слабовидящих
+        .header__bottom
+            .header__bottom-inner
+                include ./../../bem-blocks/header-nav/hamburger.pug
+                form.form-mn(action="#")
+                    label
+                        input._req(type="text" placeholder="Поиск по сайту")
+                    button.btn.btn-send.btn-form Найти

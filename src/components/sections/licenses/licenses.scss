@@ -1,0 +1,306 @@
+.licenses {
+    padding: 4.5rem 0;
+
+    // @media screen and (min-width: 768px) {
+    //     padding: 3.1rem 0 3.8rem 0;
+    // }
+
+    // @media screen and (min-width: 1320px) {
+    //     padding: 4.5rem 0 5rem 0;
+    // }
+
+    .btn--green {
+        min-width: 11.5rem;
+    }
+}
+
+.section__title--licenses {
+    max-width: 99.1rem;
+    margin: 1.7rem 0 3.1rem 0;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        margin: 1.7rem 0 5.1rem 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 1.7rem 0 6.3rem 0;
+    }
+}
+
+.slider-wrap {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-licenses,
+.swiper-sertificates,
+.swiper-medical--first,
+.swiper-medical--second {
+    width: 28rem;
+
+    @media screen and (min-width: 414px) {
+        width: 31.6rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 65.2rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        width: 112.4rem;
+    }
+    
+}
+
+.slide-licenses {
+    position: relative;
+    width: 28rem;
+    overflow: hidden;
+
+    @media screen and (min-width: 414px) {
+        width: 31.6rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 65.2rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        width: 25.1rem;
+    }
+}
+
+.swiper-button-prev--licenses,
+.swiper-button-next--licenses,
+.swiper-button-prev--reviews,
+.swiper-button-next--reviews,
+.swiper-button-prev-lisences--small-first,
+.swiper-button-next-lisences--small-first,
+.swiper-button-prev-lisences--small-second,
+.swiper-button-next-lisences--small-second,
+.swiper-button-prev-first,
+.swiper-button-next-first,
+.swiper-button-prev-second,
+.swiper-button-next-second,
+.swiper-button-prev-third,
+.swiper-button-next-third,
+.swiper-button-prev-fourth,
+.swiper-button-next-fourth,
+.swiper-button-prev-fifth,
+.swiper-button-next-fifth {
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 4rem);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    outline: none;
+    background: $blue;
+    transition: transform .3s linear;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.swiper-button-prev--licenses,
+.swiper-button-prev--reviews,
+.swiper-button-prev-lisences--small-first, 
+.swiper-button-prev-lisences--small-second,
+.swiper-button-prev-first,
+.swiper-button-prev-second,
+.swiper-button-prev-third,
+.swiper-button-prev-fourth,
+.swiper-button-prev-fifth {
+    &::after {
+        position: absolute;
+        z-index: 2;
+        top: 1.8rem;
+        left: 1.5rem;
+        transform: rotate(180deg);
+        content: url(../img/icons/slider-arrow.svg);
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.swiper-button-next--licenses,
+.swiper-button-next--reviews,
+.swiper-button-next-lisences--small-first,
+.swiper-button-next-lisences--small-second,
+.swiper-button-next-first,
+.swiper-button-next-second,
+.swiper-button-next-third,
+.swiper-button-next-fourth,
+.swiper-button-next-fifth {
+    &::after {
+        position: absolute;
+        z-index: 2;
+        top: 1.2rem;
+        right: 1.5rem;
+        transform: rotate(360deg);
+        content: url(../img/icons/slider-arrow.svg);
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.swiper-button-prev--licenses {
+    left: -1.6rem;
+
+    @media screen and (min-width: 1320px) {
+        left: -4.5rem;
+    }
+}
+
+.swiper-button-next--licenses {
+    right: -1.6rem;
+
+    @media screen and (min-width: 1320px) {
+        right: -4.5rem;
+    }
+}
+
+.swiper-button-prev-first,
+.swiper-button-prev-second,
+.swiper-button-prev-third,
+.swiper-button-prev-fourth,
+.swiper-button-prev-fifth {
+    left: -2rem;
+
+    @media screen and (min-width: 1320px) {
+        display: none;
+    }
+}
+
+.swiper-button-next-first,
+.swiper-button-next-second,
+.swiper-button-next-third,
+.swiper-button-next-fourth,
+.swiper-button-next-fifth {
+    right: -1.6rem;
+
+    @media screen and (min-width: 1320px) {
+        display: none;
+    }
+}
+
+.swiper-button-prev--reviews {
+    left: -2rem;
+}
+
+.swiper-button-next--reviews {
+    right: -2rem;
+}
+
+.swiper-button-next--reviews {
+    &::after {
+        @media screen and (min-width: 1320px) {
+            right: 1.4rem;
+        }
+    }
+}
+
+.swiper-button-prev--reviews {
+    &::after {
+        @media screen and (min-width: 1320px) {
+            left: 1.4rem;
+        }
+    }
+}
+
+.swiper-button-next-lisences--small-first,
+.swiper-button-next-lisences--small-second {
+    right: -1.1rem;
+
+    @media screen and (min-width: 414px) {
+        right: 0;
+    }
+
+    @media screen and (min-width: 560px) {
+        right: 6rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        // right: 14.6rem;
+        right: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+        right: -3.5rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        right: -1.4rem;
+    }
+
+    &::after {
+        top: 1rem;
+    }
+}
+
+.swiper-button-prev-lisences--small-first,
+.swiper-button-prev-lisences--small-second {
+    left: -1.1rem;
+
+    @media screen and (min-width: 414px) {
+        left: 0;
+    }
+
+    @media screen and (min-width: 560px) {
+        left: 6rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        // left: 14.6rem;
+        left: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+        left: -3.5rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        left: -1.4rem;
+    }
+
+    &::after {
+        top: 2rem;
+    }
+}
+
+.swiper-button-prev--reviews,
+.swiper-button-next--reviews {
+    top: calc(50% - (10rem - 4rem));
+
+    @media screen and (min-width: 768px) {
+        top: calc(50% - 4rem);
+    }
+
+    @media screen and (min-width: 1320px) {
+        top: calc(50% - 3rem);
+    }
+}
+
+.swiper-button-prev--reviews {
+    left: -1rem;
+
+    @media screen and (min-width: 414px) {
+        left: -2rem;
+    }
+}
+
+.swiper-button-next--reviews {
+    right: -1rem;
+
+    @media screen and (min-width: 414px) {
+        right: -2rem;
+    }
+}

@@ -1,0 +1,31 @@
+section.contacts-page 
+    .container 
+        .stages
+            .stage
+                h3 Наш центр
+                include ./../../bem-blocks/contacts/contacts2.pug
+                include ./../../bem-blocks/addres/addres-2.pug
+                include ./../../bem-blocks/mail/mail.pug
+                .stage__bottom
+                    include ./../../bem-blocks/social/social.pug
+                    .stage__link
+                        a(href="https://yandex.ru/maps/?rtext=~53.528796,49.392563&rtt=mt" target="_blank") Построить маршрут
+            .stage
+                h3 Вызов врача на дом
+                include ./../../bem-blocks/contacts/contacts2.pug
+                include ./../../bem-blocks/time/time.pug
+                .stage__bottom
+                    button.btn.btn--blue.btn-call Вызвать онлайн
+                    .stage__link
+                        a(href="doctor-at-home.html") Узнать больше
+            .stage
+                h3 Режим работы
+                p ПН-ПТ – с 10:00 до 20:00
+                    br
+                    | СБ – с 10:00 до 13:00
+                    br 
+                    |ВС – выходной
+                .stage__bottom
+                    button.btn.btn--blue.btn-consult Записаться на приём
+                    .stage__link
+                        a(href="reception.html") Правила записи

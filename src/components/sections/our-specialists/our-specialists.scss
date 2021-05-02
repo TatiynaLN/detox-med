@@ -1,0 +1,130 @@
+.our-specialists {
+
+    @media screen and (min-width: 1320px) {
+        margin-bottom: 10.3rem;
+    }
+
+    .specialists__content {
+        width: 100%;
+        // min-height: 44.8rem;
+        margin-bottom: 9rem;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+            align-items: initial;
+        }    
+
+        @media screen and (min-width: 1320px) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+
+        &:first-of-type {
+
+            @media screen and (min-width: 1320px) {
+                margin-right: 2.2rem;
+            }
+        }
+    }
+
+    .content-block {
+
+        @media screen and (min-width: 1024px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    .specialists__photo {
+        width: 25rem;
+        // height: 37rem;
+        // overflow: hidden;
+        margin-bottom: 9rem;
+
+        @media screen and (min-width: 900px) {
+            margin-right: 2rem;
+        }  
+
+        
+        @media screen and (min-width: 1320px) {
+            margin: 0 1.6rem 0 0;
+        }
+    }
+
+    .specialists__info--staff {
+        margin-top: 7rem !important;
+
+        @media screen and (min-width: 900px) {
+            max-width: 41.5rem;
+            margin-top: 0 !important;
+        }  
+
+        @media screen and (min-width: 1024px) {
+            max-width: 100%;
+        }  
+
+        @media screen and (min-width: 1200px) {
+           margin-right: 2rem;
+        }  
+
+        @media screen and (min-width: 1320px) {
+            min-height: 49.1rem;
+        }
+    }
+
+    .specialists__experience {
+        bottom: -3.6rem;
+        left: 3.9rem;
+    }
+
+    .specialists__name,
+    .specialists__position {
+        margin-bottom: .6rem;
+    }
+
+    .specialists__name {
+        max-width: 24.9rem;
+
+        @media screen and (min-width: 414px) {
+            max-width: initial;
+        }
+    }
+    
+    .specialists__info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 1320px) {
+            max-width: 32.9rem;
+        }
+    }
+
+    .text {
+        margin-bottom: 2.2rem;
+
+        @media screen and (min-width: 1320px) {
+            margin-bottom: 4.4rem;
+        }
+    }
+
+    .btn--white {
+        min-width: 18.6rem;
+        padding: 1.6rem 1.1rem;
+        margin-top: auto;
+        align-self: flex-start;
+
+        // @media screen and (min-width: 900px) {
+        //     margin-top: 3.7rem;
+        // }
+
+        // @media screen and (min-width: 1024px) {
+        //     margin-top: auto;
+        // }
+    }
+}

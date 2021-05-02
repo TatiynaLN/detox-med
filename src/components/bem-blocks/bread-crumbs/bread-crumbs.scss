@@ -1,0 +1,8 @@
+.breadcrumbs {
+    margin: 1rem 0;
+    align-self: flex-start;
+
+    @media screen and (min-width: 1320px) {
+        margin: 1.5rem 0;
+    }
+}

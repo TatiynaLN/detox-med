@@ -1,0 +1,29 @@
+.narcology-text {
+    margin-bottom: 5rem;
+    // padding: 4rem 0 4.5rem 0;
+
+    // @media (min-width: 768px) {
+    //     padding: 4rem 0 7.5rem 0;
+    // }
+    // @media (min-width: 1320px) {
+    //     padding: 4rem 0 9.5rem 0;
+    // }
+
+    .section__title {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 1.4rem;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 160%;
+        color: #4f4f4f;
+        @include OpenSans-Regular();
+        font-size: 1.4rem;
+        color: $gray2;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

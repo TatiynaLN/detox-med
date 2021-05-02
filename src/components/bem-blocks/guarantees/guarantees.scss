@@ -1,0 +1,29 @@
+.gray-block--guarantees {
+    text-align: center;
+    padding: 2.4rem 2.1rem 3.9rem 2.1rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 3.3rem .7rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        padding: 3.3rem 11.8rem 3.9rem 11.8rem;
+    }
+
+    &:first-of-type {
+        margin-bottom: 5.2rem;
+
+        @media screen and (min-width: 1320px) {
+            margin-bottom: 5.8rem;
+        }
+    }
+
+    .btn--blue {
+        min-width: 25.6rem;
+        margin-top: 2rem;
+
+        @media screen and (min-width: 1320px) {
+            margin-top: 3.5rem;
+        }
+    }
+}

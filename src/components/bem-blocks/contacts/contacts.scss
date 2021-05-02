@@ -1,0 +1,33 @@
+.contacts {
+    a {
+        position: relative;
+        padding-left: 2.8rem;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-feature-settings: "case" on, "cpsp" on;
+        color: #333333;
+        transition: all 0.5s;
+        // transition: all 1s ease-out;
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../img/icons/phone.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 1.9rem;
+            height: 1.9rem;
+            top: 0.3rem;
+            left: 0;
+        }
+        &:hover,
+        &:focus {
+            color: #009136;
+            transition: all 0.5s;
+            transform: scale(1.1);
+            transform: translateY(-0.3rem);
+        }
+    }
+}

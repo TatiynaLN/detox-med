@@ -1,0 +1,202 @@
+.reviews {
+    padding: 4.5rem 0;
+
+    // @media screen and (min-width: 768px) {
+    //     padding: 3.8rem 0 6.2rem 0;
+    // }
+
+    // @media screen and (min-width: 1320px) {
+    //     padding: 5rem 0 7.3rem 0;
+    // }
+
+    .btn--green {
+        min-width: 11.5rem;
+    }
+}
+
+.section__title--reviews {
+    margin: 1.7rem 0 3.4rem 0;
+}
+
+.swiper-reviews {
+    width: 30rem;
+    min-height: 57rem;
+    height: auto;
+    margin-bottom: 0 !important;
+
+    @media screen and (min-width: 414px) {
+        width: 35.4rem;
+        // height: 50.4rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 66.5rem;
+        min-height: initial;
+    }
+
+    @media screen and (min-width: 1320px) {
+        width: 100rem;
+        // height: 22.8rem;
+    }
+}
+
+.slide-reviews {
+    width: 30rem;
+    height: initial !important;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3.2rem 0 3rem;
+    background: $white;
+    border: 0.1rem solid $gray3;
+    border-radius: 1rem;
+
+    @media screen and (min-width: 414px) {
+        width: 35.4rem;
+        padding: 3rem 2.2rem 1.6rem 2.2rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 66.5rem;
+        min-height: 27rem;
+    }
+
+    @media screen and (min-width: 1320px) {
+        width: 100rem;
+        // height: 22.8rem;
+        // display: flex;
+        padding: 3rem 3.7rem 2.8rem 3.5rem;
+    }
+}
+
+.slide-reviews__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .slide-reviews__text {
+        margin-bottom: 1rem;
+        text-align: justify;
+
+        @media screen and (min-width: 768px) {
+            max-width: 50rem;
+            margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1320px) {
+            max-width: 77.7rem;
+        }
+    }
+
+    .slide-reviews__author {
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        .author__avatar {
+            width: 10rem;
+            height: 10.5rem;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                width: 10rem;
+                height: 10.5rem;
+            }
+        }
+
+        .author__name {
+            text-align: right;
+            padding-right: 1rem;
+            @include Raleway-Bold();
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: $gray3;
+        }
+
+        .author__city {
+            text-align: right;
+            padding-right: 1rem;
+            @include Raleway-Regular();
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: $gray3;
+        }
+    }
+}
+/* СТИЛИ ДЛЯ .reviews-2 СТРАНИЦА ОТЗЫВЫ */
+.revievs-page {
+    padding: 0 0 4.5rem 0;
+}
+.reviews {
+    blockquote {
+        margin: 0;
+        background: #ffffff;
+        border: 1px solid #565b62;
+        box-sizing: border-box;
+        border-radius: 1rem;
+        padding: 3.5rem 1.5rem 2.6rem 1.5rem;
+        margin-bottom: 2rem;
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 3.5rem 3.5rem 2.6rem 3.5rem;
+        }
+        em {
+            @include Raleway-Italic();
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: $gray3;
+        }
+        figure {
+            width: 100%;
+            max-width: 10rem;
+            margin: 0;
+            overflow: hidden;
+            margin-top: 2rem;
+            float: right;
+            @media (min-width: 1200px) {
+                margin-top: 0rem;
+                margin-left: 4.3rem;
+            }
+        }
+        img {
+            width: 100%;
+            height: 10.5rem;
+            border-radius: 50%;
+        }
+        figcaption {
+            text-align: right;
+            padding-right: 1rem;
+            @include Raleway-Regular();
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-feature-settings: "pnum" on, "lnum" on;
+            color: $gray3;
+            strong {
+                display: block;
+                @include Raleway-Bold();
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                font-feature-settings: "pnum" on, "lnum" on;
+                color: $gray3;
+            }
+        }
+    }
+    button.btn--blue {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 25.2rem;
+        display: inline-block;
+    }
+}
