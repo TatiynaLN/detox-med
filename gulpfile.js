@@ -29,7 +29,7 @@ const gulp = require('gulp'),
 /* FILES PATHS */
 
 // Current project name
-let themePath = 'genesis';
+let themePath = 'detox-med';
 
 const paths = {
     prod: {
