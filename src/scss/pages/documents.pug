@@ -1,0 +1,21 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Права и обязанности граждан в сфере охраны здоровья';
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_1 = 'Нормативные документы';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.banner-page
+            .container 
+                .banner-page__block.banner-page__block-center
+                    h1 Нормативные документы
+        .container                 
+            include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        include ./../components/sections/documents/documents.pug
+        include ./../components/sections/footer/footer.pug

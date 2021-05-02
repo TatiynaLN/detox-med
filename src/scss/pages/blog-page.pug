@@ -1,0 +1,35 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Как проходят консультации психолога?';
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_1 = 'Блог / ';
+    - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Как проходят консультации психолога?';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    - let breadcrumbsLink_1 = 'blog.html';
+    - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.banner-page
+            .container 
+                figure.banner-page__block  
+                    img(src="./wp-content/themes/genesis/assets/img/psychol-in-office.jpg", alt="")
+                    figcaption 
+                        h1 Как проходят консультации психолога?
+                        p Психолог создает опоры, чтобы человек мог пройти путь
+                            |от знакомого и известного -  переживания проблемы, к новому - знаниям о решении проблемы.
+        .container                 
+            include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+            include ./../components/bem-blocks/blog-article/blog-article.pug
+        include ./../components/sections/form-down/form-down.pug
+        include ./../components/sections/blog/blog-2.pug
+        include ./../components/sections/footer/footer.pug
+//- .banner-page__block
+                        //- h1 Как проходят консультации психолога?
+                        //- p Психолог создает опоры, чтобы человек мог пройти путь
+                        //-     |от знакомого и известного -  переживания проблемы, к новому - знаниям о решении проблемы.

@@ -1,0 +1,10 @@
+.about-us--doctor-call {
+    padding-top: 0 !important;
+
+    .content-block__img {
+        
+        @media screen and (min-width: 1320px) {
+            height: 30rem;
+        }
+    }
+}
