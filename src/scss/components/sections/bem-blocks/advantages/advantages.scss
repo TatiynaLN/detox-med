@@ -1,0 +1,43 @@
+.advantages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.4rem 1.7rem 2rem 1rem;
+    margin-bottom: 4.6rem;
+
+    @media (min-width: 414px) {
+        padding: 2.7rem 3.9rem 2.3rem 3.9rem;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 7.3rem;
+    }
+
+    @media (min-width: 1320px) {
+        margin-bottom: 8.8rem;
+    }
+    
+}
+
+.numbers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    @media (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.green-square--advantages {
+
+    svg {
+        fill: $gray6;
+    }
+}
