@@ -19,11 +19,36 @@
     @media (min-width: 1320px) {
         padding: 6.6rem 11rem;
         // min-height: initial;
-        min-height: 28.9rem;
-        background: url(../img/baner-home1.jpg) 100% 100% / cover no-repeat;
+        min-height: 70.8rem;
+        background: url("../img/baner-home1.jpg") 100% 100% / cover no-repeat;
 
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background: url(../img/baner-home1@2x.jpg) 100% 100% / cover no-repeat;
+            background: url("../img/baner-home1@2x.jpg") 100% 100% / cover no-repeat;
+        }
+    }
+    h1 {
+        position: relative;
+        margin-top: 5rem;
+        z-index: 0;
+        &::after,
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        &::after {
+            width: 6.5rem;
+            height: 6.5rem;
+            background: url("../img/icons/marcer2.svg") 100% 100% / cover no-repeat;
+            transform: translate(-7rem, -7rem);
+        }
+        &::before {
+            width: 9rem;
+            height: 9rem;
+            background: url("../img/icons/marcer.svg") 100% 100% / cover no-repeat;
+            transform: translate(-5.5rem, -5.5rem);
         }
     }
 }

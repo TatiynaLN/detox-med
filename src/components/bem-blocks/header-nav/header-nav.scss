@@ -21,17 +21,6 @@
                 font-size: 1.4rem;
                 line-height: 1.9rem;
                 animation-duration: 1s;
-                transform: scale(1);
-                &:hover,
-                &:focus {
-                    animation-duration: 1s;
-                    color: $gray6;
-                    transform: scale(1.1);
-                }
-            }
-            li {
-                animation-duration: 1s;
-
                 animation-timing-function: ease;
                 &:hover,
                 &:focus {
@@ -39,8 +28,12 @@
                     transition: all 0.5s;
 
                     background-color: rgba(17, 192, 171, 1);
+                    transform: translateY(-0.3rem);
+                    animation-duration: 1s;
+                    color: $gray6;
                 }
             }
+
             &:nth-child(1) {
                 width: 100%;
                 text-align: left;
@@ -128,16 +121,19 @@
     30% {
         transform: rotateX(-30deg) rotateY(7deg);
         animation-timing-function: ease-in-out;
+        z-index: 99;
     }
 
     65% {
         transform: rotateX(20deg) rotateY(-3deg);
         animation-timing-function: ease-in-out;
+        z-index: 99;
     }
 
     100% {
         transform: rotateX(0);
         animation-timing-function: ease-in-out;
+        z-index: 99;
     }
 }
 
@@ -227,15 +223,15 @@
 //         transform: scale(1) rotate(0);
 //     }
 // }
-@keyframes Tada {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.9);
-    }
+// @keyframes Tada {
+//     0% {
+//         transform: scale(1);
+//     }
+//     50% {
+//         transform: scale(0.9);
+//     }
 
-    100% {
-        transform: scale(1);
-    }
-}
+//     100% {
+//         transform: scale(1);
+//     }
+// }
