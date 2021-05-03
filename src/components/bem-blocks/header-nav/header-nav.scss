@@ -1,199 +1,133 @@
 .header {
-    /* .header__nav */
     .item-link-active {
         // вот он
-        background: $blue;
         color: $gray6;
+        background-color: #11c0ab;
     }
-    &__bottom {
+    /* .header__nav */
+    &__nav {
         width: 100%;
-    }
-    &__nav-list {
-        width: 100%;
-        text-align: left;
-        color: $gray2;
+        margin-bottom: 4rem;
         @media (min-width: 1320px) {
-            display: flex;
+            margin-bottom: 0;
+            justify-self: flex-start;
         }
+    }
+
+    ul {
         a {
             color: $gray2;
             transition: all 0.5s;
             @include Nunito-Regular();
             font-size: 1.4rem;
             line-height: 1.9rem;
+            animation-duration: 1s;
+            transform: scale(1);
             &:hover,
             &:focus {
-                transition: all 0.5s;
-                color: $gray6;
-                background: $blue;
-                span {
-                    color: $gray6;
-                }
-            }
-        }
-    }
-
-    &__nav {
-        width: 100%;
-        margin-bottom: 4rem;
-        @media (min-width: 1320px) {
-            margin-bottom: 0;
-        }
-    }
-
-    /* .header__nav-item */
-
-    &__nav-item {
-        position: relative;
-        height: 100%;
-        &:hover,
-        &:focus {
-            .header__drop-menu {
-                padding: 15px 0;
-                background: #333;
-                opacity: 1;
-                visibility: visible;
-                box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
-                animation-name: swingdown;
                 animation-duration: 1s;
-                animation-timing-function: ease;
+                color: $gray6;
+                transform: scale(1.1);
             }
         }
-    }
-    .link-arow {
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            border-width: 1rem;
-            border-color: transparent;
-            border-style: solid;
-            border-bottom-color: $blue;
-            width: 1rem;
-            height: 1rem;
-            top: 0;
-            right: -1.9rem;
-            transform: matrix(0.5, 0, 0, -1, 1, 7.2);
-            transition: all 0.3s;
-        }
-    }
-    /* .header__item-link */
+        li {
+            animation-duration: 1s;
 
-    &__item-link {
-        line-height: 4.3rem;
-        display: block;
-        padding: 2.5rem 2rem 2.5rem 3.2rem;
-        &:hover,
-        &:focus {
-        }
-        @media (min-width: 1320px) {
-            padding: 2.5rem 1.6rem 2.5rem 1.6rem;
-        }
-    }
+            animation-timing-function: ease;
+            &:hover,
+            &:focus {
+                animation-name: Tada;
+                transition: all 0.5s;
 
-    /* .header__drop-menu */
-
-    &__drop-menu {
-        // visibility: hidden;
-        // opacity: 0;
-        // position: absolute;
-        // width: max-content;
-        // max-width: 29rem;
-        // left: 0;
-        // transform: translateX(-50%);
-        // background-color: $white;
-        // border-radius: 3px;
-        // filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.2));
-        // padding: 2rem 0;
-        // z-index: 90;
-        // transition-property: opacity, visibility, transform;
-        // transition-duration: 0.4s;
-        // transform: perspective(600px) rotateX(-90deg);
-        // transform-origin: 0% 0%;
-        position: absolute;
-        left: 0;
-        z-index: 1;
-        width: 200px;
-        padding: 0;
-        opacity: 0;
-        visibility: hidden;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        background: transparent;
-        overflow: hidden;
-        transform-origin: 50% 0%;
-        @media (min-width: 1320px) {
-            max-width: 30rem;
+                background-color: rgba(17, 192, 171, 1);
+            }
         }
-        &::before {
-            content: "";
-            position: absolute;
-            border-width: 1rem;
-            border-color: transparent;
-            border-style: solid;
-            border-bottom-color: $white;
-            width: 2rem;
-            height: 2rem;
-            top: -2rem;
-            left: 0;
-        }
-    }
-
-    /* .header__drop-link */
-
-    &__drop-link {
-        display: block;
-        padding: 1.5rem 2rem;
-        font-size: 1.8rem;
-    }
-}
-.header__nav-list {
-    li {
         &:nth-child(1) {
-            &:hover,
-            &:focus {
-                transition: all 0.5s;
-                color: $gray6;
-                background: $blue;
-                span {
-                    color: $gray6;
+            width: 100%;
+            text-align: left;
+            color: $gray2;
+            @media (min-width: 1320px) {
+                display: flex;
+            }
+            li {
+                position: relative;
+                height: 100%;
+                &:hover,
+                &:focus {
+                    ul {
+                        background-color: #ebf7f5;
+                        opacity: 1;
+                        visibility: visible;
+                        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+                        animation-name: swingdown;
+                        animation-duration: 1s;
+                        animation-timing-function: ease;
+                    }
+                }
+                ul {
+                    position: absolute;
+                    left: 0;
+                    z-index: 1;
+                    width: 200px;
+                    padding: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    background: transparent;
+                    overflow: hidden;
+                    transform-origin: 50% 0%;
+                    @media (min-width: 1320px) {
+                        max-width: 30rem;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-width: 1rem;
+                        border-color: transparent;
+                        border-style: solid;
+                        border-bottom-color: $white;
+                        width: 2rem;
+                        height: 2rem;
+                        top: -2rem;
+                        left: 0;
+                    }
+                    a {
+                        display: block;
+                        padding: 1.5rem 2rem;
+                        font-size: 1.8rem;
+                        &:hover,
+                        &:focus {
+                            transition: all 0.5s;
+                        }
+                    }
                 }
             }
-            .header__drop-menu {
-                &::before {
-                    left: 13%;
+            a {
+                line-height: 2.3rem;
+                display: block;
+                padding: 2.5rem 2rem 2.5rem 3.2rem;
+                &:hover,
+                &:focus {
+                }
+                @media (min-width: 1320px) {
+                    padding: 2.5rem 1.6rem 2.5rem 1.6rem;
                 }
             }
         }
-        &:nth-child(2) {
-            &:hover,
-            &:focus {
-                transition: all 0.5s;
-                color: $gray6;
-                background: $blue;
-                span {
-                    color: $gray6;
-                }
-            }
-            // a {
-            //     pointer-events: none;
-            // }
-            .header__drop-menu {
-                a {
-                    pointer-events: all;
-                }
-                &::before {
-                    left: 20%;
-                }
-            }
-        }
+    }
+
+    &__bottom {
+        width: 100%;
     }
 }
 
 .submenu-active {
     visibility: visible;
     opacity: 1;
-    transform: perspective(0px) rotateX(0deg);
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 
 @keyframes swingdown {
@@ -203,7 +137,7 @@
     }
 
     30% {
-        transform: rotateX(-20deg) rotateY(5deg);
+        transform: rotateX(-30deg) rotateY(7deg);
         animation-timing-function: ease-in-out;
     }
 
@@ -215,5 +149,104 @@
     100% {
         transform: rotateX(0);
         animation-timing-function: ease-in-out;
+    }
+}
+
+// анимация для пунктов меню
+
+// @-webkit-keyframes Tada {
+//     0% {
+//         -webkit-transform: scale(1);
+//         transform: scale(1);
+//     }
+//     10%,
+//     20% {
+//         -webkit-transform: scale(0.9) rotate(-3deg);
+//         transform: scale(0.9) rotate(-3deg);
+//     }
+//     30%,
+//     50%,
+//     70%,
+//     90% {
+//         -webkit-transform: scale(1.1) rotate(3deg);
+//         transform: scale(1) rotate(3deg);
+//     }
+//     40%,
+//     60%,
+//     80% {
+//         -webkit-transform: scale(1.1) rotate(-3deg);
+//         transform: scale(1) rotate(-3deg);
+//     }
+//     100% {
+//         -webkit-transform: scale(1) rotate(0);
+//         transform: scale(1) rotate(0);
+//     }
+// }
+// @-moz-keyframes Tada {
+//     0% {
+//         -moz-transform: scale(1);
+//         transform: scale(1);
+//     }
+//     10%,
+//     20% {
+//         -moz-transform: scale(0.9) rotate(-3deg);
+//         transform: scale(0.9) rotate(-3deg);
+//     }
+//     30%,
+//     50%,
+//     70%,
+//     90% {
+//         -moz-transform: scale(1.1) rotate(3deg);
+//         transform: scale(1) rotate(3deg);
+//     }
+//     40%,
+//     60%,
+//     80% {
+//         -moz-transform: scale(1.1) rotate(-3deg);
+//         transform: scale(0.9) rotate(-3deg);
+//     }
+//     100% {
+//         -moz-transform: scale(1) rotate(0);
+//         transform: scale(1) rotate(0);
+//     }
+// }
+// @-o-keyframes Tada {
+//     0% {
+//         -o-transform: scale(1);
+//         transform: scale(1);
+//     }
+//     10%,
+//     20% {
+//         -o-transform: scale(0.9) rotate(-3deg);
+//         transform: scale(0.9) rotate(-3deg);
+//     }
+//     30%,
+//     50%,
+//     70%,
+//     90% {
+//         -o-transform: scale(1.1) rotate(3deg);
+//         transform: scale(1) rotate(3deg);
+//     }
+//     40%,
+//     60%,
+//     80% {
+//         -o-transform: scale(1.1) rotate(-3deg);
+//         transform: scale(1) rotate(-3deg);
+//     }
+//     100% {
+//         -o-transform: scale(1) rotate(0);
+//         transform: scale(1) rotate(0);
+//     }
+// }
+@keyframes Tada {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
