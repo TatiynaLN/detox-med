@@ -1,0 +1,88 @@
+.footer {
+    width: 100%;
+    padding: 5rem 0;
+    background-color: #ebf7f5;
+    &__top {
+        position: relative;
+        width: 100%;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: 1320px) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 0;
+            padding-bottom: 2rem;
+        }
+        .mn {
+            display: none;
+            @media (min-width: 1320px) {
+                display: inline-block;
+            }
+        }
+    }
+    &__top-block {
+        margin-bottom: 1rem;
+        @media (min-width: 1320px) {
+            width: 100%;
+            margin-right: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.6rem;
+        a {
+            display: inline-block;
+            margin-bottom: 3rem;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.6rem;
+            line-height: 170%;
+            color: #11c0ab;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 1320px) {
+                margin-bottom: 0;
+                margin-right: 3rem;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                border-bottom: 1px solid #11c0ab;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        @media (min-width: 1320px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 82%;
+            margin: 0 auto;
+            margin-bottom: 2.6rem;
+        }
+    }
+    span {
+        display: block;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 170%;
+        color: rgba(1, 18, 15, 0.7);
+    }
+}

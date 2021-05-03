@@ -34,7 +34,11 @@
     &__top-block {
         margin-bottom: 1rem;
         @media (min-width: 1320px) {
+            width: 100%;
             margin-right: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
     &__top-blocks {
@@ -46,12 +50,6 @@
         }
     }
     .contacts {
-        text-align: center;
-        margin-bottom: 2rem;
-        @media (min-width: 1320px) {
-            margin-left: 0;
-            margin-bottom: 1.1rem;
-        }
     }
     .addres,
     .time {
@@ -60,48 +58,7 @@
             display: block;
         }
     }
-    .social {
-        margin: 0 auto;
-        margin-bottom: 3rem;
-        @media (min-width: 1320px) {
-            margin-bottom: 0.7rem;
-            ul {
-                max-width: 11.3rem;
-                justify-content: center;
-            }
-        }
-    }
-    button {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.4rem;
-        color: #2e3a59;
-        @media (min-width: 1320px) {
-            margin-right: 0;
-        }
-    }
-    &__btn-ring {
-        background: transparent;
-        line-height: 1.9rem;
-        // text-decoration-line: underline;
-        transition: all 0.3s;
-        position: relative;
-        transition: 0.3s;
-        outline: transparent;
-        border-bottom: 0.1rem solid #2e3a59;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 4rem;
-        &:hover,
-        &:focus {
-            transition: all 0.3s;
-            transition: 0.3s;
-            border-color: transparent;
-        }
-        @media (min-width: 1320px) {
-            margin-bottom: 0;
-        }
-    }
+
     &__btn-version {
         margin: 0 auto;
         display: flex;
@@ -109,7 +66,6 @@
         align-items: center;
         width: 100%;
         width: auto;
-        line-height: 124.18%;
         text-align: center;
         font-feature-settings: "case" on, "cpsp" on;
         background-color: transparent;
@@ -117,13 +73,15 @@
         padding: 1.5rem;
         position: relative;
         transition: all 0.5s;
-        z-index: 0;
+        color: #01120f;
         &:focus,
         &:hover {
+            font-weight: bold;
             transition: all 0.5s;
-            color: $gray6;
+            color: #11c0ab;
             svg {
-                fill: #fff;
+                transition: all 0.5s;
+                fill: #11c0ab;
             }
         }
         svg {
@@ -133,26 +91,6 @@
         }
         @media (min-width: 1320px) {
             margin-left: auto;
-        }
-        &::before {
-            content: "";
-            position: absolute;
-            background-color: transparent;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 0%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all 0.5s;
-        }
-        &:focus::before,
-        &:hover::before {
-            width: 100%;
-            transition: all 0.5s;
-            background-color: #11c0ab;
         }
     }
 

@@ -12,111 +12,99 @@
             margin-bottom: 0;
             justify-self: flex-start;
         }
-    }
 
-    ul {
-        a {
-            color: $gray2;
-            transition: all 0.5s;
-            @include Nunito-Regular();
-            font-size: 1.4rem;
-            line-height: 1.9rem;
-            animation-duration: 1s;
-            transform: scale(1);
-            &:hover,
-            &:focus {
-                animation-duration: 1s;
-                color: $gray6;
-                transform: scale(1.1);
-            }
-        }
-        li {
-            animation-duration: 1s;
-
-            animation-timing-function: ease;
-            &:hover,
-            &:focus {
-                animation-name: Tada;
+        ul {
+            a {
+                color: $gray2;
                 transition: all 0.5s;
-
-                background-color: rgba(17, 192, 171, 1);
-            }
-        }
-        &:nth-child(1) {
-            width: 100%;
-            text-align: left;
-            color: $gray2;
-            @media (min-width: 1320px) {
-                display: flex;
-            }
-            li {
-                position: relative;
-                height: 100%;
+                @include Nunito-Regular();
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                animation-duration: 1s;
+                transform: scale(1);
                 &:hover,
                 &:focus {
-                    ul {
-                        background-color: #ebf7f5;
-                        opacity: 1;
-                        visibility: visible;
-                        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
-                        animation-name: swingdown;
-                        animation-duration: 1s;
-                        animation-timing-function: ease;
-                    }
+                    animation-duration: 1s;
+                    color: $gray6;
+                    transform: scale(1.1);
                 }
-                ul {
-                    position: absolute;
-                    left: 0;
-                    z-index: 1;
-                    width: 200px;
-                    padding: 0;
-                    opacity: 0;
-                    visibility: hidden;
-                    border-bottom-left-radius: 4px;
-                    border-bottom-right-radius: 4px;
-                    background: transparent;
-                    overflow: hidden;
-                    transform-origin: 50% 0%;
-                    @media (min-width: 1320px) {
-                        max-width: 30rem;
+            }
+            li {
+                animation-duration: 1s;
+
+                animation-timing-function: ease;
+                &:hover,
+                &:focus {
+                    animation-name: Tada;
+                    transition: all 0.5s;
+
+                    background-color: rgba(17, 192, 171, 1);
+                }
+            }
+            &:nth-child(1) {
+                width: 100%;
+                text-align: left;
+                color: $gray2;
+                @media (min-width: 1320px) {
+                    display: flex;
+                }
+                li {
+                    position: relative;
+                    height: 100%;
+                    &:hover,
+                    &:focus {
+                        ul {
+                            background-color: #ebf7f5;
+                            opacity: 1;
+                            visibility: visible;
+                            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+                            animation-name: swingdown;
+                            animation-duration: 1s;
+                            animation-timing-function: ease;
+                            z-index: 8;
+                        }
                     }
-                    &::before {
-                        content: "";
+                    ul {
                         position: absolute;
-                        border-width: 1rem;
-                        border-color: transparent;
-                        border-style: solid;
-                        border-bottom-color: $white;
-                        width: 2rem;
-                        height: 2rem;
-                        top: -2rem;
                         left: 0;
-                    }
-                    a {
-                        display: block;
-                        padding: 1.5rem 2rem;
-                        font-size: 1.8rem;
-                        &:hover,
-                        &:focus {
-                            transition: all 0.5s;
+                        z-index: 8;
+                        width: 200px;
+                        padding: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        background: transparent;
+                        overflow: hidden;
+                        transform-origin: 50% 0%;
+                        @media (min-width: 1320px) {
+                            max-width: 30rem;
+                        }
+                        a {
+                            display: block;
+                            padding: 1.5rem 2rem;
+                            font-size: 1.8rem;
+                            &:hover,
+                            &:focus {
+                                transition: all 0.5s;
+                            }
                         }
                     }
                 }
-            }
-            a {
-                line-height: 2.3rem;
-                display: block;
-                padding: 2.5rem 2rem 2.5rem 3.2rem;
-                &:hover,
-                &:focus {
-                }
-                @media (min-width: 1320px) {
-                    padding: 2.5rem 1.6rem 2.5rem 1.6rem;
+                a {
+                    line-height: 2.3rem;
+                    display: block;
+                    padding: 2.5rem 2rem 2.5rem 3.2rem;
+                    &:hover,
+                    &:focus {
+                    }
+                    @media (min-width: 1320px) {
+                        padding: 2.5rem 1.6rem 2.5rem 1.6rem;
+                    }
                 }
             }
         }
     }
-
     &__bottom {
         width: 100%;
     }
@@ -132,8 +120,9 @@
 
 @keyframes swingdown {
     0% {
-        opacity: 0.99999;
+        opacity: 1;
         transform: rotateX(90deg);
+        z-index: 99;
     }
 
     30% {

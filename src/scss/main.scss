@@ -22,11 +22,13 @@
 // Секции
 // Главная
 @import "./../components/sections/header/header"; // Шапка
+@import "./../components/sections/banner/banner"; // Подвал
+@import "./../components/sections/footer/footer"; // Подвал
 
 // Бем-блоки
 // Главная
 @import "./../components/bem-blocks/logo/logo"; // Лого
-
+@import "./../components/bem-blocks/social/social";
 @import "./../components/bem-blocks/addres/addres";
 @import "./../components/bem-blocks/contacts/contacts";
 @import "./../components/bem-blocks/header-nav/hamburger";

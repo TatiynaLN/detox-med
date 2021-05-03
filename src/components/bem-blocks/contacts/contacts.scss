@@ -1,33 +1,47 @@
 .contacts {
+    position: relative;
+    padding-left: 4.8rem;
+    animation-duration: 1s;
+    animation-timing-function: ease;
     a {
-        position: relative;
-        padding-left: 2.8rem;
-        display: inline-block;
-        font-weight: bold;
-        font-size: 1.8rem;
-        line-height: 2.5rem;
+        display: block;
+        margin-bottom: 0.5rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #01120f;
         font-feature-settings: "case" on, "cpsp" on;
-        color: #333333;
         transition: all 0.5s;
         // transition: all 1s ease-out;
-        // &::after {
-        //     position: absolute;
-        //     content: "";
-        //     background: url("../img/icons/phone.svg");
-        //     background-repeat: no-repeat;
-        //     background-size: cover;
-        //     background-position: center center;
-        //     width: 1.9rem;
-        //     height: 1.9rem;
-        //     top: 0.3rem;
-        //     left: 0;
-        // }
+
         &:hover,
         &:focus {
-            color: #009136;
+            color: #11c0ab;
             transition: all 0.5s;
-            transform: scale(1.1);
-            transform: translateY(-0.3rem);
         }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        background: url("../img/icons/phone.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 2rem;
+        height: 3.32rem;
+        top: 0rem;
+        left: 0rem;
+        transform: translate(0.5rem, 0.9rem);
+    }
+    &:hover,
+    &:focus {
+        color: #11c0ab;
+        transition: all 0.5s;
+        animation-name: icon;
+        transition: all 0.5s;
     }
 }

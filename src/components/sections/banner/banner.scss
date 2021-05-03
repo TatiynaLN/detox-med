@@ -1,0 +1,29 @@
+.banner {
+    @media (min-width: 0) {
+        background: url(../img/baner-home1.jpg) 100% 100% / cover no-repeat;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background: url(../img/baner-home1@2x.jpg) 100% 100% / cover no-repeat;
+        }
+    }
+
+    @media (min-width: 768px) {
+        padding: 2rem 2rem 4rem 2rem;
+        background: url(../img/baner-home1.jpg) 100% 100% / cover no-repeat;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background: url(../img/baner-home1@2x.jpg) 100% 100% / cover no-repeat;
+        }
+    }
+
+    @media (min-width: 1320px) {
+        padding: 6.6rem 11rem;
+        // min-height: initial;
+        min-height: 28.9rem;
+        background: url(../img/baner-home1.jpg) 100% 100% / cover no-repeat;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background: url(../img/baner-home1@2x.jpg) 100% 100% / cover no-repeat;
+        }
+    }
+}
