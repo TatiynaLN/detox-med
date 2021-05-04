@@ -1,8 +1,9 @@
 .contacts {
     position: relative;
-    padding-left: 4.8rem;
     animation-duration: 1s;
     animation-timing-function: ease;
+    padding-left: 4.8rem;
+
     a {
         display: block;
         margin-bottom: 0.5rem;
@@ -24,6 +25,13 @@
             margin-bottom: 0;
         }
     }
+    &:hover,
+    &:focus {
+        color: #11c0ab;
+        transition: all 0.5s;
+        animation-name: icon;
+        transition: all 0.5s;
+    }
     &::after {
         position: absolute;
         content: "";
@@ -36,12 +44,5 @@
         top: 0rem;
         left: 0rem;
         transform: translate(0.5rem, 0.9rem);
-    }
-    &:hover,
-    &:focus {
-        color: #11c0ab;
-        transition: all 0.5s;
-        animation-name: icon;
-        transition: all 0.5s;
     }
 }

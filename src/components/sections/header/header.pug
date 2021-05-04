@@ -2,19 +2,19 @@ header.header
     .container
         .header__top
             include ./../../bem-blocks/logo/logo.pug
-            .header__top-block
-                //-     .contacts.mn   
-                //-         a(href="tel:+7(8482)21-03-03") +7 (8482) 21-03-03
-                include ./../../bem-blocks/addres/addres.pug
-                include ./../../bem-blocks/contacts/contacts.pug
-                include ./../../bem-blocks/social/social.pug
-                button.btn-red.btn-call Обратный звонок
+            include ./../../bem-blocks/addres/addres.pug
+            include ./../../bem-blocks/contacts/contacts.pug
+            include ./../../bem-blocks/social/social.pug
+            button.btn-red.btn-call Обратный звонок
+            button.header__btn-version 
+                svg(width="45" height="45")
+                    use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#glaz")
+                |Версия для слабовидящих
     .header__bottom
-        .container
-            .header__bottom-inner
-                include ./../../bem-blocks/header-nav/hamburger.pug
-                button.header__btn-version 
-                    svg#glaz(width="45" height="45")
-                        use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#glaz")
-                    |Версия для слабовидящих
-                
+        .header__bottom-inner
+            include ./../../bem-blocks/header-nav/hamburger.pug
+            button.header__btn-version 
+                svg(width="45" height="45")
+                    use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#glaz")
+                |Версия для слабовидящих
+    

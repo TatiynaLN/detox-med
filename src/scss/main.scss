@@ -22,7 +22,9 @@
 // Секции
 // Главная
 @import "./../components/sections/header/header"; // Шапка
-@import "./../components/sections/banner/banner"; // Подвал
+@import "./../components/sections/banner/banner"; // главный банер
+@import "./../components/sections/operating-principle/operating-principle"; // принцип нашей работы
+
 @import "./../components/sections/footer/footer"; // Подвал
 
 // Бем-блоки
@@ -33,6 +35,7 @@
 @import "./../components/bem-blocks/contacts/contacts";
 @import "./../components/bem-blocks/header-nav/hamburger";
 @import "./../components/bem-blocks/header-nav/header-nav";
+@import "./../components/bem-blocks/advantages/advantages";
 
 // Плагины
 @import "./../scss/libs/swiper-bundle.min"; // Слайдер

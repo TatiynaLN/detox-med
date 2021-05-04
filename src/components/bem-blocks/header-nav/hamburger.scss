@@ -1,7 +1,7 @@
 // /* скрываем чекбокс */
 #menu__toggle {
     opacity: 0;
-    @media (min-width: 1320px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
@@ -17,20 +17,49 @@ input#menu__toggle[type="checkbox"] + label {
         transform: rotate(0deg);
     }
 }
-
+.hamburger-menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    .menu__box-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .addres,
+    .contacts,
+    .social {
+        margin-bottom: 2rem;
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
+    .addres {
+        margin-left: -1rem;
+    }
+    .btn-red {
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
+}
 /* стилизуем кнопку */
 .menu__btn {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
-    position: absolute;
+    position: relative;
     // top: 0.5rem;
     top: 0;
-    right: 0;
+    margin-left: auto;
+    right: 2rem;
+    width: 3rem;
     width: 3rem;
     height: 2.6rem;
     cursor: pointer;
     z-index: 91;
-    transform: translate(-2rem, -5.6rem);
+    transform: translatey(1.3rem);
+    // transform: translate(39vh, -10.2rem);
 
     // @media (min-width: 900px) {
     //     // right: 15%;
@@ -121,7 +150,7 @@ input#menu__toggle[type="checkbox"] + label {
     //     transform: translate(83vw, -5.5rem);
     // }
 
-    @media (min-width: 1320px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
@@ -133,8 +162,9 @@ input#menu__toggle[type="checkbox"] + label {
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background-color: #616161;
+    background-color: #11c0ab;
     transition-duration: 0.25s;
+    border-radius: 20px;
 }
 .menu__btn > span::before {
     content: "";
@@ -150,8 +180,8 @@ input#menu__toggle[type="checkbox"] + label {
     position: fixed;
     visibility: hidden;
     overflow-x: auto;
-    height: 100%;
-    width: 100%;
+    height: 0%;
+    width: 0%;
     max-width: 41.1rem;
     top: 0;
     right: -100%;
@@ -167,7 +197,7 @@ input#menu__toggle[type="checkbox"] + label {
         justify-content: center;
         margin: 0 auto;
     }
-    @media (min-width: 1320px) {
+    @media (min-width: 1200px) {
         display: block;
         width: 100%;
         background: transparent;
@@ -183,7 +213,7 @@ input#menu__toggle[type="checkbox"] + label {
     }
 }
 .menu__box-bottom {
-    @media (min-width: 1320px) {
+    @media (min-width: 1200px) {
         display: none;
     }
 }
@@ -201,6 +231,8 @@ input#menu__toggle[type="checkbox"] + label {
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     right: 0;
+    height: 100%;
+    width: 100%;
     // transition-duration: 0.7s;
     transition: all 0.4s;
     z-index: 90;
