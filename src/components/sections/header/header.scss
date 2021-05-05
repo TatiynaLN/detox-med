@@ -152,17 +152,22 @@
         color: #01120f;
         &:focus,
         &:hover {
-            font-weight: bold;
+            // font-weight: bold;
             transition: all 0.5s;
-            color: #11c0ab;
+            // color: #11c0ab;
+            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px, rgba(17, 192, 171, 0.4) 0px 2px,
+                rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+                rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
             svg {
                 transition: all 0.5s;
-                fill: #11c0ab;
+                stroke-width: 0.9px;
+                stroke: rgba(17, 192, 171, 0.9);
             }
         }
         svg {
             display: inline-block;
             fill: #01120f;
+
             margin-right: 1.5rem;
         }
         // @media (min-width: 414px) {

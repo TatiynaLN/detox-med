@@ -1,21 +1,29 @@
 .header {
     .item-link-active {
         // вот он
-        color: $gray6;
-        background-color: #11c0ab;
+        text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px, rgba(17, 192, 171, 0.4) 0px 2px,
+            rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+            rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+        transform: scale(1.1);
     }
     /* .header__nav */
     &__nav {
         width: 100%;
         margin-bottom: 4rem;
+        @media (min-width: 640px) {
+            margin-left: auto;
+            width: 45%;
+        }
         @media (min-width: 1200px) {
+            margin-left: 0;
+            width: 100%;
             margin-bottom: 0;
             justify-self: flex-start;
         }
 
         ul {
             a {
-                color: $gray2;
+                color: #01120f;
                 transition: all 0.5s;
                 @include Nunito-Regular();
                 font-size: 1.4rem;
@@ -24,14 +32,16 @@
                 animation-timing-function: ease;
                 &:hover,
                 &:focus {
-                    animation-name: Tada;
+                    // animation-name: Tada;
                     transition: all 0.5s;
+                    // text-shadow: 0 0 .65px rgba(17, 192, 171, 0.3), 0 0 .65px rgba(17, 192, 171, 0.3);
+                    text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px,
+                        rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px,
+                        rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+                        rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
 
-                    background-color: rgba(17, 192, 171, 1);
                     // transform: translate(0.3rem);
-                    transform: rotatex(-25deg);
                     animation-duration: 1s;
-                    color: $gray6;
                 }
             }
 
@@ -65,8 +75,8 @@
                         position: absolute;
                         left: 0;
                         z-index: 8;
-                        width: 200px;
-                        padding: 0;
+                        min-width: 28rem;
+                        padding: 2rem 0;
                         opacity: 0;
                         visibility: hidden;
                         border-bottom-left-radius: 4px;
