@@ -25,10 +25,11 @@
 @import "./../components/sections/banner/banner"; // главный банер
 @import "./../components/sections/operating-principle/operating-principle"; // принцип нашей работы
 @import "./../components/sections/services/services"; // услуги
+@import "./../components/sections/prices/prices"; // цены
 
+@import "./../components/sections/questions/questions"; // вопрос ответ
 @import "./../components/sections/why-we/why-we"; // почему мы
 @import "./../components/sections/footer/footer"; // Подвал
-
 // Бем-блоки
 // Главная
 @import "./../components/bem-blocks/logo/logo"; // Лого
@@ -38,6 +39,8 @@
 @import "./../components/bem-blocks/header-nav/hamburger";
 @import "./../components/bem-blocks/header-nav/header-nav";
 @import "./../components/bem-blocks/advantages/advantages";
+@import "./../components/bem-blocks/prices-tabs/prices-tabs";
+@import "./../components/bem-blocks/cost/cost"; // стоимость
 
 // Плагины
 @import "./../scss/libs/swiper-bundle.min"; // Слайдер

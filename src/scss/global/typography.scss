@@ -41,14 +41,15 @@
 // Заголовок секции H2
 .section__title {
     @include Nunito-Bold();
-    text-align: center;
+    text-align: left;
     font-style: normal;
     font-weight: bold;
     font-size: 2.6rem;
     line-height: 3.5rem;
     position: relative;
     margin-bottom: 5rem;
-
+    width: 100%;
+    padding-left: 2rem;
     &::after {
         position: absolute;
         content: "";
@@ -58,20 +59,19 @@
         left: 0;
         background-color: #11c0ab;
         border-radius: 50%;
-        transform: translate(1.1rem, 95%);
+        transform: translate(0rem, 95%);
         @media screen and (min-width: 355px) {
-            transform: translate(-1rem, 95%);
+            transform: translate(0rem, 95%);
         }
         @media screen and (min-width: 411px) {
             width: 1.3rem;
             height: 1.3rem;
-            transform: translate(-2.1rem, 75%);
+            transform: translate(0rem, 75%);
         }
     }
     @media screen and (min-width: 1200px) {
         width: 100%;
         text-align: left;
-        margin-left: 4rem;
     }
 }
 h3 {
@@ -87,10 +87,12 @@ a {
     text-decoration: none;
 }
 p,
-li {
+li,
+i {
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;
+    line-height: 170%;
 }
 ol {
     padding: 0;

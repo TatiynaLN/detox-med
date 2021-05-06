@@ -2,9 +2,6 @@
     padding: 5rem 0;
     .section__title {
         margin-bottom: 9.5rem;
-        &::after {
-            transform: translate(-2.1rem, 95%);
-        }
     }
     &__flex {
         @media (min-width: 1200px) {
