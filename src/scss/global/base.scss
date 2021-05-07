@@ -117,3 +117,65 @@ section {
     margin-top: 4.7rem;
   }
 }
+// Затемняющий фон
+.overlay {
+  position: fixed;
+  z-index: 9990;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+// Обертка для увеличенной картинки
+.magnify {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  img {
+    object-fit: contain;
+    border-radius: none;
+
+    @media (min-width: 768px) {
+      height: 90vh;
+    }
+  }
+}
+.modal--open {
+  animation: modal-open 0.5s ease-in-out;
+  transition: all 3s;
+}
+
+.modal--close {
+  animation: modal-close 0.5s ease-in-out;
+  transition: all 3s;
+}
+@keyframes modal-open {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes modal-close {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

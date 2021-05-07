@@ -1,0 +1,10 @@
+.our-clinic {
+    padding: 5rem 0;
+    background: #ebf7f5;
+    @media (min-width: 1200px) {
+        border-radius: 0px 0px 0px 100px;
+    }
+    .container {
+        position: relative;
+    }
+}

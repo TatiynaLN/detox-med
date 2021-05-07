@@ -27,37 +27,44 @@
 // первый банер
 .form-home {
     @media (min-width: 0) {
-        background: url("../img/banner-form1-s.jpg") 100% 100% / cover no-repeat;
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form1-s.jpg");
+        background-size: cover;
 
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background: url("../img/banner-form1-s@2x.jpg") 100% 100% / cover no-repeat;
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form1-s@2x.jpg");
+            background-size: cover;
         }
     }
     @media (min-width: 1320px) {
         // min-height: initial;
         // min-height: 60.8rem;
         // max-height: 71rem;
-        background: url("../img/banner-form1-l.jpg") 100% 100% / cover no-repeat;
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form1-l.jpg");
+        background-size: cover;
 
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background: url("../img/banner-form1-l@2x.jpg") 100% 100% / cover no-repeat;
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form1-l@2x.jpg");
+            background-size: cover;
         }
     }
 }
 // второй банер
 .form-home2 {
     @media (min-width: 0) {
-        background: url("../img/banner-form2-s.jpg") 100% 100% / cover no-repeat;
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form2-s.jpg");
+        background-size: cover;
 
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background: url("../img/banner-form2-s@2x.jpg") 100% 100% / cover no-repeat;
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form2-s@2x.jpg");
+            background-size: cover;
         }
     }
     @media (min-width: 1320px) {
-        background: url("../img/banner-form2-l.jpg") 100% 100% / cover no-repeat;
-
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form2-l.jpg");
+        background-size: cover;
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background: url("../img/banner-form2-l@2x.jpg") 100% 100% / cover no-repeat;
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form2-l@2x.jpg");
+            background-size: cover;
         }
     }
 }
