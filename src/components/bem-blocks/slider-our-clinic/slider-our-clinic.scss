@@ -17,22 +17,6 @@
             top: -0.2rem;
         }
     }
-    .swiper-wrapper {
-        margin-bottom: 3.2rem;
-        width: 100%;
-        @media (min-width: 1200px) {
-            height: 55.5rem;
-        }
-    }
-    .swiper-slide {
-        height: calc((100% - 3.8rem) / 2);
-        overflow: hidden;
-        background: #c4c4c4;
-        border-radius: 20px;
-
-        overflow: hidden;
-    }
-
     // содержимое слайдов
     &__img {
         width: 100%;
@@ -49,6 +33,21 @@
             transition: all 0.8s;
         }
     }
+}
+.swiper-wrapper.slider-our-clinic__wrapper {
+    margin-bottom: 3.2rem;
+    width: 100%;
+    @media (min-width: 1200px) {
+        height: 55.5rem;
+    }
+}
+.swiper-slide.slider-our-clinic__slide {
+    height: calc((100% - 3.8rem) / 2);
+    overflow: hidden;
+    background: #c4c4c4;
+    border-radius: 20px;
+
+    overflow: hidden;
 }
 .our-clinic-prev,
 .our-clinic-next {
@@ -132,8 +131,8 @@
     }
 }
 
-.swiper-slide:hover .img__overlay,
-.swiper-slide:hover .eye svg {
+.slider-our-clinic__slide:hover .img__overlay,
+.slider-our-clinic__slide:hover .eye svg {
     opacity: 1;
     cursor: zoom-in;
 }

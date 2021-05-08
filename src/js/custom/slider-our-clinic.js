@@ -19,7 +19,7 @@
         // slidesPerView: 3,
         slidePerGroup: 1,
         initialSlide: 0,
-        // loop: true, // бесконечный слайд
+        loop: false, // бесконечный слайд
         speed: 400,
         spaceBetween: 38,
         breakpoints: {
