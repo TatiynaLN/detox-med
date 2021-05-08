@@ -17,7 +17,7 @@
         //         //     spaceBetween: 30,
         slidePerGroup: 1,
         centeredSlides: true,
-        initialSlide: 1,
+        initialSlide: 0,
         lopp: true, // бесконечный слайд
         speed: 700, // скорость пролистывания
         // effect: 'fade', // эфект прозрачность
