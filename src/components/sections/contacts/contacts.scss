@@ -1,0 +1,79 @@
+.section-contacts {
+    padding: 10rem 0;
+    h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+}
+.contacts-addres {
+    width: 100%;
+    margin-bottom: 3rem;
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 170%;
+        color: #01120f;
+        display: inline-block;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-bottom: 0.3rem;
+        transition: all 0.3s;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.1rem;
+            background-color: #11c0ab;
+            transform: scaleX(1);
+            transition: transform 0.5s;
+        }
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px, rgba(17, 192, 171, 0.4) 1px 0px,
+                rgba(17, 192, 171, 0.4) 1px 1px;
+            &::before {
+                transform: scaleX(0);
+            }
+        }
+    }
+}
+.section-contacts__block {
+    width: 100%;
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    .map {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        align-self: baseline;
+        overflow: hidden;
+
+        max-width: 65.2rem;
+        min-width: 65.2rem;
+
+        @media (min-width: 1200px) {
+            margin: 0;
+            max-width: 65.2rem;
+            min-width: 65.2rem;
+        }
+    }
+    .txt {
+        width: 100%;
+        @media (min-width: 1200px) {
+            max-width: 45.6rem;
+            min-width: 45.6rem;
+        }
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+}
