@@ -39,7 +39,7 @@
         }
 
         p {
-            transition: all 1s ease-out;
+            transition: all 0.5s ease-out;
             padding: 0rem 2rem;
             @media (min-width: 1200px) {
                 padding-left: 3rem;
@@ -134,7 +134,7 @@
         overflow: hidden;
         height: 0;
         opacity: 0;
-        transition: all 0.4s ease-out;
+        transition: all 0.5s ease-out;
     }
 
     ul li {
@@ -165,7 +165,7 @@
 .accordion__item__title--active + p {
     height: initial;
     opacity: 1;
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
 }
 // input[type="checkbox"] {
 //     display: none;

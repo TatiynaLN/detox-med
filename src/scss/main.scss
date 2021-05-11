@@ -41,7 +41,8 @@
 @import "./../components/sections/footer/footer"; // Подвал
 
 // СТРАНИЦА ОТДЕЛЬНОЙ СТАТЬИ
-@import "./../components/sections/avtors/avtors"; // Шапка
+@import "./../components/sections/avtors/avtors"; // автор статьи + дата
+@import "./../components/sections/reviews-page/reviews-page"; // Шапка
 // Бем-блоки
 // Главная
 @import "./../components/bem-blocks/logo/logo"; // Лого
