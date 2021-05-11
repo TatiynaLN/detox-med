@@ -1,0 +1,217 @@
+.header {
+    .item-link-active {
+        // вот он
+        text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px, rgba(17, 192, 171, 0.4) 0px 2px,
+            rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+            rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+        transform: scale(1.1);
+    }
+    /* .header__nav */
+    &__nav {
+        width: 100%;
+        margin-bottom: 4rem;
+        @media (min-width: 640px) {
+            margin-left: auto;
+            width: 45%;
+        }
+        @media (min-width: 1200px) {
+            margin-left: 0;
+            width: 100%;
+            margin-bottom: 0;
+            justify-self: flex-start;
+        }
+
+        ul {
+            a {
+                color: #11c0ab;
+
+                transition: all 0.5s;
+                @include Nunito-Regular();
+                font-size: 1.4rem;
+                line-height: 1.9rem;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                &:hover,
+                &:focus {
+                    color: #01120f;
+                    // animation-name: Tada;
+                    transition: all 0.5s;
+                    // text-shadow: 0 0 .65px rgba(17, 192, 171, 0.3), 0 0 .65px rgba(17, 192, 171, 0.3);
+                    text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px,
+                        rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px,
+                        rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+                        rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+
+                    // transform: translate(0.3rem);
+                    animation-duration: 1s;
+                }
+                @media (min-width: 1200px) {
+                    color: #01120f;
+                }
+            }
+
+            &:nth-child(1) {
+                width: 100%;
+                text-align: left;
+                color: $gray2;
+                @media (min-width: 1200px) {
+                    display: flex;
+                }
+                li {
+                    position: relative;
+                    height: 100%;
+                    @media (min-width: 1200px) {
+                        margin-right: 2.4rem;
+                    }
+                    &:hover,
+                    &:focus {
+                        ul {
+                            background-color: #ebf7f5;
+                            opacity: 1;
+                            visibility: visible;
+                            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+                            animation-name: swingdown;
+                            animation-duration: 1s;
+                            animation-timing-function: ease;
+                            z-index: 8;
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        left: 0;
+                        z-index: 8;
+                        min-width: 28rem;
+                        padding: 2rem 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                        background: transparent;
+                        overflow: hidden;
+                        transform-origin: 50% 0%;
+                        @media (min-width: 1320px) {
+                            max-width: 30rem;
+                        }
+                        li {
+                            margin-right: 0;
+                        }
+                        a {
+                            display: block;
+                            padding: 1.5rem 2rem;
+                            font-size: 1.8rem;
+                            &:hover,
+                            &:focus {
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+                }
+                a {
+                    line-height: 2.3rem;
+                    display: block;
+                    padding: 2.5rem 2rem;
+                    // &:hover,
+                    // &:focus {
+                    // }
+                    @media (min-width: 1200px) {
+                        padding: 2rem 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        width: 100%;
+    }
+}
+
+.submenu-active {
+    visibility: visible;
+    opacity: 1;
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes swingdown {
+    0% {
+        opacity: 1;
+        transform: rotateX(90deg);
+        z-index: 99;
+    }
+
+    30% {
+        transform: rotateX(-30deg) rotateY(7deg);
+        animation-timing-function: ease-in-out;
+        z-index: 99;
+    }
+
+    65% {
+        transform: rotateX(20deg) rotateY(-3deg);
+        animation-timing-function: ease-in-out;
+        z-index: 99;
+    }
+
+    100% {
+        transform: rotateX(0);
+        animation-timing-function: ease-in-out;
+        z-index: 99;
+    }
+}
+
+// .header__btn-version {
+//     transition: all 0.5s;
+// }
+// .header__nav {
+//     ul {
+//         &:nth-child(1) {
+//             a {
+//                 @media (min-width: 1320px) {
+//                     transition: all 0.5s;
+//                 }
+//             }
+//             li ul a {
+//                 transition: all 0.5s;
+//             }
+//         }
+//     }
+// }
+
+// .sticky-menu ul {
+//     &:nth-child(1) {
+//         a {
+//             @media (min-width: 1200px) {
+//                 animation-name: sticy;
+//                 animation-duration: 1s;
+//                 animation-timing-function: ease;
+
+//                 transition: all 0.5s;
+//             }
+//         }
+//     }
+// }
+// .sticky-menu .header__btn-version {
+//     animation-name: sticys;
+//     animation-duration: 1s;
+//     animation-timing-function: ease;
+
+//     transition: all 0.5s;
+// }
+// @keyframes sticy {
+//     0% {
+//         padding: 2rem 1.6rem;
+//     }
+
+//     100% {
+//         padding: 1rem 1.6rem;
+//     }
+// }
+// @keyframes sticys {
+//     0% {
+//         padding: 0.5rem 1.5rem;
+//     }
+
+//     100% {
+//         padding: 0 1.5rem;
+//     }
+// }

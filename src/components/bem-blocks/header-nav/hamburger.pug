@@ -1,0 +1,11 @@
+.hamburger-menu
+    input#menu__toggle(type="checkbox")
+    label.menu__btn(for="menu__toggle"): span
+    .menu__box
+        include ./../../bem-blocks/header-nav/header-nav.pug
+        .menu__box-bottom
+            include ./../../bem-blocks/addres/addres.pug
+            include ./../../bem-blocks/contacts/contacts.pug
+            include ./../../bem-blocks/social/social.pug
+            button.btn-red.btn-call Обратный звонок
+            

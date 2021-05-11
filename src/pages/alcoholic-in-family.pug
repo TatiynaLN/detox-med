@@ -1,0 +1,12 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Алкоголик в семье';
+    - let servicesTitle = 'Оказываем медицинские услуги по направлениям:';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/avtors/avtors.pug
+        include ./../components/sections/footer/footer.pug

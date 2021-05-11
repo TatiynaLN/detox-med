@@ -1,0 +1,93 @@
+.slider-licenses {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 117rem;
+    &__wrapper {
+        width: 100%;
+    }
+    &__slide,
+    .img__overlay {
+        width: 100%;
+        @media (min-width: 520px) {
+            max-width: 36rem;
+        }
+        @media (min-width: 1200px) {
+            max-width: 36rem;
+            min-width: 36rem;
+        }
+    }
+    &__img {
+        transform: scale(1);
+        transition: all 0.8s;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            transition: all 0.8s;
+        }
+    }
+    img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+.slider-licenses-prev,
+.slider-licenses-next {
+    color: #11c0ab;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @media (min-width: 1344px) {
+        position: absolute;
+        z-index: 0;
+        bottom: 50%;
+    }
+    &:hover,
+    &:focus {
+        color: #01120f;
+        transform: scale(1.1);
+        text-shadow: rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px,
+            rgba(17, 192, 171, 0.4) -2px -2px, rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+        transition: all 0.3s;
+    }
+}
+.slider-licenses-next {
+    left: 1rem;
+    transform: rotate(180deg);
+    margin-right: auto;
+    margin-top: -3rem;
+
+    @media (min-width: 1344px) {
+        left: 0;
+    }
+    &:hover,
+    &:focus {
+        transform: scale(1.1) rotate(180deg);
+
+        transition: all 0.3s;
+    }
+}
+.slider-licenses-prev {
+    right: 1rem;
+    margin-left: auto;
+    margin-top: 4rem;
+
+    @media (min-width: 1344px) {
+        right: 0;
+    }
+}
+
+.slider-licenses-prev.swiper-button-disabled,
+.slider-licenses-next.swiper-button-disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.4;
+}
+.slider-licenses__slide:hover .img__overlay,
+.slider-licenses__slide:hover .eye svg {
+    opacity: 1;
+    cursor: zoom-in;
+}

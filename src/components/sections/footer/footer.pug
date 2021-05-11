@@ -1,0 +1,19 @@
+footer.footer 
+    .container
+        .footer__top
+            .logo
+                a(href="index.html") 
+                    img(src="./wp-content/themes/detox-med/assets/img/logo-footer.png" alt="Logo")
+                    p.logo__name ДетоксМед
+                        span Наркологический центр
+            .addres 
+                a(href="https://yandex.ru/maps/?rtext=~59.941912,30.364907&rtt=mt" target="_blank") Санкт-Петербург, 
+                    |ул. Радищева 39В
+            include ./../../bem-blocks/contacts/contacts.pug
+            include ./../../bem-blocks/social/social.pug
+            button.btn-red.btn-call Обратный звонок
+        .footer__bottom 
+            a(href="" target="_blank") Политика конфиденциальности
+            a(href="" target="_blank") Права и обязанности граждан в сфере охраны здоровья
+            a(href="" target="_blank") Карта сайта
+        span © 2021 DetoxMed

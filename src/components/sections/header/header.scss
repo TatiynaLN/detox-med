@@ -1,0 +1,225 @@
+.header {
+    background: rgb(255, 255, 255);
+    transition: all 0.3s;
+    @media (min-width: 1200px) {
+        padding: 0rem;
+    }
+
+    &__top {
+        position: relative;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+        flex-wrap: wrap;
+        @media (min-width: 1200px) {
+            padding-bottom: 0;
+        }
+        .header__btn-version {
+            width: auto;
+            padding: 0;
+            transition: all 0.5s;
+            flex-basis: 100%;
+            margin-top: 1rem;
+            @media (min-width: 414px) {
+                margin-top: 0;
+                font-size: 0;
+                padding: 0;
+                flex-basis: auto;
+                svg {
+                    margin-right: 0;
+                }
+            }
+            @media (min-width: 860px) {
+                font-size: 1.6rem;
+                padding: 0;
+                flex-basis: auto;
+                svg {
+                    margin-right: 1.5rem;
+                }
+            }
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+        .contacts {
+            padding-left: 0;
+            align-self: center;
+            @media (min-width: 900px) {
+                padding-left: 4.8rem;
+            }
+            a {
+                color: #f04242;
+                @media (min-width: 1200px) {
+                    margin-bottom: 0.5rem;
+                    color: #01120f;
+                }
+                // &:hover,
+                // &:focus {
+                //     color: #11c0ab;
+                //     transition: all 0.5s;
+
+                // }
+            }
+            &::after {
+                display: none;
+            }
+            @media (min-width: 1200px) {
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background: url("../img/icons/phone.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    width: 2rem;
+                    height: 3.32rem;
+                    top: 0rem;
+                    left: 0rem;
+                    transform: translate(0.5rem, 0.9rem);
+                }
+            }
+        }
+        .addres {
+            display: none;
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+    }
+    &__top {
+        align-self: center;
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social,
+        .btn-red {
+            display: none;
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+        .social {
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+        }
+    }
+    &__btn-version {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        width: auto;
+        text-align: center;
+        font-feature-settings: "case" on, "cpsp" on;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 0.5rem 1.5rem;
+        position: relative;
+        transition: all 0.5s;
+        color: #01120f;
+        &:focus,
+        &:hover {
+            transition: all 0.5s;
+            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(1, 18, 15, 0.7) 1px 1px, rgba(17, 192, 171, 0.4) 0px 2px,
+                rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px, rgba(17, 192, 171, 0.4) -2px -2px,
+                rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+            svg {
+                transition: all 0.5s;
+                stroke-width: 0.9px;
+                stroke: rgba(17, 192, 171, 0.9);
+            }
+        }
+        svg {
+            display: inline-block;
+            fill: #01120f;
+
+            margin-right: 1.5rem;
+        }
+    }
+    /*   HEADER BOTTOM         */
+    .header__bottom.sticky-menu {
+        top: 0 !important;
+    }
+    &__bottom {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        display: block;
+        margin-left: auto;
+        width: 100%;
+
+        @media (min-width: 414px) {
+            width: auto;
+        }
+        @media (min-width: 1200px) {
+            position: relative;
+            background-color: #ebf7f5;
+            width: 100%;
+        }
+    }
+    &__bottom-inner {
+        position: relative;
+        right: 0;
+
+        @media (min-width: 1200px) {
+            margin: 0 auto;
+            max-width: 117rem;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+        }
+        .mn {
+            display: none;
+            @media (min-width: 1200px) {
+                display: inline-block;
+            }
+        }
+        .header__btn-version {
+            display: none;
+            @media (min-width: 1200px) {
+                display: flex;
+                margin: 0;
+                margin-left: auto;
+            }
+        }
+    }
+    &__nav-flex {
+        display: none;
+        @media (min-width: 1200px) {
+            display: flex;
+        }
+    }
+
+    // стили для лого
+    .logo {
+        width: 6.7rem;
+        height: 7.1rem;
+        margin-right: 1.2rem;
+        @media (min-width: 414px) {
+            margin-right: 3.2rem;
+        }
+        @media (min-width: 620px) {
+            width: auto;
+            margin-right: 2rem;
+        }
+        a {
+            width: 100%;
+        }
+        &__name {
+            display: none;
+            @media (min-width: 620px) {
+                display: block;
+            }
+        }
+    }
+}

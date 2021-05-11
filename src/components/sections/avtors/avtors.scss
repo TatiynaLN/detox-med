@@ -1,0 +1,39 @@
+.avtors {
+    padding: 5rem 0;
+    &__block-box {
+        @include Nunito-Regular();
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 170%;
+        &:nth-child(1) {
+            display: flex;
+        }
+    }
+    &__block-img {
+        min-width: 9.8rem;
+        max-width: 9.8rem;
+        min-height: 9.8rem;
+        max-height: 9.8rem;
+        background-color: #c4c4c4;
+        border-radius: 5px 70px 70px 70px;
+        margin-right: 3rem;
+        img {
+            border-radius: 5px 70px 70px 70px;
+        }
+    }
+    i {
+        @include Nunito-Regular();
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 170%;
+        color: #11c0ab;
+    }
+    h6 {
+        color: #01120f;
+    }
+    p {
+        color: rgba(1, 18, 15, 0.7);
+    }
+}
