@@ -64,86 +64,95 @@
     p {
         color: rgba(1, 18, 15, 0.7);
     }
-
-    time {
-        @include Nunito-Regular();
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.6rem;
-        line-height: 170%;
-        color: rgba(1, 18, 15, 0.7);
-        position: relative;
-        padding-left: 2.5rem;
-        margin-right: 3rem;
-        margin-bottom: 1rem;
-        @media (min-width: 1024px) {
-            text-align: right;
-            display: inline-block;
-        }
-        &::before {
-            position: absolute;
-            content: "";
-            left: 0;
-            transform: translateY(18%);
-            width: 1.7rem;
-            height: 1.7rem;
-            background-image: url("../img/icons/calendar.svg");
-        }
-    }
     .tag {
-        position: relative;
-        padding-left: 2.5rem;
-        text-align: right;
         @media (min-width: 540px) {
             margin-left: auto;
         }
-        &::before {
-            position: absolute;
-            content: "";
-            left: 0;
-            transform: translateY(18%);
-            width: 1.7rem;
-            height: 1.7rem;
-            background-image: url("../img/icons/tag.svg");
-        }
-        a {
+        @media (min-width: 1024px) {
+            max-width: 45rem;
+            min-width: 0;
             text-align: right;
-            display: inline-block;
-            @include Nunito-Regular();
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.4rem;
-            line-height: 170%;
-            color: rgba(1, 18, 15, 0.7);
-            position: relative;
-            transition: all 0.3s;
-            margin-right: 1rem;
-            margin-bottom: 0.7rem;
-            text-decoration: underline 1px solid #11c0ab;
-            @media (min-width: 540px) {
-                text-decoration: none;
-            }
-            &:hover {
-                transition: all 0.3s;
-                text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px,
-                    rgba(17, 192, 171, 0.4) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px;
+        }
+    }
+}
+time {
+    @include Nunito-Regular();
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 170%;
+    color: rgba(1, 18, 15, 0.7);
+    position: relative;
+    padding-left: 2.5rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    @media (min-width: 1024px) {
+        text-align: right;
+        display: inline-block;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        transform: translateY(18%);
+        width: 1.7rem;
+        height: 1.7rem;
+        background-image: url("../img/icons/calendar.svg");
+    }
+}
 
-                &::before {
-                    transform: scaleX(0);
-                }
-            }
+.tag {
+    position: relative;
+    padding-left: 2.5rem;
+    text-align: left;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        transform: translateY(18%);
+        width: 1.7rem;
+        height: 1.7rem;
+        background-image: url("../img/icons/tag.svg");
+    }
+    a {
+        text-align: left;
+        display: inline-block;
+        @include Nunito-Regular();
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 170%;
+        color: rgba(1, 18, 15, 0.7);
+        position: relative;
+        transition: all 0.3s;
+        margin-right: 1rem;
+        margin-bottom: 0.7rem;
+        text-decoration: underline 1px solid #11c0ab;
+        @media (min-width: 540px) {
+            text-decoration: none;
+        }
+        &:hover {
+            transition: all 0.3s;
+            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px, rgba(17, 192, 171, 0.4) 1px 0px,
+                rgba(17, 192, 171, 0.4) 1px 1px;
+
             &::before {
-                @media (min-width: 540px) {
-                    position: absolute;
-                    content: "";
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 0.1rem;
-                    background-color: #11c0ab;
-                    transform: scaleX(1);
-                    transition: transform 0.5s;
-                }
+                transform: scaleX(0);
+            }
+        }
+        &::before {
+            @media (min-width: 540px) {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0.1rem;
+                background-color: #11c0ab;
+                transform: scaleX(1);
+                transition: transform 0.5s;
             }
         }
     }
