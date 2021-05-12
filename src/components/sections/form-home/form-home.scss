@@ -11,9 +11,14 @@
         line-height: 146.4%;
         text-align: left;
         width: 100%;
+        max-width: 98.8rem;
         color: #ffffff;
+
         @media (min-width: 411px) {
             font-size: 4.4rem;
+        }
+        @media (min-width: 1024px) {
+            align-self: flex-start;
         }
     }
     h3 {

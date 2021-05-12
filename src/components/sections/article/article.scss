@@ -1,0 +1,46 @@
+.article {
+    width: 100%;
+    padding: 10rem 0;
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    .publications__content {
+        margin-bottom: 5rem;
+        padding: 0;
+        transform: scale(1);
+        transition: all 0.3s;
+        @media (min-width: 1300px) {
+            padding-right: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        &:hover {
+            @media (min-width: 1300px) {
+                transition: all 0.3s;
+                transform: scale(1.1);
+                box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.1);
+            }
+        }
+    }
+    .publications__left {
+        @media (min-width: 900px) {
+            margin-right: 3rem;
+        }
+    }
+    .publications__content-info {
+        padding: 0;
+    }
+    .tag {
+        @media (min-width: 900px) {
+            margin-left: 0;
+        }
+    }
+}
