@@ -11,17 +11,23 @@
             pageUpDown: true,
         },
         autoHeight: true,
-        slidesPerView: 1,
         slidePerGroup: 1,
         initialSlide: 0,
         loop: true, // бесконечный слайд
         speed: 700,
-        effect: 'flip',
-        flipEffect: {
-            slideShadows: true,
-            limitRotation: true // показ только активного слайда
-        },
+        breakpoints: {
+            // when window width is <= 320px
+            320: {
+                slidesPerView: 1,
 
+            },
+            // when window width is <= 480px
+            1400: {
+                slidesPerView: 2,
+                spaceBetween: 29
+
+            }
+        }
     });
 
 
