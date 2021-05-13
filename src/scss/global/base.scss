@@ -21,7 +21,25 @@ header,
 section {
   width: 100%;
 }
-
+// Обязательные css
+.alignright {
+  float: right;
+  margin: 0.5em 0 0.5em 1em;
+}
+.alignleft {
+  float: left;
+  margin: 0.5em 1em 0.5em 0;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alignnone {
+  height: auto;
+  max-width: 100%;
+}
+//
 .wrapper {
   width: 100%;
   padding: 0;

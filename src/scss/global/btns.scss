@@ -48,6 +48,35 @@ button {
         // }
     }
 }
+.button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #11c0ab;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #11c0ab;
+    border-radius: 100px;
+    z-index: 0;
+    padding: 1.2rem;
+    max-width: 23.2rem;
+    min-width: 23.2rem;
+
+    display: block;
+    transition: transform 1s ease;
+    position: relative;
+    &:hover {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em rgba(#fff, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #11c0ab;
+    }
+}
 // .btn {
 //     display: inline-block;
 //     text-align: center;

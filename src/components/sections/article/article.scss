@@ -1,6 +1,9 @@
 .article {
     width: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
+    @media (min-width: 1200px) {
+        padding: 10rem 0;
+    }
     &__flex {
         display: flex;
         flex-direction: column;
