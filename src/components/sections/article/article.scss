@@ -20,6 +20,9 @@
         padding: 0;
         transform: scale(1);
         transition: all 0.3s;
+        @media (min-width: 900px) {
+            align-self: stretch;
+        }
         @media (min-width: 1300px) {
             padding-right: 1rem;
             padding-bottom: 2rem;
