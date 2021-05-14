@@ -48,6 +48,13 @@
 // СТАТЬИ
 @import "./../components/sections/article/article"; //
 
+// О центре
+@import "./../components/sections/about/about"; //
+
+// О центре
+@import "./../components/sections/quote/quote"; // цитата глав. врач
+@import "./../components/sections/guarantees/guarantees"; //  гарантии
+
 // Бем-блоки
 // Главная
 @import "./../components/bem-blocks/logo/logo"; // Лого

@@ -1,0 +1,27 @@
+.guarantees {
+    background: #ebf7f5;
+    border-radius: 0px 100px 100px 0px;
+    padding: 5rem 0;
+    ul {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+    li {
+        margin-bottom: 1rem;
+        padding-left: 1.7rem;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #11c0ab;
+            border-radius: 50%;
+            left: 0;
+            transform: translateY(1.2rem);
+        }
+    }
+    i {
+        color: #11c0ab;
+    }
+}
