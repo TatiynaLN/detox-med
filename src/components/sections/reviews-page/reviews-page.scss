@@ -26,8 +26,14 @@
     img {
         border-radius: 20px;
     }
-    h3 {
+    h2 {
         margin-bottom: 3rem;
+        @include Nunito-Bold();
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: #01120f;
     }
     p {
         margin-bottom: 2rem;
@@ -52,12 +58,12 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        h3,
+        h2,
         p {
             min-width: 100%;
         }
     }
-    h3 {
+    h2 {
         margin-bottom: 3rem;
     }
     &__block-img {
