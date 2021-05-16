@@ -58,7 +58,7 @@
             margin-right: 0;
             align-self: stretch;
 
-            background-color: #11c0ab;
+            background-color: rgba(17, 192, 171, 0.75);
         }
         &::before {
             position: absolute;
@@ -83,6 +83,7 @@
                 transform: scaleX(1);
             }
             @media (min-width: 1250px) {
+                background-color: #11c0ab;
                 color: #ebf7f5;
                 box-shadow: inset 3px 3px 3px rgba(1, 18, 15, 0.2);
                 text-shadow: rgba(255, 255, 255, 0.7) 1px 0px, 0px 2px 5px rgba(1, 18, 15, 0.3);
@@ -101,6 +102,7 @@
             color: #ebf7f5;
             box-shadow: inset 3px 3px 3px rgba(1, 18, 15, 0.2);
             text-shadow: rgba(255, 255, 255, 0.7) 1px 0px, 0px 2px 5px rgba(1, 18, 15, 0.3);
+            background-color: #11c0ab;
         }
     }
 }

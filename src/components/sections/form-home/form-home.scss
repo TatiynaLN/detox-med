@@ -181,3 +181,76 @@
         }
     }
 }
+
+// чекбокс
+.form__policy {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    label[for="chec"],
+    label[for="chec2"] {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        max-width: 50.3rem;
+        padding-left: 2.5rem;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            border: solid 0.1rem #f04242;
+            border-radius: 0.2rem;
+            width: 1.45rem;
+            height: 1.45rem;
+            top: 0.5rem;
+            left: 0;
+            transition: 0.5s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            border-right: solid 0.2rem transparent;
+            border-bottom: solid 0.2rem transparent;
+            width: 0.5rem;
+            height: 1rem;
+            top: 0.6rem;
+            left: 0.45rem;
+            transform: rotate(42deg);
+            transition: 0.5s;
+        }
+    }
+
+    input:checked + label::after {
+        border-right: solid 0.2rem #fff;
+        border-bottom: solid 0.2rem #fff;
+        transform: rotate(42deg);
+        transition: 0.5s;
+    }
+
+    input:checked + label::before {
+        background: #f04242;
+        transition: 0.5s;
+    }
+
+    input:not(:checked),
+    input:checked {
+        display: none;
+    }
+    label,
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+        width: 100%;
+    }
+    a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+    }
+}

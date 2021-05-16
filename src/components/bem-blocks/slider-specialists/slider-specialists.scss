@@ -28,6 +28,7 @@
             border-radius: 20px 70px 70px 70px;
             transform: scale(1);
             transition: all 0.8s;
+            object-fit: cover;
             @media (min-width: 900px) {
                 height: 100%;
             }

@@ -13,6 +13,8 @@
 //     });
 
 // })();
+
+
 ; (function () {
 
     let accordItems = document.querySelectorAll('.accordion ul li h3');
@@ -23,4 +25,6 @@
         });
     });
 
+
 })();
+

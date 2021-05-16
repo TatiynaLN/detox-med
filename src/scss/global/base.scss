@@ -20,6 +20,7 @@ body {
 header,
 section {
   width: 100%;
+  z-index: 0;
 }
 // Обязательные css
 .alignright {
@@ -122,8 +123,8 @@ section {
 
   @media (min-width: 1200px) {
     display: block;
-    // padding-top: 7rem;
-    margin-top: 62.73px;
+    // padding-top: 6rem;
+    // margin-top: 62.73px;
   }
 }
 // Затемняющий фон
@@ -186,5 +187,29 @@ section {
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+.header__bottom-new {
+  @media (min-width: 1200px) {
+    position: sticky;
+    // top: -13rem;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: -0.1rem;
+  }
+  button,
+  a {
+    animation-duration: 0.5s;
+  }
+  button {
+    transition: all 0.3s;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  a {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    transition: all 0.5s;
   }
 }

@@ -56,6 +56,10 @@
     .tag {
         display: none;
         margin-bottom: 2rem;
+        text-align: left;
+        @media (min-width: 414px) {
+            text-align: left;
+        }
         @media (min-width: 900px) {
             display: block;
             margin-left: 1rem;
@@ -210,6 +214,7 @@
 
     time {
         display: none;
+
         @media (min-width: 900px) {
             margin-left: 0;
             display: inline-block;
@@ -221,6 +226,10 @@
     .tag {
         display: block;
         margin-bottom: 2rem;
+        text-align: left;
+        @media (min-width: 414px) {
+            text-align: left;
+        }
         @media (min-width: 900px) {
             display: none;
         }

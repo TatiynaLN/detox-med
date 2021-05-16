@@ -36,8 +36,8 @@
         &:hover,
         &:focus {
             transition: all 0.3s;
-            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px, rgba(17, 192, 171, 0.4) 1px 0px,
-                rgba(17, 192, 171, 0.4) 1px 1px;
+            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 0.5px 0.5px,
+                rgba(17, 192, 171, 0.4) 0.5px 0px;
             &::before {
                 transform: scaleX(0);
             }

@@ -10,6 +10,7 @@
             border: 1px solid #11c0ab;
             border-radius: 20px;
             width: 100%;
+            transition: all 0.5s;
         }
         h3 {
             padding: 1.6rem 2rem 1.6rem 2rem;
@@ -39,7 +40,8 @@
         }
 
         p {
-            transition: all 1s ease-out;
+            transition: all 0.5s ease-out;
+            transition: all 0.5s;
             padding: 0rem 2rem;
             @media (min-width: 1200px) {
                 padding-left: 3rem;
@@ -137,11 +139,11 @@
         transition: all 0.5s ease-out;
     }
 
-    ul li {
-        // &:not(:last-of-type) {
-        //     // margin-bottom: 3rem;
-        // }
-    }
+    // ul li {
+    //     // &:not(:last-of-type) {
+    //     //     // margin-bottom: 3rem;
+    //     // }
+    // }
 }
 .accordion h3.accordion__item__title--active {
     position: relative;
@@ -164,8 +166,10 @@
 
 .accordion__item__title--active + p {
     height: initial;
+    max-height: 3000px;
     opacity: 1;
     transition: all 0.5s ease-out;
+    font-size: 1.6rem;
 }
 
 // input[type="checkbox"] {
@@ -332,3 +336,4 @@
 //         }
 //     }
 // }
+// new
