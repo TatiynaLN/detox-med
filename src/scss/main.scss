@@ -57,6 +57,9 @@
 @import "./../components/sections/about-numbers/about-numbers"; //  о нас в цифрах
 @import "./../components/sections/about-advantages/about-advantages";
 
+// Врачи
+@import "./../components/sections/doctors/doctors"; //
+
 // Бем-блоки
 // Главная
 @import "./../components/bem-blocks/logo/logo"; // Лого
@@ -75,6 +78,7 @@
 @import "./../components/bem-blocks/info/info";
 @import "./../components/bem-blocks/steps/steps";
 @import "./../components/bem-blocks/block/block";
+@import "./../components/bem-blocks/doctors__block/doctors__block";
 
 // какие-то ОБЛАКА)))))
 @import "./../components/bem-blocks/belt__tags/belt__tags";
