@@ -27,11 +27,9 @@ button {
     &:hover {
         animation-duration: 1s;
         animation-timing-function: ease;
-        animation-name: social;
+        animation-name: btn__red;
         animation-iteration-count: infinite;
 
-        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
-            0px 5px 10px rgba(1, 18, 15, 0.15);
         // transform: skew(10deg, 10deg);
         // // transform: scale(1.1);
         // transition: all 0.3s;
@@ -161,3 +159,27 @@ button {
 //         }
 //     }
 // }
+@keyframes btn__red {
+    0% {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
+            0px 5px 10px rgba(1, 18, 15, 0.15);
+    }
+    25% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
+            0px 5px 10px rgba(1, 18, 15, 0.15);
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
+            0px 5px 10px rgba(1, 18, 15, 0.15);
+    }
+}

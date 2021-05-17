@@ -2,14 +2,21 @@ extends ./../layouts/main
 
 block variables
     - let pageTitle = 'Статьи';
-    - let servicesTitle = 'Оказываем медицинские услуги по направлениям:';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Статьи';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
 
 block content
     .wrap-feedback
     .wrapper
         include ./../components/sections/header/header.pug
-        section
-            .container                 
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        .container                 
                 include ./../components/bem-blocks/belt__tags/belt__tags.pug
         include ./../components/sections/article/article.pug
         include ./../components/sections/form-home/form-article.pug
