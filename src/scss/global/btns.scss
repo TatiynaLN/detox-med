@@ -23,9 +23,9 @@ button {
     background-color: #f04242;
     overflow: hidden;
     transform: scale3d(1);
-    transition: all 0.3s;
+    transition: all 2s;
     &:hover {
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-timing-function: ease;
         animation-name: btn__red;
         animation-iteration-count: infinite;

@@ -36,6 +36,7 @@
             margin-left: 5rem;
             margin-right: 5rem;
         }
+
         &::before {
             position: absolute;
             content: "";
@@ -60,6 +61,16 @@
         height: 100%;
         border-radius: 20px 70px 70px 70px;
         object-fit: contain;
+        @media (min-width: 900px) {
+            min-width: 23rem;
+            max-width: 23rem;
+        }
+        @media (min-width: 1124px) {
+            min-width: 36rem;
+            max-width: 36rem;
+            min-height: 34.5rem;
+            max-height: 34.5rem;
+        }
     }
     .doctors__block-txt {
         width: 100%;
@@ -81,7 +92,7 @@
             content: "";
             width: 2.5rem;
             height: 2.5rem;
-            background-image: url(../img/icons/left-quote.svg);
+            background-image: url("../img/icons/left-quote.svg");
             left: 0;
             top: 0;
         }
@@ -90,34 +101,63 @@
             content: "";
             width: 2.5rem;
             height: 2.5rem;
-            background-image: url(../img/icons/left-quote.svg);
+            background-image: url("../img/icons/left-quote.svg");
             right: 0;
             bottom: 0;
             transform: rotate(180deg);
         }
     }
-    button {
-    }
+    // button {
+    // }
 
-    .block-img {
-        &::before {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 80%;
-            right: 0;
-            bottom: 0;
-            max-height: 29rem;
-            background: url("../img/icons/marc.svg");
-            z-index: -1;
-            transform: translateY(20%);
-            @media (min-width: 460px) {
-                max-width: 31rem;
-                transform: translate(5%, 20%);
+    // .block-img {
+    //     &::before {
+    //         position: absolute;
+    //         content: "";
+    //         width: 100%;
+    //         height: 80%;
+    //         right: 0;
+    //         bottom: 0;
+    //         max-height: 29rem;
+    //         background: url("../img/icons/marc.svg");
+    //         z-index: -1;
+    //         transform: translateY(20%);
+    //         @media (min-width: 460px) {
+    //             max-width: 31rem;
+    //             transform: translate(5%, 20%);
+    //         }
+    //         @media (min-width: 520px) {
+    //             max-width: 31rem;
+    //             transform: translate(15%, 20%);
+    //         }
+    //     }
+    // }
+
+    &:nth-child(odd) {
+        .doctors__block-img {
+            margin-bottom: 5rem;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 80%;
+                right: 0;
+                bottom: 0;
+                max-height: 29rem;
+                background: url("../img/icons/marc.svg");
+                z-index: -1;
+                transform: translateY(20%);
+                @media (min-width: 460px) {
+                    max-width: 31rem;
+                    transform: translate(5%, 20%);
+                }
+                @media (min-width: 520px) {
+                    max-width: 31rem;
+                    transform: translate(15%, 20%);
+                }
             }
-            @media (min-width: 520px) {
-                max-width: 31rem;
-                transform: translate(15%, 20%);
+            @media (min-width: 900px) {
+                margin-bottom: 2rem;
             }
         }
     }
