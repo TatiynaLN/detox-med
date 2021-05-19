@@ -1,0 +1,12 @@
+section.form.form-home2
+    .container
+        h2.form__title Всё ещё сомневаетесь? Есть вопросы?
+        h3 Оставьте заявку, и мы Вам перезвоним.
+        form
+            input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+            input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+            button.btn-send.btn-red Заказать звонок
+            .form__policy
+                input._req.chec#chec2(type="checkbox" required="required" checked)
+                label.form-chec(for="chec2") Вы соглашаетесь с 
+                    a(href="#!" target="_blank") условиями обработки персональных данных
