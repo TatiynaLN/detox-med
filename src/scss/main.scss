@@ -42,7 +42,7 @@
 
 // СТРАНИЦА ОТДЕЛЬНОЙ СТАТЬИ
 @import "./../components/sections/avtors/avtors"; // автор статьи + дата
-@import "./../components/sections/reviews-page/reviews-page"; // статья
+@import "./../components/sections/post/post"; // статья
 @import "./../components/sections/publications/publications"; // Шапка
 
 // СТАТЬИ
@@ -62,6 +62,9 @@
 
 // страница Вопрос ответ
 @import "./../components/sections/fears/fears"; // страхи
+
+// отзывы
+@import "./../components/sections/reviews/reviews"; // отзывы
 
 // Бем-блоки
 // Главная
