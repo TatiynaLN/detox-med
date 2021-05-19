@@ -38,6 +38,33 @@ button {
         // }
     }
 }
+.btn-green {
+    padding: 1.1rem 2.7rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+    border-radius: 100px;
+    min-width: 19rem;
+    max-width: 3.6rem;
+    position: relative;
+    background-color: #11c0ab;
+    overflow: hidden;
+    transform: scale3d(1);
+    transition: all 2s;
+    box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.3);
+    &:hover {
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-name: btn__green;
+        animation-iteration-count: infinite;
+    }
+    @media (min-width: 540px) {
+        max-width: 36rem;
+        min-width: 36rem;
+    }
+}
 .button {
     font-style: normal;
     font-weight: bold;
@@ -181,5 +208,29 @@ button {
         transform: scale(1.1);
         box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
             0px 5px 10px rgba(1, 18, 15, 0.15);
+    }
+}
+
+@keyframes btn__green {
+    0% {
+        transform: scale(1.1);
+        box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
+    }
+    25% {
+        transform: scale(0.8);
+        box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.3);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
+    }
+
+    75% {
+        transform: scale(0.8);
+        box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.3);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
     }
 }

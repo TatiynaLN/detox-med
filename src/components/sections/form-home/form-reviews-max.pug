@@ -1,0 +1,16 @@
+section.form.form-max
+    .container
+        h2.section__title Оставить отзыв
+        p Надеемся, что Вы оставите свой отзыв о нашем центре в форме ниже. Благодаря Вашим отзывам 
+            |наш наркологический центр становимся лучше!
+        form
+            input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+            input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+            input.req.email-input(type="email" name="user-email" placeholder="Ваш E-mail" required="required")
+            textarea._req(type="text" name="user-message" placeholder="Ваш отзыв")
+
+            button.btn-send.btn-green Отправить
+            .form__policy.form-max__policy
+                input._req.chec#chec(type="checkbox" required="required" checked)
+                label.form-chec(for="chec") Вы соглашаетесь с 
+                    a(href="#!" target="_blank") условиями обработки персональных данных

@@ -20,9 +20,17 @@
         border-radius: 20px 70px 70px 70px;
         padding: 3rem 3rem 4rem 3rem;
         margin-bottom: 5rem;
+        transition: all 0.3s;
         @media (min-width: 768px) {
             width: 43vw;
             max-width: 55.5rem;
+        }
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            transform: scale(1.1);
+            box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.07), 0px 5px 10px rgba(1, 18, 15, 0.07),
+                0px 5px 10px rgba(1, 18, 15, 0.07), 0px 5px 10px rgba(1, 18, 15, 0.07);
         }
     }
     h3 {
@@ -57,6 +65,6 @@
             margin-left: 02rem;
         }
     }
-    p {
-    }
+    // p {
+    // }
 }

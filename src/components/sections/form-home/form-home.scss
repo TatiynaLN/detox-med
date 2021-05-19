@@ -84,7 +84,7 @@
             margin-bottom: 3rem;
             color: rgba(255, 255, 255, 0.7);
 
-            &:nth-child(1) {
+            &:first-child {
                 @media (min-width: 800px) {
                     margin-right: 3rem;
                 }
@@ -192,6 +192,81 @@
         }
     }
 }
+// Форма с texteria
+.form-max {
+    @media (min-width: 0) {
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form-max-s.jpg");
+        background-size: cover;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form-max-s@2x.jpg");
+            background-size: cover;
+        }
+    }
+    @media (min-width: 1320px) {
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form-max.jpg");
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-form-max@2x.jpg");
+            background-size: cover;
+        }
+    }
+    .section__title,
+    p {
+        color: #ffffff;
+    }
+    p {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    form {
+        input,
+        textarea {
+            border: 1px solid #11c0ab;
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-bottom: 3rem;
+        }
+        input {
+            @media (min-width: 1200px) {
+                margin-right: 1rem;
+                margin-bottom: 3rem;
+                max-width: 37rem;
+                min-width: 37rem;
+            }
+            @media (min-width: 1240px) {
+                margin-right: 3rem;
+            }
+            &:first-child {
+                @media (min-width: 1200px) {
+                    margin-right: 1rem;
+                }
+                @media (min-width: 1240px) {
+                    margin-right: 3rem;
+                }
+            }
+            &:nth-child(3) {
+                margin-right: 0;
+                @media (min-width: 1200px) {
+                    margin-right: 0;
+                }
+                @media (min-width: 1240px) {
+                    margin-right: 0;
+                }
+            }
+        }
+        textarea {
+            width: 100%;
+            padding: 3.5rem;
+            background: transparent;
+            min-height: 21.6rem;
+            outline: none;
+        }
+    }
+    textarea[type="text"] {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
 
 // чекбокс
 .form__policy {
@@ -263,5 +338,18 @@
     a {
         color: rgba(255, 255, 255, 0.9);
         text-decoration: underline;
+    }
+}
+.form-max__policy {
+    label[for="chec"],
+    label[for="chec2"] {
+        &::before {
+            border: solid 0.1rem #11c0ab;
+        }
+    }
+
+    input:checked + label::before {
+        background: #11c0ab;
+        transition: 0.5s;
     }
 }
