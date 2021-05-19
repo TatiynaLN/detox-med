@@ -19,8 +19,6 @@
     &__img {
         transform: scale(1);
         transition: all 0.8s;
-        max-height: 42.1rem;
-        min-height: 42.1rem;
         &:hover,
         &:focus {
             transform: scale(1.1);
@@ -40,6 +38,10 @@
         max-width: 100%;
         min-height: 100%;
         max-height: 100%;
+        @media (min-width: 900px) {
+            max-height: 51.4rem;
+            min-height: 51.4rem;
+        }
     }
 }
 .slider-licenses-prev,

@@ -1,11 +1,11 @@
 extends ./../layouts/main
 
 block variables
-    - let pageTitle = 'Вопрос-ответ';
+    - let pageTitle = 'Лицензии';
     - let breadcrumbsHomepage = 'Главная / ';
     - let breadcrumbsText_1 = 'О центре / ';
     //- - let breadcrumbsText_2 = 'О приеме / ';
-    - let breadcrumbsText_3 = 'Вопрос-ответ';
+    - let breadcrumbsText_3 = 'Лицензии';
 
     - let breadcrumbsHomepageLink = 'index.html';
     - let breadcrumbsLink_1 = 'about.html';
@@ -16,8 +16,6 @@ block content
     .wrapper
         include ./../components/sections/header/header.pug
         include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
-        include ./../components/sections/fears/fears.pug
-        include ./../components/sections/questions/questions.pug
-        include ./../components/sections/form-home/form-about.pug
-        include ./../components/sections/questions/questions2.pug
+        include ./../components/sections/licenses/licenses-page.pug
+        include ./../components/sections/form-home/form-licenses.pug
         include ./../components/sections/footer/footer.pug 

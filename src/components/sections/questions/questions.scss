@@ -1,5 +1,6 @@
 .questions {
     padding: 10rem 0;
+
     //     .accordion {
     //         margin: 0 auto;
     //         width: 100%;
@@ -174,9 +175,10 @@
 
 // new
 .accordion-first {
+    width: 100%;
     article {
         box-sizing: border-box;
-
+        width: 100%;
         border: 1px solid #11c0ab;
         border-radius: 20px;
         margin-bottom: 3rem;
@@ -245,18 +247,24 @@
 
     .accordion__item {
         // height: 5.9rem;
+        position: relative;
         min-height: 0;
         transition: all 0.8s linear;
+
+        // position: relative;
         h3 {
             transition: all 0.3s linear;
         }
         p {
             padding-left: 3rem;
             padding-right: 3rem;
-
+            padding-bottom: 3rem;
             overflow: hidden;
+            position: absolute;
+            // transform: translateY(-100%);
+            width: 100%;
             opacity: 0;
-            transition: all 0.3s linear;
+            transition: all 0.5s linear;
         }
     }
     .accordion__item--active {
@@ -286,11 +294,14 @@
         }
     }
     .accordion__item p.accordion__content--active {
+        // transform: translateY(0%);
         max-height: initial !important;
         overflow: initial !important;
         opacity: 1 !important;
+        transition: all 0.5s linear;
+        position: relative;
         @media (min-width: 411px) {
-            padding-bottom: 0;
+            // padding-bottom: 0;
         }
     }
     .questions {

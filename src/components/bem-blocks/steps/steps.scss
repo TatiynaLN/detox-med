@@ -65,3 +65,22 @@
         }
     }
 }
+.fears-steps {
+    li {
+        position: relative;
+        min-height: 14rem;
+        i {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 146.4%;
+            text-align: center;
+            @include Nunito-Bold();
+            color: rgba(240, 66, 66, 0.1);
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(22%, 25%);
+        }
+    }
+}
