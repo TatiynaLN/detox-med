@@ -29,6 +29,9 @@
         @media (min-width: 560px) {
             padding-left: 4.5rem;
         }
+        @media (min-width: 1024px) {
+            margin-top: 2rem;
+        }
         &::before {
             position: absolute;
             content: "";
@@ -59,8 +62,6 @@
     &__txt {
         @media (min-width: 1024px) {
             max-width: 65.2rem;
-        }
-        p {
         }
     }
     i {

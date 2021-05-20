@@ -1,13 +1,22 @@
 .principle {
-    padding-top: 15rem;
     padding-bottom: 5rem;
-    @media (min-width: 768px) {
-        padding-top: 10rem;
+    // padding-top: 15rem;
+    // padding-bottom: 5rem;
+    // @media (min-width: 768px) {
+    //     padding-top: 10rem;
+    // }
+    .section__title {
+        color: #01120f;
     }
 }
 
 .operating-principle {
-    .section__title {
-        color: #01120f;
+    padding-top: 15rem;
+
+    @media (min-width: 768px) {
+        padding-top: 10rem;
     }
+}
+.services-principle {
+    padding-top: 3rem;
 }
