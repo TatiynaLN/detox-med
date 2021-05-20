@@ -1,6 +1,6 @@
 ; (function () {
     // || document.querySelector('.swiper-licenses') || document.querySelector('.specialists'))
-    if (document.querySelector('.slider-our-clinic') || document.querySelector('.slider-licenses')) {
+    if (document.querySelector('.slider-our-clinic') || document.querySelector('.slider-licenses') || document.querySelector('.slider-reviews')) {
 
         const minimizedImg = document.querySelectorAll('.minimized');
         const imgOverlay = document.querySelectorAll('.img__overlay');

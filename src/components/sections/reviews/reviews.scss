@@ -68,3 +68,143 @@
     // p {
     // }
 }
+// стили для слайдера
+.reviews-top {
+    width: 100%;
+    padding: 3.5rem 0 10rem 0;
+    .container {
+        position: relative;
+    }
+}
+.slider-reviews {
+    width: 100%;
+
+    .swiper-scrollbar {
+        background: rgba(17, 192, 171, 0.3);
+        border-radius: 20px;
+        height: 0.5rem;
+        cursor: pointer;
+
+        @media (min-width: 1200px) {
+            bottom: 0.3rem;
+        }
+        .swiper-scrollbar-drag {
+            background: #11c0ab;
+            border-radius: 20px;
+            height: 1rem;
+            top: -0.2rem;
+        }
+        @media (min-width: 1200px) {
+            transform: translateX(50%);
+            max-width: 55.5rem;
+            min-width: 55.5rem;
+        }
+    }
+    // содержимое слайдов
+    &__img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: all 0.8s;
+        @media (min-width: 1200px) {
+            min-height: 39.3rem;
+            max-height: 39.3rem;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            min-height: 35rem;
+            max-height: 35rem;
+            @media (min-width: 640px) {
+                min-height: 41rem;
+                max-height: 41rem;
+            }
+            @media (min-width: 720px) {
+                min-height: 42rem;
+                max-height: 42rem;
+            }
+            @media (min-width: 768px) {
+                min-height: 29.3rem;
+                max-height: 29.3rem;
+            }
+            @media (min-width: 1200px) {
+                min-height: 39.3rem;
+                max-height: 39.3rem;
+            }
+        }
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            transition: all 0.8s;
+        }
+    }
+}
+.swiper-container.slider-reviews {
+    padding-bottom: 4rem;
+}
+.swiper-wrapper.slider-reviews__wrapper {
+    width: 100%;
+    height: 100%;
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        // height: 55.5rem;
+    }
+}
+.swiper-slide.slider-reviews__slide {
+    // @media (min-width: 1200px) {
+    //     height: calc((100% - 3.8rem) / 2);
+    // }
+    overflow: hidden;
+    background: #c4c4c4;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+.reviews-prev,
+.reviews-next {
+    display: none;
+    color: #11c0ab;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.3s;
+    @media (min-width: 1360px) {
+        display: block;
+        position: absolute;
+        bottom: 39%;
+    }
+    &:hover,
+    &:focus {
+        color: #01120f;
+        transform: scale(1.1);
+        text-shadow: rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px,
+            rgba(17, 192, 171, 0.4) -2px -2px, rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
+        transition: all 0.3s;
+    }
+}
+.reviews-next {
+    right: -7rem;
+}
+.reviews-prev {
+    left: -7rem;
+    transform: rotate(180deg);
+    &:hover,
+    &:focus {
+        transform: scale(1.1) rotate(180deg);
+
+        transition: all 0.3s;
+    }
+}
+.reviews-prev.swiper-button-disabled,
+.reviews-next.swiper-button-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+.slider-reviews__slide:hover .img__overlay,
+.slider-reviews__slide:hover .eye svg {
+    opacity: 1;
+    cursor: zoom-in;
+}
