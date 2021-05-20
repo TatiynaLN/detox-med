@@ -1,5 +1,5 @@
 ; (function () {
-    if (document.querySelector('.prices-tabs')) {
+    if (document.querySelector('.tab')) {
         var $tabs = function (target) {
             var
                 _elemTabs = (typeof target === 'string' ? document.querySelector(target) : target),
@@ -26,7 +26,7 @@
                     document.dispatchEvent(_eventTabsShow);
                 },
                 _switchTabTo = function (tabsLinkIndex) {
-                    var tabsLinks = _elemTabs.querySelectorAll('.prices-tabs__link');
+                    var tabsLinks = _elemTabs.querySelectorAll('.tabs__link');
                     if (tabsLinks.length > 0) {
                         if (tabsLinkIndex > tabsLinks.length) {
                             tabsLinkIndex = tabsLinks.length;
@@ -42,7 +42,7 @@
             _elemTabs.addEventListener('click', function (e) {
                 var tabsLinkTarget = e.target;
                 // завершаем выполнение функции, если кликнули не по ссылке
-                if (!tabsLinkTarget.classList.contains('prices-tabs__link')) {
+                if (!tabsLinkTarget.classList.contains('tabs__link')) {
                     return;
                 }
                 // отменяем стандартное действие
@@ -61,6 +61,6 @@
 
         };
 
-        $tabs('.prices-tabs');
+        $tabs('.tab');
     }
 })();

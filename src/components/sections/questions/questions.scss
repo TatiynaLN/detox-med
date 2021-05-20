@@ -250,7 +250,7 @@
         position: relative;
         min-height: 0;
         transition: all 0.8s linear;
-
+        z-index: 0;
         // position: relative;
         h3 {
             transition: all 0.3s linear;
@@ -265,6 +265,7 @@
             width: 100%;
             opacity: 0;
             transition: all 0.5s linear;
+            visibility: hidden;
         }
     }
     .accordion__item--active {
@@ -300,9 +301,8 @@
         opacity: 1 !important;
         transition: all 0.5s linear;
         position: relative;
-        @media (min-width: 411px) {
-            // padding-bottom: 0;
-        }
+        z-index: 0;
+        visibility: visible;
     }
     .questions {
         padding: 10rem 0;

@@ -42,7 +42,7 @@
 // })();
 
 ; (function () {
-    if (document.querySelector('.questions')) {
+    if (document.querySelector('.questions-open')) {
         let accordItemsTitle = document.querySelectorAll('.accordion-first .accordion__item h3');
         let accordItems = document.querySelectorAll('.accordion-first .accordion__item');
         let accordItemsContent = document.querySelectorAll('.accordion-first .accordion__item p');

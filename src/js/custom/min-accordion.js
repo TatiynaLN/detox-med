@@ -41,7 +41,7 @@
 
 // })();
 ; (function () {
-    if (document.querySelector('.cost')) {
+    if (document.querySelector('.cost') || document.querySelector('.questions-close')) {
         let accordItemsTitle = document.querySelectorAll('.accordion__item h3');
         let accordItems = document.querySelectorAll('.accordion__item');
         let accordItemsContent = document.querySelectorAll('.accordion__item p');
