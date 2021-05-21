@@ -37,7 +37,9 @@
             content: "";
             min-width: 30rem;
             max-width: 39rem;
-            height: 29rem;
+            height: 100%;
+            max-height: 29rem;
+            min-height: 13rem;
             top: 0;
             left: 0;
             background: url("../img/icons/marc.svg");
@@ -58,6 +60,10 @@
     p {
         line-height: 170%;
         margin-bottom: 1rem;
+        i {
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid #11c0ab;
+        }
     }
     ol {
         counter-reset: myCounter;
