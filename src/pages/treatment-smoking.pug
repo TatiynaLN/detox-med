@@ -1,0 +1,36 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Лечение табакокурения';
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_1 = 'Услуги / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Лечение табакокурения';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    - let breadcrumbsLink_1 = 'services.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/banner/banner-smoking.pug
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        section.advantages-services.addiction
+            .container
+                h2.section__title О табачной зависимости
+                .info.info-order
+                    .info__txt
+                        p Табачная зависимость — самая стойкая форма зависимости. Нет курильщика который не задумывался 
+                            |об отказе от табака, однако табачная зависимость — одна из самых мощных форм зависимости. 
+                            |Пациентов отказавшихся от табака, с первого дня начинает беспокоить тревога, неусидчивость,
+                            | психоэмоциональное напряжение.
+                        p С целью снижения негативных последствий в тяжёлых формах синдрома отмены табака, 
+                            |врач — нарколог назначает поддерживающую терапию. Результат — снижение 
+                            |тяги к табаку и полный отказ от курения.
+                    .info__img
+                        img(src="./wp-content/themes/detox-med/assets/img/pexels.jpg", alt="Табачная зависимость")
+        include ./../components/sections/form-home/form-smoking.pug
+        include ./../components/sections/footer/footer.pug 
+//- form-smoking

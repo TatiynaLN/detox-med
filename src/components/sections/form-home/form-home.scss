@@ -192,6 +192,25 @@
         }
     }
 }
+.form-smoking {
+    @media (min-width: 0) {
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/form-smoking-s.jpg");
+        background-size: cover;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/form-smoking-s@2x.jpg");
+            background-size: cover;
+        }
+    }
+    @media (min-width: 1320px) {
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/form-smoking.jpg");
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/form-smoking@2x.jpg");
+            background-size: cover;
+        }
+    }
+}
 // Форма с texteria
 .form-max {
     @media (min-width: 0) {
