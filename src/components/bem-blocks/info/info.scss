@@ -110,6 +110,7 @@
             @media (min-width: 900px) {
                 width: 100%;
                 max-width: 100%;
+                align-self: center;
             }
             @media (min-width: 1024px) {
                 max-width: 65.1rem;
@@ -117,6 +118,7 @@
             }
         }
         &__img {
+            align-self: flex-start;
             margin: 0 auto;
             max-height: 30.6rem;
             border-radius: 20px 70px 70px 70px;
@@ -204,6 +206,17 @@
             @media (min-width: 1024px) {
                 margin-left: 3rem;
                 margin-right: 0rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
+.addiction {
+    .info {
+        margin-top: 3rem;
+        &__img {
+            margin-top: 0;
+            @media (min-width: 600px) {
                 margin-top: 0;
             }
         }

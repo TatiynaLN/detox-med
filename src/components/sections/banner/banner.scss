@@ -85,7 +85,7 @@
         background-size: cover;
 
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
-            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/baner-home1-s.jpg");
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/baner-home1-s@2x.jpg");
             background-size: cover;
         }
     }
@@ -122,7 +122,7 @@
         background-size: cover;
         @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
             // background: url("../img/baner-home1@2x.jpg") 100% 100% / cover no-repeat;
-            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/baner-home1.jpg");
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/baner-home1@2x.jpg");
             background-size: cover;
         }
     }
@@ -138,6 +138,57 @@
             display: block;
             margin-top: 0;
         }
+    }
+}
+.banner-addiction {
+    @media (min-width: 0) {
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-addiction-s.jpg");
+        background-size: cover;
+
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-addiction-s@2x.jpg");
+            background-size: cover;
+        }
+    }
+    padding: 5rem 0 0 0;
+
+    @media (min-width: 411px) {
+        min-height: 40rem;
+        height: 60vh;
+    }
+    @media (min-width: 414px) {
+        min-height: 50rem;
+        height: 60vh;
+    }
+    @media (min-width: 540px) {
+        min-height: 49.5rem;
+        height: 65.1vh;
+    }
+    @media (min-width: 768px) {
+        min-height: 65.5rem;
+        height: 64.4vh;
+        padding: 10.3rem 0 0rem 0;
+    }
+    @media (min-width: 1024px) {
+        min-height: 62.2rem;
+        height: 64.4vh;
+    }
+    @media (min-width: 1200px) {
+        // min-height: 67.9rem;
+        // height: 83vh;
+        min-height: 56rem;
+        height: 77vh;
+        // background: url("../img/baner-home1.jpg") 100% 100% / cover no-repeat;
+        background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-addiction.jpg");
+        background-size: cover;
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 192dpi) {
+            // background: url("../img/baner-home1@2x.jpg") 100% 100% / cover no-repeat;
+            background-image: linear-gradient(to top, rgba(2, 37, 33, 0.5)), url("../img/banner-addiction@2x.jpg");
+            background-size: cover;
+        }
+    }
+    @media (min-width: 1360px) {
+        padding: 16.3rem 0 0rem 0;
     }
 }
 .banner-main-services {
