@@ -1,0 +1,24 @@
+section.payment
+    .container 
+        h1.main__title.main__titles Оплата
+        .flex-block 
+            form 
+                h3 Оплата услуг
+                .select-wrapper
+                    select(required="required")(class="turnintodropdown")
+                            option Наименование услуги
+                            option Вывод из запоя на дому
+                            option Лечение наркомании
+                            option Лечение алкоголизма
+                            option Лечение табакокурения
+                            option Кодирование от алкогодизма
+                            option ДетоксМед24
+                    
+                input._req(type="text" name="user-payment" placeholder="Сумма оплаты" required="required")
+                input._req(type="text" name='user-name' placeholder="Имя покупателя" required="required")
+                textarea._req(type="text" name="user-message" placeholder="Комментарий" required="required" )
+                button.btn-send.btn-green Оплатить
+                .form__policy
+                    input._req.chec#chec2(type="checkbox" required="required" checked)
+                    label.form-chec(for="chec2") Вы соглашаетесь с 
+                        a(href="#!" target="_blank") условиями обработки персональных данных
