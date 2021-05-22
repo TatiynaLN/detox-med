@@ -347,11 +347,19 @@
 }
 
 .dropdownhidden {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    transform: rotateX(-95deg);
+    transition: all 0.7s;
+    li a {
+        opacity: 0;
+        transition: all 0.1s;
+    }
 }
 
 .dropdownvisible {
     // height: 20rem;
+    visibility: visible;
     height: auto;
     padding: 0;
     border: 1px solid rgba(17, 192, 171, 0.7);
@@ -359,12 +367,15 @@
     // overflow-y: auto;
     background: #ffffff;
     border-radius: 0px 0 30px 30px;
+    transform: rotateX(0deg);
+    transition: all 0.7s;
     li a {
         font-style: normal;
         font-weight: normal;
         font-size: 1.6rem;
         line-height: 170%;
         height: 100%;
+        opacity: 1;
         /* or 27px */
         transition: all 0.3s;
         color: #000000;
