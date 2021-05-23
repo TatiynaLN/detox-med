@@ -1,0 +1,55 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Цены';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Услуги / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Цены';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'services.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        include ./../components/sections/advantages-appeal/advantages-prices.pug
+        include ./../components/sections/form-home/form-payment.pug
+        section.about-advantages.advantages-services
+            .container 
+                h2.section__title Наши преимущества
+                .block 
+                    .block__box 
+                        h3 Научная обоснованность
+                        p
+                            i: svg(width="45" height="45")
+                                use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#atom")
+                            | Мы используем методы,которые имеют научное обоснование. Это позволяет достигать гарантированный результат.
+                    .block__box  
+                        h3 Инновационные методы
+                        p
+                            i: svg(width="45" height="45")
+                                use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#innovation")
+                            | Использование только самых современных и передовых методик лечения синдрома зависимости.
+                    .block__box  
+                        h3 Строжайшая конфиденциальность
+                        p
+                            i: svg(width="45" height="45")
+                                use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#anonymous")
+                            | Мы гарантируем полную анонимность лечения. Вы можете быть уверены, что не будете скомпрометированы.
+                    .block__box  
+                        h3 Максимальный комфорт
+                        p
+                            i: svg(width="45" height="45")
+                                use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#hospital")
+                            | Наш стационар оснащён современным оборудованием. В палатах есть всё необходимое для комфортного проживания.
+                    .block__box  
+                        h3 Индивидуальный план лечения
+                        p
+                            i: svg(width="45" height="45")
+                                use(xlink:href="./wp-content/themes/detox-med/assets/img/icons/sprite.svg#list")
+                            | Наши специалисты подберают наиболее эффективные методы восстановительной терапии под каждого пациента.
+        include ./../components/sections/footer/footer.pug 

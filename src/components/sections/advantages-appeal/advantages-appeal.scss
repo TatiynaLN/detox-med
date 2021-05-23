@@ -1,3 +1,109 @@
 .advantages-appeal {
     padding: 10rem 0;
 }
+.advantages-prices {
+    h1 {
+        margin-bottom: 5rem;
+    }
+    h3 {
+        text-align: left;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    p {
+        margin-bottom: 0.8rem;
+        i {
+            color: rgba(1, 18, 15, 0.8);
+        }
+    }
+    .info {
+        margin-bottom: 3rem;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 900px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+        li {
+            border: 1px solid #11c0ab;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 37rem;
+            padding: 0rem 3rem 3rem 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 3rem;
+            transition: all 0.4s;
+            &:hover,
+            &:focus {
+                transition: all 0.4s;
+                transform: scale(1.1);
+                box-shadow: 0px 5px 10px rgba(17, 192, 171, 0.5);
+            }
+            @media (min-width: 900px) {
+                margin-right: 3rem;
+            }
+
+            &:nth-child(2n) {
+                @media (min-width: 900px) {
+                    margin-right: 0rem;
+                }
+                @media (min-width: 1200px) {
+                    margin-right: 3rem;
+                }
+            }
+            &:nth-child(3n) {
+                @media (min-width: 1200px) {
+                    margin-right: 0rem;
+                }
+            }
+        }
+        h3 {
+            padding: 1.6rem 0;
+            border-bottom: 1px solid #11c0ab;
+            margin-bottom: 1.6rem;
+        }
+        p {
+            &:last-child {
+                padding-top: 2rem;
+                margin-top: auto;
+            }
+        }
+        strong {
+            color: #f04242;
+        }
+    }
+    &__bottom {
+        width: 100%;
+        padding: 3rem;
+        background: #ebf7f5;
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.05);
+        border-radius: 20px;
+        position: relative;
+        margin-top: 6.9rem;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            max-width: 39rem;
+            height: 13rem;
+            max-height: 29rem;
+            top: 0;
+            left: 0;
+            background: url("../img/icons/marc.svg");
+            z-index: -1;
+            transform: translate(-0.5rem, -5rem);
+            @media (min-width: 1200px) {
+                transform: translate(-3.3rem, -5rem);
+            }
+        }
+    }
+}
