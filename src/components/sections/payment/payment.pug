@@ -5,7 +5,7 @@ section.payment
             form 
                 h3 Оплата услуг
                 .select-wrapper
-                    select(required="required")(class="turnintodropdown")
+                    select(required="required").turnintodropdown
                             option Наименование услуги
                             option Вывод из запоя на дому
                             option Лечение наркомании
@@ -22,3 +22,23 @@ section.payment
                     input._req.chec#chec2(type="checkbox" required="required" checked)
                     label.form-chec(for="chec2") Вы соглашаетесь с 
                         a(href="#!" target="_blank") условиями обработки персональных данных
+            .flex-block__payment
+                p Для Вашего удобства мы предусмотрели возможность оплаты наших услуг прямо на сайте.
+                p Для выбора формы оплаты услуг клиники заполните ниже находящиеся поля, после чего нажмите кнопку «ОПЛАТИТЬ».
+                p 
+                    i Обязательно 
+                    |укажите свое имя и фамилию для правильного соответствия оплаченных услуг.
+                p платить можно любым удобным для Вас способом!
+                ul 
+                    li Банковская карта
+                        p: img(src="./wp-content/themes/detox-med/assets/img/credit.png", alt="Банковская карта")
+                    li ЮMoney
+                        p: img(src="./wp-content/themes/detox-med/assets/img/u-money.png", alt="ЮMoney")
+                    li Сбербанк Онлайн
+                        p: img(src="./wp-content/themes/detox-med/assets/img/Sberbank.png", alt="Сбербанк Онлайн")
+                    li QIWI Wallet
+                        p: img(src="./wp-content/themes/detox-med/assets/img/qiwi.png", alt="QIWI Wallet")
+                    li WebMoney
+                        p: img(src="./wp-content/themes/detox-med/assets/img/webmoney.png", alt="WebMoney")
+                    li Альфа-Клик
+                        p: img(src="./wp-content/themes/detox-med/assets/img/alfabank.png", alt="Альфа-Клик")
