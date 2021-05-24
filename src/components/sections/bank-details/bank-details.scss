@@ -1,0 +1,40 @@
+.bank-details {
+    width: 100%;
+    background: #ebf7f5;
+    border-radius: 0px 100px 0px 0px;
+    padding: 5rem 0 10rem 0;
+    ul {
+        width: 100%;
+        @media (min-width: 620px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @media (min-width: 900px) {
+            justify-content: space-between;
+        }
+    }
+    li {
+        margin-bottom: 3rem;
+        max-width: 35.9rem;
+        &:first-child {
+            @media (min-width: 620px) {
+                margin-right: 3rem;
+            }
+        }
+        @media (min-width: 882px) {
+            margin-right: 3rem;
+            max-width: 32.9rem;
+        }
+        @media (min-width: 1024px) {
+            max-width: 35.9rem;
+        }
+        &:last-child {
+            margin: 0 auto;
+            @media (min-width: 900px) {
+                margin: 0;
+                margin-right: 0rem;
+            }
+        }
+    }
+}
