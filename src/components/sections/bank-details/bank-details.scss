@@ -17,6 +17,9 @@
     li {
         margin-bottom: 3rem;
         max-width: 35.9rem;
+        p {
+            margin-bottom: 0.6rem;
+        }
         &:first-child {
             @media (min-width: 620px) {
                 margin-right: 3rem;
