@@ -33,7 +33,9 @@ block content
                                 a(href="#!" target="_blank") условиями обработки персональных данных
 
         include ./../components/sections/about-advantages/about-advantages3.pug 
-        section.advantages-appeal.advantages-region
+        include ./../components/sections/questions/questions-region.pug 
+        include ./../components/sections/form-home/form-region.pug 
+        section.advantages-appeal.advantages-region.pt
             .container
                 h2.section__title Алкоголизм и кодирование
                 .info
@@ -70,5 +72,5 @@ block content
                             |от алкоголизма.
                     .info__img
                         img(src="./wp-content/themes/detox-med/assets/img/Stock.jpg", alt="кодированию от алкоголизма")
-        
+        include ./../components/sections/questions/questions-region.pug 
         include ./../components/sections/footer/footer.pug 
