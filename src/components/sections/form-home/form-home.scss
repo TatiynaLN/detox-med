@@ -404,7 +404,7 @@
     }
 }
 .form-prices--stock {
-    padding: 0;
+    padding: 0 0 10rem 0;
     .form {
         background: #ebf7f5;
         box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.05);
@@ -509,4 +509,7 @@
             }
         }
     }
+}
+.form-region {
+    padding-top: 5rem;
 }

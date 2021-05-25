@@ -1,5 +1,9 @@
 .advantages-appeal {
     padding: 10rem 0;
+    text-align: left;
+    p {
+        width: 100%;
+    }
 }
 .advantages-prices {
     padding: 0 0 10rem 0;
@@ -267,5 +271,11 @@
             border-bottom: none;
             margin-right: 3rem;
         }
+    }
+}
+.advantages-region {
+    padding-top: 0;
+    .info__txt {
+        align-self: center;
     }
 }

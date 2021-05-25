@@ -1,6 +1,25 @@
 .conclusion-drinking {
     padding-bottom: 3rem;
 }
+
+.conclusion-region {
+    p {
+        margin-bottom: 6rem;
+    }
+    li {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .steps {
+        margin-bottom: 0;
+    }
+}
 .symptoms {
     padding: 0rem 0 3.5rem 0;
     h2.section__title {
@@ -18,4 +37,63 @@
         margin-bottom: 3rem;
         display: block;
     }
+    li {
+        min-width: 17rem;
+        max-width: 17rem;
+        padding: 3rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+
+        @media (min-width: 570px) {
+            margin: 0;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+        }
+        @media (min-width: 800px) {
+            margin-right: 3rem;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 3rem;
+        }
+        &:nth-child(3n) {
+            @media (min-width: 644px) {
+                margin-right: 0rem;
+            }
+            @media (min-width: 800px) {
+                margin-right: 3rem;
+            }
+        }
+        &:nth-child(4n) {
+            @media (min-width: 1200px) {
+                margin-right: 3rem;
+            }
+        }
+        &:nth-child(6n) {
+            @media (min-width: 1200px) {
+                margin-right: 0rem;
+            }
+        }
+        &:last-child {
+            margin-bottom: 5rem;
+            @media (min-width: 570px) {
+                margin-bottom: 3rem;
+            }
+            @media (min-width: 644px) {
+                margin-bottom: 7.7rem;
+            }
+            @media (min-width: 1200px) {
+                margin-bottom: 3rem;
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+.conclusion-region--pb {
+    padding-bottom: 3.3rem;
 }

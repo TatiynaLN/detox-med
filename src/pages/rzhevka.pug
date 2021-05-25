@@ -1,0 +1,32 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Вывод из запоя Ржевка, Пороховые, Красногвардейский р-н';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Вывод из запоя Ржевка, Пороховые, Красногвардейский р-н';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        //- include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        include ./../components/sections/about/about-rzhevka.pug 
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.symptoms.conclusion-region--pb
+            .container
+                h2.section__title Когда необходимо незамедлительно вызывать специалиста
+                include ./../components/bem-blocks/steps/step.pug
+                button.btn-send.btn-red Вызвать нарколога
+                p При выполнении услуг по выведению из запойного состояния, врач-нарколог может предоставить бесплатную консультацию и бесплатное медицинское обследование на дому, которое покажет текущее состояние больного и противопоказания к использованию некоторых методик по выведению из запоя.
+                    br
+                    |Одним из самым популярным методом является капельница — она позволяет дозировать лекарственные препараты и точно вносить в организм необходимое количество лекарств. Также с помощью капельницы можно быстро переключать типы вводимых веществ. При использовании капельницы очень быстро можно привести организм заболевшего в порядок.
+                    br
+                    |Наши врачи наркологического центра обеспечивают выведение из запоя также в Токсово, в Мурино, в Парголово, во Всеволожске, в Выборге, в Сестрорецке и в Санкт-Петербурге в Купчино .
+        
+        include ./../components/sections/footer/footer.pug 
