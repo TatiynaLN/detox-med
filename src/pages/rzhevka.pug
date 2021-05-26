@@ -18,6 +18,28 @@ block content
         //- include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
         include ./../components/sections/about/about-rzhevka.pug 
         include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.doctors-info.doctors-region
+            .container
+                h2.section__title Почему возникает опасность для здоровья при запое и после него
+                .doctors-info__flex.info-order
+                    .doctors-info__txt 
+                        p Чрезмерное употребление алкоголя — это одна из главных причин возникновения опасных проблем 
+                            |со здоровьем. Вначале алкоголь приносит удовольствие, повышает настроение, снимает стрессы и 
+                            |усталость за счет влияния на центральную нервную систему. Но затем выпивающему регулярно спиртные 
+                            |напитки приходится постоянно увеличивать потребляемую дозу алкогольных напитков, чтобы чувствовать
+                            | такое опьянение как раньше. Поэтому все больше и больше поступает в организм алкоголя и все больше 
+                            |и больше приходится организму его перерабатывать.
+                        p В нашей печени этиловый спирт с помощью фермента алкогольдегидрогеназы превращается в ацетальдегид
+                            | , после чего он превращается в уксусную кислоту. При большом количестве потупившего алкоголя 
+                            |организм не справляется с полным превращением алкоголя в уксусную кислоту, в результате чего 
+                            |ацетальдегид начинает накапливаться в организме. Он очень токсичен, и токсикация организма отходами 
+                            |переработки алкоголя является причиной возникновения крайней опасности для здоровья пациента и 
+                            |для его состояния.
+                    .doctors-info__image 
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/ben-hershey.jpg", alt="Опасность для здоровья")
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/protrezvet-i-izbavitsja-ot-peregara.jpg", alt="Чрезмерное употребление алкоголя")
         section.symptoms.conclusion-region--pb
             .container
                 h2.section__title Когда необходимо незамедлительно вызывать специалиста
@@ -29,4 +51,5 @@ block content
                     br
                     |Наши врачи наркологического центра обеспечивают выведение из запоя также в Токсово, в Мурино, в Парголово, во Всеволожске, в Выборге, в Сестрорецке и в Санкт-Петербурге в Купчино .
         include ./../components/sections/questions/questions-region3.pug 
+        include ./../components/sections/publications/publications-region.pug
         include ./../components/sections/footer/footer.pug 

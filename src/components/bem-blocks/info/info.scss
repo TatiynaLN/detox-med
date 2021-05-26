@@ -1,5 +1,6 @@
 .info {
     width: 100%;
+    margin-bottom: 2rem;
     @media (min-width: 900px) {
         display: flex;
         justify-content: space-between;
@@ -107,6 +108,7 @@
         &__txt {
             margin-bottom: 5rem;
             @media (min-width: 900px) {
+                margin-bottom: 0rem;
                 width: 100%;
                 max-width: 100%;
                 align-self: center;
@@ -119,6 +121,7 @@
         &__img {
             align-self: flex-start;
             margin: 0 auto;
+            margin-top: 2rem;
             max-height: 30.6rem;
             border-radius: 20px 70px 70px 70px;
             @media (min-width: 520px) {
@@ -184,6 +187,10 @@
     }
     .info-order {
         .info__img {
+            margin-top: 4rem;
+            @media (min-width: 1024px) {
+                margin-top: 0;
+            }
             &::before {
                 left: 0;
                 transform: translate(0, -3rem);

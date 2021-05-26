@@ -18,6 +18,27 @@ block content
         //- include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
         include ./../components/sections/about/about-murino.pug 
         include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.doctors-info.doctors-region
+            .container
+                h2.section__title Куда приезжают наши врачи
+                .doctors-info__flex.info-order
+                    .doctors-info__txt 
+                        p Мурино — город в Ленинградской области России. По одной из версий, историческое название дало 
+                            |поселение с названием по-фински Muurola — «поселение каменщиков». Первое картографическое 
+                            |упоминание о Мурино было в 1676 году . С 1749 г. и до 1917 г. дер. Мурино принадлежала князю 
+                            |Воронцову и его семье. 26 апреля 2019 года посёлок Мурино получил статус города.
+                        p Улицы в Мурино по которым принимаются заказы по выведению из запойного состояния и лечению от 
+                            |алкоголизма: 2-я линия, проспект Авиаторов Балтики, Английская, Берёзовая аллея, Боровая, 
+                            |Верхняя, Весёлая, Вокзальная, Воронцовский бульвар, Гражданская, Графская, Екатерининская, 
+                            |Заречная, Кооперативная, Лесная, бульвар Менделеева, Новая, Оборонная, Охтинская аллея, Парковая, 
+                            |Петровский бульвар, Привокзальная площадь, Родниковая, Родниковый переулок, Ручьёвский проспект, 
+                            |Садовая, Скандинавский проезд, Тихая, Центральная, Челябинская, Школьная, шоссе в Лаврики, 
+                            |Шувалова, Ясная и другие улицы района Мурино.
+                    .doctors-info__image 
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/rajon-murino.jpg", alt="Мурино")
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/vyvedenie.jpg", alt="Выведение из запоя")
         include ./../components/sections/form-home/form-prices2.pug
         include ./../components/sections/operating-principle/principle-region.pug 
         section.advantages-appeal.advantages-region
@@ -53,8 +74,8 @@ block content
                     .info__img
                         img(src="./wp-content/themes/detox-med/assets/img/alcohol.jpg", alt="Выведение из запоя")
         
-        
-        section.advantages-appeal.advantages-services.advantages-region
+        include ./../components/sections/form-home/form-region2.pug
+        section.advantages-services.advantages-region.pt
             .container
                 h2.section__title Лечение алкоголизма в Кузьмоловском
                 .info.info-order
@@ -70,5 +91,5 @@ block content
                             |Сиреневая, Солнечная, Сосновый проезд, Спортивная, Строителей, Центральная, Школьная,
                             | Юбилейная, Южная. 
                     .info__img
-                        img(src="./wp-content/themes/detox-med/assets/img/Stock.jpg", alt="Врачебная помощь")
+                        img(src="./wp-content/themes/detox-med/assets/img/leal.jpg", alt="Лечение алкоголизма")
         include ./../components/sections/footer/footer.pug 

@@ -79,7 +79,7 @@
         &:last-child {
             position: relative;
             transform: translate(0%, -50%);
-            max-width: 27.8rem;
+            max-width: 22.8rem;
             max-height: 18.4rem;
 
             align-self: flex-start;
@@ -108,4 +108,25 @@
 }
 .doctors-services {
     padding: 0rem 0 10rem 0;
+}
+.doctors-region {
+    .info-order {
+        align-items: flex-start;
+    }
+    .doctors-info__txt {
+        align-self: flex-start;
+        order: 1;
+    }
+    .doctors-info__image {
+        order: 0;
+        align-items: flex-start;
+    }
+    .doctors-info__img {
+        &:last-child {
+            align-self: flex-end;
+        }
+    }
+    i {
+        color: #11c0ab;
+    }
 }

@@ -178,13 +178,15 @@
 }
 
 // для ссылок адреса на страницах регионов
+.services__flex-block,
+.doctors-region,
 .advantages-services {
     a {
         font-style: normal;
         font-weight: normal;
         font-size: 1.6rem;
         line-height: 170%;
-        color: #01120f;
+        color: #000;
         display: inline-block;
         margin-bottom: 0.1rem;
         position: relative;
