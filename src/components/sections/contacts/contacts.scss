@@ -162,7 +162,9 @@
     }
 }
 .contacts-map {
-    padding-bottom: 10rem;
+    @media (min-width: 1024px) {
+        padding-bottom: 10rem;
+    }
     .contacts-map__flex--order {
         justify-content: flex-end;
         .contacts-map__flex-map {

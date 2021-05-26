@@ -132,49 +132,67 @@ function $modal(options) {
                 <textarea class="_req "type="text" name="user-message" placeholder="Опишите проблему" required="required"></textarea>\
                 <button class= "btn-red"> Заказать звонок</button>\
                 <div class="form__policy">\
-                    <input class="_req" id="modal__chec1" type="checkbox" required="required" checked="">\
-                    <label for="modal__chec1"> Вы соглашаетесь с \
+                    <input class="_req" id="modal__chec2" type="checkbox" required="required" checked="">\
+                    <label for="modal__chec2"> Вы соглашаетесь с \
                         <a target="_blank" href="#!">условиями обработки персональных данных</a>\
                     </label>\
                 </div>\
             </form>\
         </div>'
     });
-    // // создадим модальное окно 3
-    // var modal3 = $modal({
-    //     content: '<h5>Записаться на приём</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
-    //     <form><div class="input-flex">\
-    //                 <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">\
-    //                 <input class="_req phone-input" type="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-    //                 </div><button class="btn-send">Записаться на приём</button>\
-    //               </form>\
-    //               <div class="form__policy">\
-    //                 <input class="_req" id="modal__chec3" type="checkbox" checked="">\
-    //                 <label for="modal__chec3"> \
-    //                                     Вы соглашаетесь с \
-    //                 <a target="_blank" href="#!">условиями обработки персональных данных</a>\
-    //                 </label>\
-    //               </div></form>'
-    // });
-    // // создадим модальное окно 4
-    // var modal4 = $modal({
-    //     content: '<h5>Связаться с психологом</h5><p>Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей</p>\
-    //     <form><div class="input-flex">\
-    //         <input class="_req" type="text" name="user-name" placeholder="Ваше имя" required="required">\
-    //                 <input class="_req phone-input" type ="text" name="user-phone" placeholder="Ваш номер телефона" required="required">\
-    //                 </div><button class="btn-send">Записаться на приём</button>\
-    //     <div class="form__policy">\
-    //                 <input class="_req" id="modal__chec4" type="checkbox" checked="">\
-    //                 <label for="modal__chec4"> \
-    //             Вы соглашаетесь с \
-    //                 <a target="_blank" href="#!">условиями обработки персональных данных</a>\
-    //                 </label>\
-    //               </div></form>'
-    // });
-    // // создадим модальное окно СПАСИБО
-    // var modal5 = $modal({
-    //     content: '<h5>Спасибо за заявку!</h5><p>Мы свяжемся с вами в ближайшее время, в рабочии часы, указанные на сайте</p>',
-    // });
+    // создадим модальное окно 3
+    var modal3 = $modal({
+        content: '<div class="modal-wrapper modal-thanks"><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span><h2>Ваша заявка отправлена!</h2><p>Наша главная задача - помогать людям! Мы перезвоним вам в течении <em>10 минут</em>!</p><p>Наркологический центр «ДетоксМед» — лечение зависимостей по европейским стандартам. Лечение у нас - это:</p>\
+        <div class="block">\
+            <div class="block__box">\
+                <h3> Научная обоснованность</h3>\
+                <p>\
+                    <i>\
+                        <img src="./wp-content/themes/detox-med/assets/img/icons/atom1.svg" alt=""/>\
+                    </i>\
+                    Мы используем методы, которые имеют научное обоснование. Это позволяет достигать гарантированный результат.\
+                </p>\
+            </div>\
+            <div class="block__box">\
+                <h3>Инновационные методы</h3>\
+                <p>\
+                    <i>\
+                        <img src="./wp-content/themes/detox-med/assets/img/icons/innovation1.svg" alt=""/>\
+                    </i>\
+                    Использование только самых современных и передовых методик лечения синдрома зависимости.\
+                </p>\
+            </div>\
+            <div class="block__box">\
+                <h3>Строжайшая конфиденциальность</h3>\
+                <p>\
+                    <i>\
+                        <img src="./wp-content/themes/detox-med/assets/img/icons/anonym1.svg" alt=""/>\
+                    </i>\
+                    Мы гарантируем полную анонимность лечения. Вы можете быть уверены, что не будете скомпрометированы.\
+                </p>\
+            </div>\
+            <div class="block__box">\
+                <h3>Максимальный комфорт</h3>\
+                <p>\
+                    <i>\
+                        <img src="./wp-content/themes/detox-med/assets/img/icons/hospital1.svg" alt=""/>\
+                    </i>\
+                    Наш стационар оснащён современным оборудованием. В палатах есть всё необходимое для комфортного проживания.\
+                </p>\
+            </div>\
+            <div class="block__box">\
+                <h3>Индивидуальный план лечения</h3>\
+                <p>\
+                    <i>\
+                        <img src="./wp-content/themes/detox-med/assets/img/icons/list1.svg" alt="" />\
+                    </i>\
+                    Наши специалисты подберают наиболее эффективные методы восстановительной терапии под каждого пациента.\
+                </p>\
+            </div>\
+        </div>'
+    });
+
+
     // при клике по кнопке #show-modal-1
 
     document.addEventListener('click', function (e) {
@@ -185,10 +203,10 @@ function $modal(options) {
             // отобразим модальное окно N2
             modal2.show();
         }
-        // else if (e.target.dataset.toggle === 'modal-3') {
-        //     // отобразим модальное окно N3
-        //     modal3.show();
-        // }
+        else if (e.target.dataset.toggle === 'modal-3') {
+            // отобразим модальное окно N3
+            modal3.show();
+        }
         // else if (e.target.dataset.toggle === 'modal-4') {
         //     // отобразим модальное окно N4
         //     modal4.show();
