@@ -19,7 +19,19 @@ block content
         include ./../components/sections/about/about-pushkin.pug 
         include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
         include ./../components/sections/operating-principle/principle-region.pug 
-        include ./../components/sections/form-home/form-prices2.pug
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
         section.advantages-appeal.advantages-region
             .container
                 h2.section__title Лечение алкогольной зависимости в Пушкине

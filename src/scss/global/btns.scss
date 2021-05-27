@@ -22,6 +22,7 @@ button {
     position: relative;
     background-color: #f04242;
     overflow: hidden;
+    // transform: scale3d(1);
     transform: scale3d(1);
     transition: all 2s;
     &:hover {
@@ -188,49 +189,51 @@ button {
 // }
 @keyframes btn__red {
     0% {
-        transform: scale(1.1);
-        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
-            0px 5px 10px rgba(1, 18, 15, 0.15);
+        transform: scale(1.03, 1.03);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.15), 0px 5px 10px rgba(1, 18, 15, 0.05),
+            0px 5px 10px rgba(1, 18, 15, 0.05);
     }
     25% {
-        transform: scale(0.8);
+        transform: scale(0.9);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0), 0px 5px 10px rgba(1, 18, 15, 0), 0px 5px 10px rgba(1, 18, 15, 0);
     }
     50% {
-        transform: scale(1.1);
-        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
-            0px 5px 10px rgba(1, 18, 15, 0.15);
+        transform: scale(1.03, 1.03);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.15), 0px 5px 10px rgba(1, 18, 15, 0.05),
+            0px 5px 10px rgba(1, 18, 15, 0.05);
     }
 
     75% {
-        transform: scale(0.8);
+        transform: scale(0.9);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0), 0px 5px 10px rgba(1, 18, 15, 0), 0px 5px 10px rgba(1, 18, 15, 0);
     }
     100% {
-        transform: scale(1.1);
-        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.35), 0px 5px 10px rgba(1, 18, 15, 0.15),
-            0px 5px 10px rgba(1, 18, 15, 0.15);
+        transform: scale(1.03, 1.03);
+        box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.15), 0px 5px 10px rgba(1, 18, 15, 0.05),
+            0px 5px 10px rgba(1, 18, 15, 0.05);
     }
 }
 
 @keyframes btn__green {
     0% {
-        transform: scale(1.1);
+        transform: scale(1.03, 1.03);
         box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
     }
     25% {
-        transform: scale(0.8);
+        transform: scale(0.9);
         box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.3);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.03, 1.03);
         box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
     }
 
     75% {
-        transform: scale(0.8);
+        transform: scale(0.9);
         box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.3);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1.03, 1.03);
         box-shadow: 0px 3px 20px rgba(17, 192, 171, 0.7);
     }
 }
