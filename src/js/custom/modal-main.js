@@ -218,24 +218,29 @@ function $modal(options) {
     });
     var btns = document.querySelectorAll('.btn');
     let panel = document.getElementsByTagName('body')[0];
+    // let mod = panel.parentElement;
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
             panel.classList.add('oh');
+            // mod.classList.add('oh');
         });
     });
     window.addEventListener('click', (e) => {
         if (e.target.classList.contains('modal__btn-close')) {
             panel.classList.remove('oh');
+            // mod.classList.remove('oh');
         }
     });
     window.addEventListener('click', (e) => {
         if (e.target.dataset.dismiss === 'modal') {// этот кусок кода
             panel.classList.remove('oh');
+            // mod.classList.remove('oh');
         }
     });
     window.addEventListener('keydown', (e) => {
         if (e.code === "Escape") {
             panel.classList.remove('oh');
+            // mod.classList.remove('oh');
         }
     });
 })();
