@@ -217,7 +217,7 @@ function $modal(options) {
         // }
     });
     var btns = document.querySelectorAll('.btn');
-    let panel = document.getElementsByTagName('html')[0];
+    let panel = document.getElementsByTagName('body')[0];
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
             panel.classList.add('oh');
