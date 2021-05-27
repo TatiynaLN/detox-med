@@ -1,5 +1,5 @@
 .advantages-appeal {
-    padding: 10rem 0;
+    padding: 8rem 0;
     text-align: left;
     p {
         width: 100%;
@@ -285,5 +285,12 @@
     padding-top: 0;
     .info__txt {
         align-self: center;
+    }
+}
+.p-mb {
+    p {
+        &:last-child {
+            margin-bottom: 2rem;
+        }
     }
 }

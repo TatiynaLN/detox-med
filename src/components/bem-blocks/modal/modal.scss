@@ -30,29 +30,10 @@
         top: 50%;
         transition: all 0.3s;
     }
-    .modal-wrapper2,
-    .modal-wrapper {
-        opacity: 1;
-    }
 }
 
 .modal__body {
-    // position: relative;
-    // transform: translate(-50%, -50%);
-    // left: 50%;
-    // top: 50%;
-    // max-width: fit-content;
-    // transition: opacity 0.3s ease-in;
-    // display: flex;
-    // flex-direction: column;
-    // background-clip: padding-box;
-
-    // // transform: translateY(5%);
-    // overflow: hidden;
-    // // overflow-x: auto;
-    // padding: 3rem 0;
     position: relative;
-    /* margin: 0 auto; */
     max-width: fit-content;
     transition: opacity 0.3s ease-in;
     display: flex;
@@ -250,17 +231,12 @@
 }
 .modal-wrapper2,
 .modal-wrapper {
-    // position: relative;
     max-width: 90vw;
     max-height: auto;
     padding: 3rem 1.5rem;
     background: #ebf7f5;
     box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.05);
     border-radius: 20px;
-
-    //
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
 }
 .modal-wrapper {
     z-index: 1090;
