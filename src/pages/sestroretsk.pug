@@ -1,0 +1,80 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Вывод из запоя Сестрорецк';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Вывод из запоя Сестрорецк';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        //- include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        section.about.about-region 
+            .container 
+                h1.main__title.main__titles Вывод из запоя Сестрорецк
+                .about__block
+                    .about__block-img
+                        img(src="./wp-content/themes/detox-med/assets/img/vyvod.jpg", alt="Вывод из запоя")
+                    .about__block-txt
+                        p Выведение из запоя и лечение алкоголизма в 
+                            i Сестрорецке
+                            |, 
+                            i Белоострове
+                            |, 
+                            i Солнечном
+                            |, 
+                            i Репино
+                            |, 
+                            i Лисьем Носу
+                            |.
+                        p Бесплатная консультация о прекращении запоев с последующим лечением алкогольной зависимости. Время 
+                            |приезда врача в Сестрорецк от 15 мин. Высокая квалификация наших врачей позволяет гарантировать результат, 
+                            |используем только самые современные методики и препараты. Одна из лучших клиник Санкт-Петербурга.
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
+        include ./../components/sections/about-advantages/about-advantages3.pug
+        section.doctors-info.doctors-region
+            .container
+                h2.section__title Выведение из запоя в Сестрорецке
+                .doctors-info__flex.info-order
+                    .doctors-info__txt 
+                        p Не допускайте самостоятельного выведения из запоя, потому что необходимо правильно контролировать состояние больного. 
+                            |При похмельном синдроме возникают тряска в руках, потливость, бессонница, головная боль, тахикардия, высокое артериальное 
+                            |давление, появляются тревога, страх, бессонница, паническое беспокойство. Возможны проявления «белой горячки». Врачи нашей 
+                            |клиники «ДЕТОКСМЕД» обладают большим опытом работы с больными по выведению из запоев. Опыт работы в этой области у них от 
+                            |6 лет, а у некоторых от 12 лет. Постоянное повышение квалификации наших врачей позволяет применять самые современные и 
+                            |эффективные препараты и методики.
+                        p При небольших и «легких» запоях, как правило, врач лечит в домашних условиях, при полной анонимности, без госпитализации 
+                            |в стационар. При выборе курса по лечению нарколог ориентируется на состояние больного и его здоровья. 
+                    .doctors-info__image 
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/doctor-56.jpg", alt="Вывод из запоя")
+                        .doctors-info__img
+                            img(src="./wp-content/themes/detox-med/assets/img/pochemu-vazhno-prokapatsja-ot-alkogolja-na-domu-glavnaja.jpg", alt="Вывод из запоя")
+                p После первого этапа лечения могут назначаться препараты восстановительной терапии, лазеро-магнитотерапию, назначает препараты 
+                    |для восстановления памяти, функций внимания и мышления, нормализацию энергии, назначение препаратов для  снижения тяги к алкоголю. 
+                    |По желанию назначается курс психотерапии.
+                p Пациент постоянно находится под вниманием врача, контролирующего его состояние. Применение современных методов лечения алкоголизма 
+                    |позволяет достигнуть возвращение больного в семейную, социальную и обычную трудовую жизнь, которую обычно он теряет в бесконечной 
+                    |череде запоев и злоупотреблений алкоголем
+        include ./../components/sections/publications/publications-region.pug
+        include ./../components/sections/footer/footer.pug 

@@ -1,0 +1,65 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Вывод из запоя Токсово';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Вывод из запоя Токсово';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        //- include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        section.about.about-region 
+            .container 
+                h1.main__title.main__titles Вывод из запоя Токсово
+                .about__block
+                    .about__block-img
+                        img(src="./wp-content/themes/detox-med/assets/img/gatchina.jpg", alt="Вывод из запоя")
+                    .about__block-txt
+                        p Выведение из запоя и лечение алкоголизма — 
+                            i Токсово, Кузьмолово, Кавголово, Вартемяги, Агалатово, Новое Токсово.
+                        p Бесплатная консультация. Бесплатное медицинское обследование при проведении процедур по выведению из запоя, помощи при абстинентном синдроме и лечения алкоголизма.
+                        p Врачи наркологического центра ДетоксМед имеют большой опыт работы, высокую квалификацию, современные методики и препараты. Лечение и выведение из запоя и лечение от зависимостей происходит полностью анонимно.
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        include ./../components/sections/about-advantages/about-advantages3.pug
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
+        section.advantages-appeal.advantages-region
+            .container
+                h2.section__title Лечение алкоголизма в Токсово
+                .info
+                    .info__txt
+                        p Основной проблемой при длительном злоупотреблении алкоголем является — «синдром отмены» или похмельный синдром.  Лечение похмельного синдрома на дому — это весьма распространённый и удобный вариант лечения. Врач- нарколог выезжает  в Токсово, выведение из запоя в Токсово и проводит диагностические и лечебные мероприятия у кровати больного: измеряет артериальное давление, оценивает состояние печени, сердца, проводит забор анализов крови. В случае отсутствия противопоказаний врач — нарколог «ставит капельницу», и уже через 5ть минут от начала лечения пациент чувствует облегчение: проходит ощущение тревоги, беспокойства, снижается артериальное давление. По окончании капельницы врач — нарколог оставляет таблетированные препараты, с целью поддерживающей терапии и рекомендации по дальнейшему лечению.
+                        p В случае наличия противопоказаний, пациент госпитализируется в наркологический стационар. В случае согласия пациента, врач проводит процедуру «кодирования» от 3х месяцев до 5-ти лет.
+                        p Психотерапевтическая поддержка пациентов с зависимостью — также одно из направлений нашей работы.
+                        p Также возможно выведение из запоя в 
+                            a(href="#!") Сертолово
+                            |, в 
+                            a(href="#!") Мурино
+                            |, в 
+                            a(href="#!") Парголово  
+                            | и во 
+                            a(href="#!") Всеволожске
+                            |.
+                    .info__img
+                        img(src="./wp-content/themes/detox-med/assets/img/olga-kononenko.jpg", alt="Нарколог")
+        include ./../components/sections/publications/publications-region.pug
+        include ./../components/sections/footer/footer.pug 

@@ -273,3 +273,10 @@
         }
     }
 }
+.phone-style {
+    a {
+        &::before {
+            display: none;
+        }
+    }
+}

@@ -5,6 +5,14 @@
 .doctors-info {
     width: 100%;
     padding-bottom: 10rem;
+    text-align: left;
+    p {
+        width: 100%;
+        margin-bottom: 0.8rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     &__flex {
         width: 100%;
         display: flex;
@@ -110,6 +118,10 @@
     padding: 0rem 0 10rem 0;
 }
 .doctors-region {
+    text-align: left;
+    p {
+        width: 100%;
+    }
     .info-order {
         align-items: flex-start;
     }

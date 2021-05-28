@@ -1,0 +1,61 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Выведение из запоя у метро Рыбацкое';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Выведение из запоя у метро Рыбацкое';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.about.about-region 
+            .container 
+                h1.main__title.main__titles Выведение из запоя у метро Рыбацкое
+                .about__block
+                    .about__block-img
+                        img(src="./wp-content/themes/detox-med/assets/img/krasnoe-selo.jpg", alt="Выведение из запоя")
+                    .about__block-txt
+                        p Выведение из запоя и лечение алкоголизма на дому в районе метро Рыбацкое.
+                        p При выведении из запоя проводятся бесплатная консультация и бесплатное медицинское обследование.
+                        p У врачей наркологической клиники «ДетоксМед» большой опыт работы по лечению алкогольной зависимости. Они — 
+                            |настоящие профессионалы в области наркологии и используют только самые современные методики и препараты, 
+                            |современную медицинскую аппаратуру для диагностики состояния больного. 
+                        p Лечение и выведение из запоя проходит полностью анонимно.
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        include ./../components/sections/operating-principle/principle-region.pug 
+        include ./../components/sections/form-home/form-region2.pug
+        include ./../components/sections/publications/publications-region2.pug
+        section.symptoms.conclusion-region--pb
+            .container
+                h2.section__title Когда необходимо незамедлительно вызывать специалиста
+                include ./../components/bem-blocks/steps/step.pug
+                button.btn-send.btn-red.show-modal-2.btn(data-toggle="modal-2") Вызвать нарколога
+                p При выполнении услуг по выведению из запойного состояния, врач-нарколог может предоставить бесплатную консультацию и бесплатное медицинское обследование на дому, которое покажет текущее состояние больного и противопоказания к использованию некоторых методик по выведению из запоя.
+                    br
+                    |Одним из самым популярным методом является капельница — она позволяет дозировать лекарственные препараты и точно вносить в организм необходимое количество лекарств. Также с помощью капельницы можно быстро переключать типы вводимых веществ. При использовании капельницы очень быстро можно привести организм заболевшего в порядок.
+                    br
+                    |Наши врачи наркологического центра обеспечивают выведение из запоя также в 
+                    a(href="") Токсово
+                    |, в 
+                    a(href="") Мурино
+                    |, в 
+                    a(href="") Парголово
+                    |, во 
+                    a(href="") Всеволожске
+                    |, в 
+                    a(href="") Выборге
+                    |, в 
+                    a(href="") Сестрорецке
+                    | и в 
+                    a(href="") Санкт-Петербурге
+                    | в 
+                    a(href="") Купчино
+                    |.
+        include ./../components/sections/footer/footer.pug 
