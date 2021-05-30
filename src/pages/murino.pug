@@ -39,7 +39,19 @@ block content
                             img(src="./wp-content/themes/detox-med/assets/img/rajon-murino.jpg", alt="Мурино")
                         .doctors-info__img
                             img(src="./wp-content/themes/detox-med/assets/img/vyvedenie.jpg", alt="Выведение из запоя")
-        include ./../components/sections/form-home/form-prices2.pug
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
         include ./../components/sections/operating-principle/principle-region.pug 
         section.advantages-appeal.advantages-region
             .container
@@ -75,10 +87,10 @@ block content
                         img(src="./wp-content/themes/detox-med/assets/img/alcohol.jpg", alt="Выведение из запоя")
         
         include ./../components/sections/form-home/form-region.pug
-        section.advantages-services.advantages-region.pt
+        section.advantages-services.pt
             .container
-                h2.section__title Лечение алкоголизма в Кузьмоловском
-                .info.info-order
+                h2.section__title.section__title-mb Лечение алкоголизма в Кузьмоловском
+                .info.info-order.info-after
                     .info__txt
                         p Еще один поселок, в котором возможны принятия срочных вызовов по помощи выведения из 
                             |запоя и лечения алкоголизма. Поселок по одной из версий произошел от финского имени Kuisma

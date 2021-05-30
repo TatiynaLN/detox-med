@@ -149,6 +149,7 @@
             }
         }
         h3 {
+            width: 100%;
             padding: 1.6rem 2rem 1.6rem 2rem;
             border-radius: 20px;
             @media (min-width: 330px) {
@@ -175,6 +176,7 @@
             }
         }
         p {
+            width: 100%;
             transition: all 0.5s ease-out;
             transition: all 0.5s;
             padding: 0rem 2rem;
@@ -275,6 +277,15 @@
 }
 .phone-style {
     a {
+        color: #f04242;
+        transition: all 0.3s;
+        &:hover,
+        &:focus {
+            transition: all 0.3s;
+            text-shadow: #f04242 1px 0px, #f04242 1px 1px, rgba(1, 18, 15, 0.7) 0px 0.5px,
+                rgba(1, 18, 15, 0.7) -0.5px 0.5px, rgba(1, 18, 15, 0.7) -0.5px 0px, rgba(1, 18, 15, 0.7) -0.5px -0.5px,
+                rgba(1, 18, 15, 0.7) 0px -0.5px, rgba(1, 18, 15, 0.7) 0.5px -0.5px;
+        }
         &::before {
             display: none;
         }

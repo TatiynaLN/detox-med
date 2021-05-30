@@ -39,8 +39,8 @@ block content
         include ./../components/sections/form-home/form-region.pug 
         section.advantages-services.pt
             .container
-                h2.section__title.mb Мотивация пациента на лечение
-                .info.info-order
+                h2.section__title Мотивация пациента на лечение
+                .info.info-order.info-after
                     .info__txt
                         p Восстановление целей пациента, восстановление утраченных внутрисемейных взаимоотношений. 
                             |Выведение из запоя — лишь первый этап на пути лечения Синдрома Зависимости от Алкоголя. 
@@ -55,8 +55,20 @@ block content
                             |соответствующей помощи родственников и близких. Врачи наркологического центра ДетоксМед,
                             | в нашей работе, ориентированы на полное восстановление здоровья пациента, как физического,
                             | так и психологического.
-                    .info__img
+                    .info__img.info__img-mt
                         img(src="./wp-content/themes/detox-med/assets/img/Stock.jpg", alt="Мотивация пациента на лечение")
-        include ./../components/sections/form-home/form-prices2.pug
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
         include ./../components/sections/publications/publications-region.pug
         include ./../components/sections/footer/footer.pug 

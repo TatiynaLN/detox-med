@@ -98,12 +98,7 @@ section {
     padding-right: 1.7rem;
   }
 }
-.pt {
-  padding-top: 10rem !important;
-}
-h2.section__title.mb {
-  margin-bottom: 8.9rem;
-}
+
 .html-overflow {
   overflow-y: scroll;
 }
@@ -221,4 +216,14 @@ h2.section__title.mb {
     padding-bottom: 1rem !important;
     transition: all 0.5s;
   }
+}
+
+.pt {
+  padding-top: 10rem;
+}
+h2.section__title.mb {
+  margin-bottom: 8.9rem;
+}
+.mb5 {
+  margin-bottom: 5rem;
 }

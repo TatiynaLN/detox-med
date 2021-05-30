@@ -111,6 +111,9 @@
         text-align: left;
     }
 }
+.section__title-mb {
+    margin-bottom: 8.5rem;
+}
 h3 {
     @include Nunito-Bold();
     font-style: normal;
