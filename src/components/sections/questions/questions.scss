@@ -1,5 +1,13 @@
 .questions {
     padding: 10rem 0;
+    h3 {
+        transition: all 0.3s;
+        &:hover,
+        &:focus {
+            color: #11c0ab;
+            transition: all 0.3s;
+        }
+    }
 }
 
 // new

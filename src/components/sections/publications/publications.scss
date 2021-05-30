@@ -312,10 +312,10 @@
 
         transition: all 0.3s;
         @media (min-width: 768px) {
-            transform: translateY(40rem) scale(1.1) rotate(180deg);
+            transform: translateY(35rem) scale(1.1) rotate(180deg);
         }
         @media (min-width: 900px) {
-            transform: translateY(21.2rem) scale(1.1) rotate(180deg);
+            transform: translateY(19rem) scale(1.1) rotate(180deg);
         }
     }
 }
@@ -339,10 +339,10 @@
     &:focus {
         transform: scale(1.1);
         @media (min-width: 768px) {
-            transform: translateY(40rem) scale(1.1);
+            transform: translateY(35rem) scale(1.1);
         }
         @media (min-width: 900px) {
-            transform: translateY(21.2rem) scale(1.1);
+            transform: translateY(19rem) scale(1.1);
         }
     }
     @media (min-width: 1400px) {
