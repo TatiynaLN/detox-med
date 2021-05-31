@@ -49,7 +49,7 @@
 
         function openCard() {
             let activeInitial = accordItemsContent[0].getBoundingClientRect().height;
-            accordItems[0].style.minHeight = `${activeInitial + 90}px`;
+            accordItems[0].style.minHeight = `${activeInitial + 160}px`;
             accordItems[0].classList.add('accordion__item--active');
 
             accordItemsTitle.forEach((item, i) => {

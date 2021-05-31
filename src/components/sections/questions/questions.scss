@@ -103,6 +103,10 @@
             opacity: 0;
             transition: all 0.5s linear;
             visibility: hidden;
+            font-size: 1.4rem;
+            @media (min-width: 600px) {
+                font-size: 1.6rem;
+            }
         }
     }
     .accordion__item--active {
