@@ -333,6 +333,7 @@ dd {
 
             p {
                 display: block;
+                margin-bottom: 0;
             }
             @media (min-width: 540px) {
                 max-width: 36rem;
@@ -375,8 +376,5 @@ dd {
                 transform: scaleX(0);
             }
         }
-    }
-    p {
-        margin-bottom: 0;
     }
 }
