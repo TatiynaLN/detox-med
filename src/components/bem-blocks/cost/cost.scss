@@ -82,14 +82,8 @@
             }
         }
     }
-
-    // p {
-    //     padding: 0 2rem;
-    // }
-
     .accordion__item--active h3 {
         position: relative;
-        // height: auto;
         text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
             rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px,
             rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
@@ -111,30 +105,19 @@
     }
 
     .accordion__item {
-        // height: 7.9rem;
-
-        // min-height: 0;
         transition: all 0.8s linear;
-        @media (min-width: 360px) {
-            // height: 5.9rem;
-        }
         h3 {
             transition: all 0.3s linear;
         }
         p {
             overflow: hidden;
-            // opacity: 0;
             height: 0;
             transition: all 0.3s linear;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
         }
     }
-    // .accordion__item p.accordion__content--active {
-    //     max-height: initial !important;
-    //     overflow: initial !important;
-    //     opacity: 1 !important;
-    // }
+
     .accordion-second {
         .accordion__content--active {
             margin-bottom: 3rem;
@@ -200,10 +183,9 @@
             }
         }
 
-        .accordion__item--active h3 {
+        .accordion__item--active {
             margin-bottom: 1.5rem;
             position: relative;
-            // height: auto;
             transition: all 0.3s;
             align-items: flex-start;
             text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
