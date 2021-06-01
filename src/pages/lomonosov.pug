@@ -1,0 +1,78 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Выведение из запоя Ломоносов';
+    - let breadcrumbsHomepage = 'Главная / ';
+    //- - let breadcrumbsText_1 = 'Статьи / ';
+    //- - let breadcrumbsText_2 = 'О приеме / ';
+    - let breadcrumbsText_3 = 'Выведение из запоя Ломоносов';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+    //- - let breadcrumbsLink_1 = 'articles.html';
+    //- - let breadcrumbsLink_2 = 'reception.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        section.about.about-region 
+            .container 
+                h1.main__title.main__titles Выведение из запоя Ломоносов
+                .about__block
+                    .about__block-img
+                        img(src="./wp-content/themes/detox-med/assets/img/kudrovo.jpg", alt="Выведение из запоя")
+                    .about__block-txt
+                        p Выведение из запоя и лечение алкоголизма на дому в Ломоносове.
+                        p Санкт-Петербурга. Наши врачи медицинского наркологического центра «ДетоксМед» обеспечат выведение из запоя, лечение 
+                            |похмельного синдрома, лечение алкогольной зависимости. Они имеют большой опыт работы от 6 и более лет. Врачи обеспечивают 
+                            |срочный выезд на лечение запойного состояния, прибывая на место в кратчайший срок. Низкая цена на услуги позволяет экономить 
+                            |семейный бюджет.
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.form.form-prices--stock.form-region
+            .container
+                .form
+                    h2.form__title Только в этом месяце выведение из запоя от 1799 рублей!
+                    h3 Заполните форму, чтобы узнать подробности.
+                    form
+                        input._req.phone-input(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
+                        input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                        button.btn-send.btn-red Заказать звонок
+                        .form__policy
+                            input._req.chec#chec(type="checkbox" required="required" checked)
+                            label.form-chec(for="chec") Вы соглашаетесь с 
+                                a(href="#!" target="_blank") условиями обработки персональных данных
+        include ./../components/sections/about-advantages/about-advantages3.pug
+        
+        section.composition-droppers.advantages-region
+            .container
+                h2.section__title Снятие похмельного синдрома в Ломоносове
+                .info.info-mb2
+                    .info__txt
+                        p Формирование у пьющего алкогольного синдрома отмены может значительно ухудшить состояние больного, его здоровье, создать угрозу 
+                            |для жизни. В этот период у больного возникает тремор, увеличение пульса, повышенное давление, тахикардия, обильная потливость, 
+                            |раздражительность, тревога, страх, бессонница.
+                        p В особо опасных случаях развития болезни может наступать «белая горячка» и серия приступов типа эпилепсии.
+                        p Такие явления абстиненции наступают обычно через 10-20 часов после последнего приема алкоголя. Врачи наркологической клиники 
+                            |«ДетоксМед» смогут за самое короткое время снизить явления синдрома отмены, восстановить нормальное сердцебиение, артериальное 
+                            |давление, и снять угрозу для жизни пациента.
+                    .info__img
+                        img(src="./wp-content/themes/detox-med/assets/img/peter.jpg", alt="Похмелье")
+                .info.info-order.info-mb2
+                    .info__txt
+                        p Стоит отметить крайне важную необходимость понимания больным всей тяжести его положения, помощи его в восстановлении своего здоровья 
+                            |и выхода из опасного кризиса, создающего угрозу для его жизни.
+                        p Продолжающееся потребление алкоголя больным значительно ухудшает состояние его организма, приводит к развитию множества хронических 
+                            |заболеваний, деградации личности, ухудшению отношений в семье, с коллегами по работе, в социальной сфере жизни.
+                        p Поэтому крайне необходимо приступить:
+                        ul
+                            li к прекращению запоев;
+                            li к лечению алкогольной зависимости;
+                            li к возвращению нормальной жизни в семье и в обществе;
+                            li к прекращению употребления алкоголя. 
+                    .info__img
+                        img(src="./wp-content/themes/detox-med/assets/img/alcohol.jpg", alt="Употребление алкоголя")
+                p Только желание самого пациента изменить свою жизнь позволит нашим врачам вылечить эту жуткую болезнь, прекратить запойные 
+                    |состояния, вернуть пациента в семью, в рабочий коллектив, вдохнуть новую жизнь и удовольствия от нее. Берегите себя! Не позволяйте 
+                    |алкогольной зависимости разрушить вашу семейную и общественную жизнь!
+        include ./../components/sections/publications/publications-region.pug
+        include ./../components/sections/footer/footer.pug 
