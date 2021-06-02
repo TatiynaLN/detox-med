@@ -1,0 +1,10 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Права и обязанности граждан в сфере охраны здоровья';
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/rights/rights.pug 
+        include ./../components/sections/footer/footer.pug 

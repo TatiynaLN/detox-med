@@ -1,0 +1,10 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Карта сайта';
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/rights/site-map.pug 
+        include ./../components/sections/footer/footer.pug 

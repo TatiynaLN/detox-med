@@ -1,9 +1,29 @@
 .privacy-policy {
     padding: 5rem 0 10rem 0;
     counter-reset: privacy;
-    .main__titles {
+    h1 {
+        font-size: 2rem;
+        line-height: 3.5rem;
         max-width: 100%;
         margin-bottom: 5rem;
+        @media screen and (min-width: 411px) {
+            font-size: 2.6rem;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 2.6rem;
+        }
+        &::after {
+            transform: translate(0rem, 1rem);
+            @media (min-width: 356px) {
+                transform: translate(0rem, 1rem);
+            }
+            @media (min-width: 411px) {
+                transform: translate(0rem, 1rem);
+            }
+            @media (min-width: 1200px) {
+                transform: translate(0rem, 1rem);
+            }
+        }
     }
     &__title {
         position: relative;
