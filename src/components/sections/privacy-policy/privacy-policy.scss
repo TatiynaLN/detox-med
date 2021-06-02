@@ -1,0 +1,65 @@
+.privacy-policy {
+    padding: 5rem 0 10rem 0;
+    counter-reset: privacy;
+    .main__titles {
+        max-width: 100%;
+        margin-bottom: 5rem;
+    }
+    &__title {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 146.4%;
+        color: #11c0ab;
+        padding-left: 2.5rem;
+        margin: 2rem 0;
+        &::before {
+            position: absolute;
+            counter-increment: privacy;
+            content: counter(privacy) ".";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 146.4%;
+            color: #11c0ab;
+            top: 0;
+            left: 0;
+        }
+    }
+    p {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    ol {
+        counter-reset: privacy-ol;
+        li {
+            position: relative;
+            list-style: none;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            &::before {
+                position: absolute;
+                counter-increment: privacy-ol;
+                content: counter(privacy-ol) ")";
+                margin-right: 0.5rem;
+                top: 0;
+                left: 0;
+            }
+        }
+        ul {
+            padding: 1rem 0 1rem 1rem;
+        }
+    }
+    ul {
+        padding: 1rem 0 1rem 2rem;
+        li {
+            list-style: disc;
+            padding-left: 0;
+            margin-bottom: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

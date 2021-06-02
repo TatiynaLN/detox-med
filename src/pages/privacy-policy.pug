@@ -1,0 +1,10 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Политика конфиденциальности';
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/sections/privacy-policy/privacy-policy.pug 
+        include ./../components/sections/footer/footer.pug 

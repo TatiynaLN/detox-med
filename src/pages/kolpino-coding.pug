@@ -1,0 +1,34 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Кодирование от алкоголизма в Колпино';
+    - let breadcrumbsHomepage = 'Главная / ';
+    - let breadcrumbsText_3 = 'Кодирование от алкоголизма в Колпино';
+
+    - let breadcrumbsHomepageLink = 'index.html';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header.pug
+        include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug 
+        section.advantages-appeal.advantages-region
+            .container
+                h2.section__title Кодирование от алкоголизма в Колпино
+                .info.info-after.info-order
+                    .info__txt.info__txt-center
+                        p Кодирование от алкоголизма —  это подчас единственный способ отказа от алкоголя на запланированный период. 
+                            |Не многие могут справиться с непреодолимой тягой к употреблению алкоголя. Поэтому ведущими мировыми фармацевтами 
+                            |были разработаны препараты по блокировке ферментов, участвующих в метаболизме этанола в организме человека. Кодирование 
+                            |от употребления спиртного заключается в том, что при выпивании даже малого количества алкоголя, человек получает сильное 
+                            |алкогольное отравление, что не дает возможности ему пить спиртное. Такие препараты действуют заданное производителем время.
+                            | Также можно продлять кодировки по истечении их срока действия.
+                        p Самый популярный способ кодирования от алкоголизма представляет собой введение препаратов Дисульфирама. После 
+                            |введения данной группы препаратов блокируется группа ферментов в печени, ответственная за нормальную утилизацию 
+                            |алкоголя в организме.
+                    .info__img.info__img-mt
+                        img(src="./wp-content/themes/detox-med/assets/img/prices.jpg", alt="Кодирование от алкоголизма")
+        include ./../components/sections/about-advantages/about-advantages3.pug
+        include ./../components/sections/form-home/form-region2.pug
+        include ./../components/sections/publications/publications-region2.pug
+        include ./../components/sections/footer/footer.pug 

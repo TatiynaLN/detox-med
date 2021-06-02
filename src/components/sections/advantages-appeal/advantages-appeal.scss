@@ -229,6 +229,15 @@
         }
     }
 }
+.advantages-appeal.advantages-prices,
+.advantages-appeal.advantages-prices-s {
+    ul {
+        padding-left: 0;
+    }
+    li {
+        list-style: none;
+    }
+}
 .advantages-prices-s {
     padding-bottom: 10rem;
     p {
@@ -245,6 +254,8 @@
         .info__txt {
             ul {
                 li {
+                    list-style: none !important;
+
                     padding-left: 0;
                     margin-bottom: 2rem;
                     button {
@@ -391,6 +402,9 @@
     }
 }
 .advantages-region {
+    p {
+        width: 100%;
+    }
     //     padding-top: 0;
     //     .info__txt {
     //         align-self: center;
