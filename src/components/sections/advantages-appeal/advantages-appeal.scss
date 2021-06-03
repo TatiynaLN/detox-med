@@ -259,14 +259,23 @@
                     padding-left: 0;
                     margin-bottom: 2rem;
                     button {
-                        h3 {
-                            width: 100%;
-                            text-align: center;
-                            @media (min-width: 1200px) {
-                                text-align: left;
-                                display: flex;
-                                justify-content: space-between;
-                            }
+                        width: 100%;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 2rem;
+                        line-height: 2.7rem;
+                        color: #01120f;
+                        @media (min-width: 1200px) {
+                            text-align: left;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        &:hover,
+                        &:focus {
+                            transition: all 0.3s;
+                            text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px,
+                                rgba(17, 192, 171, 0.4) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px;
                         }
                     }
                 }
@@ -312,14 +321,32 @@
             align-items: center;
             width: 100%;
             padding: 1.7rem 2rem;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            color: #01120f;
+            &:hover,
+            &:focus {
+                transition: all 0.3s;
+                text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px,
+                    rgba(17, 192, 171, 0.4) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px;
+                strong {
+                    transition: all 0.3s;
+                    text-shadow: #f04242 0.5px 0.5px, #f04242 0.5px 0.5px, #f04242 0.5px 0.5px,
+                        rgba(1, 18, 15, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px, rgba(1, 18, 15, 0.7) 0.5px 0px,
+                        rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+                }
+            }
         }
         h3 {
-            margin-right: 3rem;
+            margin-left: 3rem;
         }
         strong {
             color: #f04242;
             display: inline-block;
             margin-left: 1rem;
+            transition: all 0.3s;
         }
         @media (min-width: 852px) {
             margin-right: 2.93rem;
@@ -391,6 +418,23 @@
                 align-items: center;
                 width: 100%;
                 padding: 1.7rem 2rem;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 2.7rem;
+                color: #01120f;
+                &:hover,
+                &:focus {
+                    transition: all 0.3s;
+                    text-shadow: rgba(1, 18, 15, 0.7) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px,
+                        rgba(17, 192, 171, 0.4) 1px 0px, rgba(17, 192, 171, 0.4) 1px 1px;
+                    strong {
+                        transition: all 0.3s;
+                        text-shadow: #f04242 0.5px 0.5px, #f04242 0.5px 0.5px, #f04242 0.5px 0.5px,
+                            rgba(1, 18, 15, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px,
+                            rgba(1, 18, 15, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+                    }
+                }
             }
         }
         h3 {

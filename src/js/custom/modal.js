@@ -77,7 +77,7 @@
                         <input class="_req phone-input" type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" id="${phoneInputID}" required="required">
                         <input class="_req type="text" name="user-name" placeholder="ФИО" required="required">
                         <input class="_req type="text" name="user-addres" placeholder="Адрес" required="required">
-                        <textarea class="_req "type="text" name="user-message" placeholder="Опишите проблему" required="required"></textarea>
+                        <textarea class="_req name="user-message" placeholder="Опишите проблему" required="required"></textarea>
                         <button class= "btn-red"> Заказать звонок</button>
                         <div class="form__policy">
                             <input class="_req" id="modal__chec2" type="checkbox" required="required" checked="">
@@ -161,8 +161,8 @@
         modal += `
         <div class="modal">
             <div class="modal-wrapper modal__body modal-thanks"><span class="modal__btn-close modal__close" data-dismiss="modal" title="Закрыть">×</span>
-                <h2>${modalTitle}</h2>
-                <p>${modalSubtitle}</p>
+                <h2>Ваша заявка отправлена!</h2>
+                <p>Наша главная задача - помогать людям! Мы перезвоним вам в течении <em>10 минут</em>!</p>
                 <p>Наркологический центр «ДетоксМед» — лечение зависимостей по европейским стандартам. Лечение у нас - это:</p>
                 <div class="block">
                     <div class="block__box">
@@ -222,12 +222,11 @@
     }
 
     window.addEventListener('click', (e) => {
-
         if (document.querySelector('.modal')) {
 
-            if (e.target.closest('.modal') && !e.target.closest('.modal__close')) {
+            if (e.target.closest('.modal__body') && !e.target.closest('.modal__close')) {
                 e.stopPropagation();
-            } else if (e.target.closest('.modal')) {
+            } else if (e.target.closest('.current-modal')) {
                 document.querySelector('.modal').classList.add('modal--close');
                 document.querySelector('.modal').classList.remove('modal__show');
                 setTimeout(() => {
@@ -267,6 +266,6 @@
             }
         }
     });
-
+    // modalThanks();
 })();
 
