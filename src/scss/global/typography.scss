@@ -81,7 +81,7 @@
     text-align: left;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     line-height: 3.5rem;
     position: relative;
     margin-bottom: 5rem;
@@ -105,6 +105,9 @@
             height: 1.3rem;
             transform: translate(0rem, 75%);
         }
+    }
+    @media screen and (min-width: 411px) {
+        font-size: 2.6rem;
     }
     @media screen and (min-width: 1200px) {
         width: 100%;
