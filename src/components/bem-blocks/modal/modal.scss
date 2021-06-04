@@ -513,3 +513,100 @@
         visibility: hidden;
     }
 }
+.modal-wrapper2 {
+    .form-price {
+        p {
+            width: 100%;
+            color: #f04242;
+            font-weight: bold;
+            font-size: 1.4rem;
+            line-height: 2.7rem;
+            margin-bottom: 1.5rem;
+            span {
+                color: #11c0ab;
+            }
+            &:first-child {
+                color: #01120f;
+                @media (min-width: 768px) {
+                    margin-bottom: 2rem;
+                }
+            }
+            @media (min-width: 768px) {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+        }
+        input {
+            padding: 0.6rem 3.5rem;
+            border-radius: 100px;
+            color: rgba(1, 18, 15, 0.7);
+            @media (min-width: 768px) {
+                padding: 1.3rem 3.5rem;
+            }
+        }
+        input[type="text"],
+        textarea[type="text"] {
+            color: rgba(1, 18, 15, 0.7);
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: 1px solid rgba(17, 192, 171, 0.7);
+            box-sizing: border-box;
+            background: transparent;
+            margin-bottom: 2rem;
+            outline: none;
+            @media (min-width: 880px) {
+                margin-bottom: 3rem;
+            }
+            &::-webkit-input-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: rgba(1, 18, 15, 0.7);
+            }
+            &::-moz-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+
+                color: rgba(1, 18, 15, 0.7);
+            } /* Firefox 19+ */
+            &:-moz-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+
+                color: rgba(1, 18, 15, 0.7);
+            } /* Firefox 18- */
+            &:-ms-input-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+
+                line-height: 2.5rem;
+
+                color: rgba(1, 18, 15, 0.7);
+            }
+        }
+    }
+    .form__policy {
+        label[for="modal__chec2"] {
+            &::before {
+                border: solid 0.1rem #11c0ab;
+            }
+        }
+        input:checked + label::before {
+            background: #11c0ab;
+            transition: 0.5s;
+        }
+    }
+}

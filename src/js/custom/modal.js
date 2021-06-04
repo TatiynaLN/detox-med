@@ -8,6 +8,23 @@
     let div = document.createElement('div');
     div.classList.add('current-modal');
 
+    // const btns = document.querySelectorAll('.btn-green');
+    // const serviceTitles = document.querySelectorAll('.advantages-appeal h3');
+    // const servicePrices = document.querySelectorAll('.advantages-appeal p strong');
+
+    // btns.forEach((btn, i) => {
+    //     btn.addEventListener('click', () => {
+    //         getData(i);
+    //     });
+    // });
+
+    // function getData(i) {
+    //     let serviceTitleValue = serviceTitles[i].textContent;
+    //     let servicePriceValue = servicePrices[i].textContent;
+    //     console.log(serviceTitleValue);
+    //     console.log(servicePriceValue);
+    // }
+
     let options = [
         {
             modal_call_btn: 'btn',
@@ -22,6 +39,28 @@
             modal_call_subtitle: '',
             modal_form_id: 'form-2',
             phone_input_id: 'modal__input-phone'
+        },
+        {
+            modal_price_btn: 'btn-zacaz',
+            modal_call_title: 'Для заказа заполните форму ниже',
+            modal_form_id: 'form-price'
+        },
+        {
+            modal_price_btn_s: 'btn-zacaz-s',
+            modal_call_title: 'Для заказа заполните форму ниже',
+            modal_call_price: 'Введение препарата «Дисульфирам»',
+            modal_form_id: 'form-price'
+        },
+        {
+            modal_price_btn_min: 'btn-zacaz-min',
+            modal_call_title: 'Для заказа заполните форму ниже',
+            modal_call_price: 'Введение препарата «Эспераль-гель»',
+            modal_form_id: 'form-price'
+        },
+        {
+            modal_price_btn_long: 'btn-zacaz-long',
+            modal_call_title: 'Для заказа заполните форму ниже',
+            modal_form_id: 'form-price'
         },
         {
             modal_call_title: 'Ваша заявка отправлена!',
@@ -41,7 +80,26 @@
             formReadyClick(null, document.querySelector('.form-modal-open'));
         }
 
+        if (e.target.classList.contains(options[2].modal_price_btn)) {
+            options[2].modal_service = e.target.parentNode.children[1].textContent;
+            options[2].modal_price = e.target.parentNode.parentNode.children[0].textContent;
+            modalzacaz(options[2].modal_form_id, options[2].modal_call_title, options[2].modal_price, options[2].modal_service);
+        }
 
+        if (e.target.classList.contains(options[3].modal_price_btn_s)) {
+            options[3].modal_service = `${e.target.children[0].textContent}   ${e.target.children[1].textContent}`;
+            modalzacaz(options[3].modal_form_id, options[3].modal_call_title, options[3].modal_call_price, options[3].modal_service);
+        }
+
+        if (e.target.classList.contains(options[4].modal_price_btn_min)) {
+            options[4].modal_service = `${e.target.children[0].textContent}   ${e.target.children[1].textContent}`;
+            modalzacaz(options[4].modal_form_id, options[4].modal_call_title, options[4].modal_call_price, options[4].modal_service);
+        }
+        if (e.target.classList.contains(options[5].modal_price_btn_long)) {
+            options[5].modal_call_price = e.target.children[0].textContent;
+            options[5].modal_service = e.target.children[1].textContent;
+            modalzacaz(options[5].modal_form_id, options[5].modal_call_title, options[5].modal_call_price, options[5].modal_service);
+        }
 
     });
 
@@ -90,7 +148,28 @@
             </div>
             `;
         }
-
+        // if (formID === 'form-price') {
+        //     modal += `
+        //     <div class="modal">
+        //         <div class="modal-wrapper2 modal__body"><span class="modal__btn-close modal__close" data-dismiss="modal" title="Закрыть">×</span>
+        //             <h2>${modalTitle}</h2>
+        //             <p><span>Услуга: </span>${service}</p>
+        //             <p><span>Цена: </span>${price}</p>
+        //             <form class="modal-form" id="${formID}" method="post" action="#">
+        //                 <input class="_req type="text" name="user-name" placeholder="Имя покупателя" required="required">
+        //                 <textarea class="_req name="user-message" placeholder="Комментарий" required="required"></textarea>
+        //                 <button class= "btn-red"> Заказать</button>
+        //                 <div class="form__policy">
+        //                     <input class="_req" id="modal__chec2" type="checkbox" required="required" checked="">
+        //                     <label for="modal__chec2"> Вы соглашаетесь с 
+        //                         <a target="_blank" href="#!">условиями обработки персональных данных</a>
+        //                     </label>
+        //                 </div>
+        //             </form>
+        //         </div>
+        //     </div>
+        //     `;
+        // }
 
         div.innerHTML = modal;
         wrap.appendChild(div);
@@ -220,7 +299,38 @@
         document.querySelector('.modal').classList.remove('modal--close');
         document.querySelector('.modal').classList.add('modal__show');
     }
-
+    //
+    function modalzacaz(formID, modalTitle, service, price) {
+        if (formID === 'form-price') {
+            modal += `
+            <div class="modal">
+                <div class="modal-wrapper2 modal__body"><span class="modal__btn-close modal__close" data-dismiss="modal" title="Закрыть">×</span>
+                    <h2>${modalTitle}</h2>
+                    
+                    <form class="modal-form form-price" id="${formID}" method="post" action="#">
+                        <p><span>Услуга: </span>${service}</p>
+                        <p><span>Цена: </span>${price}</p>
+                        <input class="_req type="text" name="user-name" placeholder="Имя покупателя" required="required">
+                        <textarea class="_req name="user-message" placeholder="Комментарий" required="required"></textarea>
+                        <button class= "btn-green"> Заказать</button>
+                        <div class="form__policy">
+                            <input class="_req" id="modal__chec2" type="checkbox" required="required" checked="">
+                            <label for="modal__chec2"> Вы соглашаетесь с 
+                                <a target="_blank" href="#!">условиями обработки персональных данных</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            `;
+        }
+        div.innerHTML = modal;
+        wrap.appendChild(div);
+        body.classList.add('no-scroll');
+        document.querySelector('.modal').classList.remove('modal--close');
+        document.querySelector('.modal').classList.add('modal__show');
+    }
+    //
     window.addEventListener('click', (e) => {
         if (document.querySelector('.modal')) {
 
