@@ -597,16 +597,16 @@
                 color: rgba(1, 18, 15, 0.7);
             }
         }
-    }
-    .form__policy {
-        label[for="modal__chec2"] {
-            &::before {
-                border: solid 0.1rem #11c0ab;
+        .form__policy {
+            label[for="modal__chec2"] {
+                &::before {
+                    border: solid 0.1rem #11c0ab;
+                }
             }
-        }
-        input:checked + label::before {
-            background: #11c0ab;
-            transition: 0.5s;
+            input:checked + label::before {
+                background: #11c0ab;
+                transition: 0.5s;
+            }
         }
     }
 }
