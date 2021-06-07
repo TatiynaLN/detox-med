@@ -17,6 +17,20 @@ block content
         include ./../components/sections/header/header.pug
         include ./../components/sections/banner/banner-detox.pug
         include ./../components/bem-blocks/bread-crumbs/bread-crumbs.pug
+        section.advantages-services
+            .container
+                h2.section__title Важность этого предложения в период низких зарплат и кризиса
+                .info.info-order 
+                    .info__txt
+                        p Это предложение возникло для многих, когда пандемия внесла тяжелые изменения в порядок жизни.
+                            | У некоторых возникли трудности с зарабатыванием в этот период, потеря работы, 
+                            |долгое сидение дома на самоизоляции. Это приводит к трудностям в психологическом
+                            | плане как в семье, так и порой с самим собой. Возникают желания убрать негативный 
+                            |фон путем выпивания спиртных напитков, что может привести к чрезмерному употреблению 
+                            |алкоголя, к запойным состояниям.
+                    .info__img
+                        img(src="./wp-content/themes/detox-med/assets/img/kak-ochistit-organizm.jpg", alt="Предложения в период низких зарплат и кризиса")
+        include ./../components/sections/services/services3.pug
         section.about-advantages.advantages-services
             .container 
                 h2.section__title Наши преимущества
@@ -58,20 +72,6 @@ block content
                     |чтобы быстро добраться до больного, облегчить его состояние.
                 p Звоните в наркологический центр «ДетоксМед». Не нужно быть наедине с бедой, вместе мы 
                     |сможем обеспечить шансы на светлое будущее и жизнь вне пагубной зависимости!
-        section.advantages-services
-            .container
-                h2.section__title Важность этого предложения в период низких зарплат и кризиса
-                .info.info-order 
-                    .info__txt
-                        p Это предложение возникло для многих, когда пандемия внесла тяжелые изменения в порядок жизни.
-                            | У некоторых возникли трудности с зарабатыванием в этот период, потеря работы, 
-                            |долгое сидение дома на самоизоляции. Это приводит к трудностям в психологическом
-                            | плане как в семье, так и порой с самим собой. Возникают желания убрать негативный 
-                            |фон путем выпивания спиртных напитков, что может привести к чрезмерному употреблению 
-                            |алкоголя, к запойным состояниям.
-                    .info__img
-                        img(src="./wp-content/themes/detox-med/assets/img/kak-ochistit-organizm.jpg", alt="Предложения в период низких зарплат и кризиса")
-        include ./../components/sections/services/services3.pug
         include ./../components/sections/form-home/form-home.pug
         
         include ./../components/sections/footer/footer.pug 

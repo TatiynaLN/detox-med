@@ -1,9 +1,21 @@
 .modal--close {
     animation: modal-close 0.6s linear;
+    .modal__body {
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-name: close-modal;
+        animation-iteration-count: 1;
+    }
 }
 .modal__show {
     transition: all 0.7s;
     animation: modal-open 0.6s linear;
+    .modal__body {
+        animation-duration: 1.5s;
+        animation-timing-function: ease;
+        animation-name: open-modal;
+        animation-iteration-count: 1;
+    }
 }
 .modal {
     position: fixed;
@@ -28,6 +40,35 @@
         z-index: 99999;
         opacity: 0;
         transition: all 0.5s;
+    }
+}
+@keyframes close-modal {
+    0% {
+        left: 50%;
+    }
+
+    25% {
+        left: 100%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+@keyframes open-modal {
+    0% {
+        left: 0%;
+    }
+    25% {
+        left: 100%;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        left: 50%;
     }
 }
 .modal__show {

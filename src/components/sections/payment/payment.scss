@@ -309,11 +309,20 @@
     box-sizing: border-box;
     .dropdownhidden {
         visibility: hidden;
-        display: none;
+        // display: none;
+        opacity: 0;
+        // transform: rotateX(-55deg);
+        transform: translateY(-5rem);
+        transition: all 0.7s;
     }
     .dropdownvisible {
         visibility: visible;
-        display: block;
+        // display: block;
+        opacity: 1;
+        transform: trotateX(0deg);
+        // transform: scaleY(1);
+        transform: translateY(0rem);
+        transition: all 0.7s;
     }
 }
 .dropcontainer ul {
@@ -347,8 +356,10 @@
 .dropdownhidden {
     visibility: hidden;
     transition: all 0.7s;
+    height: auto;
     ul {
         visibility: hidden;
+        transition: all 0.7s;
     }
     li a {
         opacity: 0;
@@ -364,13 +375,15 @@
     border-top: 0;
     background: #ffffff;
     border-radius: 0px 0 30px 30px;
-    transition: all 0.7s;
+    transition: all 0.9s;
     transform-origin: 50% 0%;
-    animation-name: swingdown;
-    animation-duration: 1s;
-    animation-timing-function: ease;
+
+    // animation-name: swingdown;
+    // animation-duration: 1s;
+    // animation-timing-function: ease;
     ul {
         visibility: visible;
+        transition: all 0.7s;
     }
     li a {
         font-style: normal;

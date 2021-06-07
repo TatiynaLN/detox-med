@@ -28,15 +28,7 @@
         position: relative;
         // max-width: 11.8rem;
         align-self: baseline;
-        &::after {
-            position: absolute;
-            content: "";
-            width: 0.1rem;
-            height: 4rem;
-            right: 0;
-            top: 1rem;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
+
         &:last-child {
             margin-right: 0;
             @media (min-width: 1250px) {
@@ -49,15 +41,13 @@
             }
         }
         @media (min-width: 1250px) {
-            color: #ffffff;
             padding: 1.7rem 1rem;
             margin-bottom: 0;
             // max-width: 19rem;
             min-width: 19rem;
             margin-right: 0;
             align-self: stretch;
-
-            background-color: rgba(17, 192, 171, 0.75);
+            border: 1px solid #11c0ab;
         }
         &::before {
             position: absolute;
@@ -78,6 +68,7 @@
             transition: all 0.3s;
             text-shadow: rgba(17, 192, 171, 0.7) 1px 0px, rgba(17, 192, 171, 0.7) 1px 1px,
                 rgba(17, 192, 171, 0.7) 1px 0px, rgba(17, 192, 171, 0.7) 1px 1px;
+            color: #ffffff;
             &::before {
                 transform: scaleX(1);
             }

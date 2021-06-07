@@ -14,7 +14,8 @@
     // transform: translateY(20%);
     @media (min-width: 411px) {
         // transform: translateY(45%);
-        transform: translateY(-2rem);
+        // transform: translateY(-2rem);
+        // transform: translateY(-13rem);
     }
     @media (min-width: 768px) {
         padding: 3.8rem 3.8rem 1.8rem 8.4rem;
@@ -27,7 +28,7 @@
         transform: translateY(-15.9rem);
     }
     @media (min-width: 1200px) {
-        transform: translateY(-17rem);
+        transform: translateY(-18rem);
     }
     p {
         position: relative;
