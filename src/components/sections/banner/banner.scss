@@ -154,8 +154,9 @@
     }
     @media (min-width: 1360px) {
         padding: 8.3rem 0 0rem 0;
-        min-height: 56rem;
-        height: 79vh;
+        // min-height: 56rem;
+        // height: 79vh;
+        height: calc(100vh - 194px);
     }
     .banner__block {
         @media (min-width: 768px) {
@@ -217,6 +218,7 @@
         }
     }
     @media (min-width: 1360px) {
+        height: calc(100vh - 194px);
         padding: 8.3rem 0 0rem 0;
     }
 }
@@ -268,6 +270,7 @@
         }
     }
     @media (min-width: 1360px) {
+        height: calc(100vh - 194px);
         padding: 8.3rem 0 0rem 0;
     }
 }
@@ -319,6 +322,7 @@
         }
     }
     @media (min-width: 1360px) {
+        height: calc(100vh - 194px);
         padding: 8.3rem 0 0rem 0;
     }
 }
@@ -370,6 +374,7 @@
         }
     }
     @media (min-width: 1360px) {
+        height: calc(100vh - 194px);
         padding: 8.3rem 0 0rem 0;
     }
 }
@@ -424,6 +429,7 @@
         }
     }
     @media (min-width: 1360px) {
+        height: calc(100vh - 194px);
         padding: 8.3rem 0 0rem 0;
     }
 }
