@@ -216,31 +216,28 @@ section {
     padding-bottom: 1rem !important;
     transition: all 0.5s;
   }
-  .header__nav-logo {
+  .header__item-logo {
     opacity: 1;
     visibility: visible;
     transition: all 0.4s;
-    a {
-      padding: 0;
-      width: 5.39rem;
-      // height: 3.8rem;
-      min-height: 100%;
-      @media (min-width: 1200px) {
-        // padding: 0;
-      }
-      img {
-        width: 100%;
-        min-height: 100%;
-        height: 2.22rem;
-      }
+    padding: 0;
+    // width: 5.39rem;
+    width: 2.39rem;
+    // height: 3.8rem;
+    min-height: 100%;
+    @media (min-width: 1200px) {
+      // padding: 0;
+      padding-top: 1.1rem !important;
+      padding-bottom: 0.8rem !important;
     }
-  }
-  .header__nav ul:nth-child(1) .header__nav-logo {
+    img {
+      width: 100%;
+      min-height: 100%;
+      height: 2.4rem;
+    }
     margin-right: 2.4rem;
     transition: all 0.3s;
-    a {
-      padding: 2rem 1.6rem;
-    }
+    // padding: 2rem 1.6rem;
   }
 }
 
