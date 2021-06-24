@@ -250,3 +250,9 @@ h2.section__title.mb {
 .mb5 {
   margin-bottom: 5rem;
 }
+
+// УДАЛЯЕМ ПУСТЫЕ ТЕГИ P которые добавляет wp
+p:empty,
+h2:empty {
+  display: none;
+}
