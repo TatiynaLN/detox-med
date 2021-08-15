@@ -420,7 +420,7 @@
         if(error === 0){
 
             form.classList.add('_sending');
-            let response = await fetch('/wp-content/themes/genesis/lib/ajax-send.php', {
+            let response = await fetch('/wp-content/themes/detoxmed/lib/ajax-send.php', {
             method: 'POST',
                 body: formData
             });
