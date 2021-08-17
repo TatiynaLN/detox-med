@@ -2,7 +2,7 @@ section.payment
     .container 
         h1.main__title.main__titles Оплата
         .flex-block 
-            form 
+            form.form
                 h3 Оплата услуг
                 .select-wrapper
                     select(required="required").turnintodropdown
@@ -13,8 +13,9 @@ section.payment
                             option Лечение табакокурения
                             option Кодирование от алкогодизма
                             option ДетоксМед24
-                    
+                
                 input._req(type="text" name="user-payment" placeholder="Сумма оплаты" required="required")
+                input._req.phone-input.masca(type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required")
                 input._req(type="text" name='user-name' placeholder="Имя покупателя" required="required")
                 textarea._req(name="user-message" placeholder="Комментарий" required="required" )
                 button.btn-green Оплатить

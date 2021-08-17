@@ -19,6 +19,7 @@
     &__img {
         transform: scale(1);
         transition: all 0.8s;
+        height: 100%;
         &:hover,
         &:focus {
             transform: scale(1.03, 1.03);
@@ -57,15 +58,11 @@
     @media (min-width: 1344px) {
         position: absolute;
         z-index: 0;
-        bottom: 50%;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         color: #01120f;
-        transform: scale(1.1);
         text-shadow: rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px,
             rgba(17, 192, 171, 0.4) -2px -2px, rgba(17, 192, 171, 0.4) 0px -2px, rgba(17, 192, 171, 0.4) 2px -2px;
-        transition: all 0.3s;
     }
 }
 .slider-licenses-next {
@@ -75,11 +72,9 @@
 
     @media (min-width: 1344px) {
         left: 0;
+        bottom: 50%;
     }
-    &:hover,
-    &:focus {
-        transform: scale(1.1) rotate(180deg);
-
+    &:hover {
         transition: all 0.3s;
     }
 }
@@ -89,6 +84,11 @@
 
     @media (min-width: 1344px) {
         right: 0;
+
+        top: 46%;
+    }
+    &:hover {
+        transition: all 0.3s;
     }
 }
 

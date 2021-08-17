@@ -27,7 +27,7 @@
                 // when window width is <= 320px
                 320: {
                     autoHeight: true,
-                    slidesPerView: 1,
+                    slidesPerView: 1.5,
                     spaceBetween: 10
                 },
                 // when window width is <= 480px
@@ -37,7 +37,7 @@
                 },
                 // when window width is <= 640px
                 1200: {
-                    initialSlide: 1,
+                    initialSlide: 0,
                     // centeredSlides: true,
                     autoHeight: false,
                     slidesPerColumn: 2, // мультирядность

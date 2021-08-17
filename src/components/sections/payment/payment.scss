@@ -56,11 +56,56 @@
             width: 100%;
             max-width: 46.5rem;
         }
+        input,
+        textarea {
+            color: rgba(1, 18, 15, 0.7);
+            @include Nunito-Bold();
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            &::-webkit-input-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: rgba(1, 18, 15, 0.7);
+            }
+            &::-moz-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
 
+                color: rgba(1, 18, 15, 0.7);
+            } /* Firefox 19+ */
+            &:-moz-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+
+                color: rgba(1, 18, 15, 0.7);
+            } /* Firefox 18- */
+            &:-ms-input-placeholder {
+                @include Nunito-Bold();
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.8rem;
+
+                line-height: 2.5rem;
+
+                color: rgba(1, 18, 15, 0.7);
+            }
+        }
         input {
             background: transparent;
             padding: 1.2rem 3rem;
             height: 5rem;
+            // z-index: 1;
             @media (min-width: 800px) {
                 margin-bottom: 3rem;
             }
@@ -75,12 +120,19 @@
             min-height: 11.6rem;
             background: transparent;
             outline: none;
+            // z-index: 1;
             @media (min-width: 620px) {
                 min-height: 18.6rem;
             }
         }
         h3 {
             margin-bottom: 3rem;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2.7rem;
+            text-align: center;
+            color: #01120f;
         }
     }
     textarea[type="text"],
@@ -214,7 +266,7 @@
     &::after {
         position: absolute;
         content: "➔";
-        top: calc(40% - 0.3rem);
+        top: calc(34% - 0.3rem);
         right: 0;
         font-weight: bold;
         margin-right: 1.5rem;
@@ -269,7 +321,7 @@
     &::after {
         position: absolute;
         content: "➔";
-        top: calc(40% - 0.3rem);
+        top: calc(34% - 0.3rem);
         right: 0;
         font-weight: bold;
         margin-right: 1.5rem;
@@ -314,6 +366,7 @@
         // transform: rotateX(-55deg);
         transform: translateY(-5rem);
         transition: all 0.7s;
+        height: 0;
     }
     .dropdownvisible {
         visibility: visible;

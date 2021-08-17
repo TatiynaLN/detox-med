@@ -18,11 +18,10 @@ button {
     color: #ffffff;
     border-radius: 100px;
     min-width: 19rem;
-    max-width: 20rem;
+    max-width: 21rem;
     position: relative;
     background-color: #f04242;
     overflow: hidden;
-    // transform: scale3d(1);
     transform: scale3d(1);
     transition: all 2s;
     &:hover {
@@ -30,13 +29,9 @@ button {
         animation-timing-function: ease;
         animation-name: btn__red;
         animation-iteration-count: infinite;
-
-        // transform: skew(10deg, 10deg);
-        // // transform: scale(1.1);
-        // transition: all 0.3s;
-        // &::after {
-        //     left: 120%;
-        // }
+    }
+    @media (min-width: 1300px) {
+        width: 21rem;
     }
 }
 .btn-green {
@@ -95,98 +90,7 @@ button {
         box-shadow: 0 0 0 0 #11c0ab;
     }
 }
-// .btn {
-//     display: inline-block;
-//     text-align: center;
-//     font-size: 1.4rem;
-//     border-radius: 0.5rem;
 
-//     &--green {
-//         padding: 0.5rem 1.1rem;
-//         @include OpenSans-Regular();
-//         line-height: 2.2rem;
-//         color: $gray6;
-//         background: $green;
-//     }
-
-//     &--white {
-//         &:hover {
-//             color: $gray6;
-//         }
-//     }
-
-//     &--blue,
-//     &--white {
-//         position: relative;
-//         z-index: 1;
-//         background-color: transparent;
-//         transition: all 0.4s;
-
-//         &::after,
-//         &::before {
-//             content: "";
-//             position: absolute;
-//             height: 100%;
-//             top: 0;
-//             left: 0;
-//             border-radius: 0.5rem;
-//             transition: all 0.4s;
-//         }
-
-//         &:focus::before,
-//         &:hover::before,
-//         &:active::before {
-//             width: 100%;
-//             transition: all 0.4s;
-//         }
-
-//         &:active::before {
-//             box-shadow: none;
-//         }
-//     }
-
-//     &--blue {
-//         padding: 1.6rem 2rem;
-//         @include OpenSans-Bold();
-//         line-height: 1.9rem;
-//         color: $white;
-//         background: $blue;
-
-//         &::after {
-//             width: 100%;
-//             background-color: $blue;
-//             z-index: -2;
-//         }
-
-//         &::before {
-//             width: 0;
-//             background-color: $green;
-//             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-//             z-index: -1;
-//         }
-//     }
-
-//     &--white {
-//         @include OpenSans-Bold();
-//         font-size: 1.4rem;
-//         line-height: 1.9rem;
-//         color: $gray2;
-//         border-radius: 0.5rem;
-
-//         &::after {
-//             width: 100%;
-//             background-color: $gray6;
-//             z-index: -2;
-//         }
-
-//         &::before {
-//             width: 0;
-//             background-color: $blue;
-//             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-//             z-index: -1;
-//         }
-//     }
-// }
 @keyframes btn__red {
     0% {
         transform: scale(1.03, 1.03);

@@ -33,9 +33,9 @@
             item.classList.remove('accordion__item--active');
         }
 
-        window.addEventListener('resize', () => {
-            openCard();
-        });
+        // window.addEventListener('resize', () => {
+        //     openCard();
+        // });
     }
     //
     if (document.querySelector('.close')) {
@@ -66,21 +66,17 @@
             item.classList.remove('accordion__item--active');
         }
 
-        window.addEventListener('resize', () => {
-            openCard();
-        });
+        // window.addEventListener('resize', () => {
+        //     openCard();
+        // });
     }
     //
     if (document.querySelector('.accordion-second')) {
         let accordItemsTitle = document.querySelectorAll('.accordion-second .accordion__item h3');
         let accordItemsContent = document.querySelectorAll('.accordion-second .accordion__item p');
-        console.log(accordItemsTitle);
+        // console.log(accordItemsTitle);
         function openCard() {
             accordItemsTitle.forEach(item => {
-                // accordItemsContent[0].style.height = `${accordItemsContent[0].scrollHeight}px`;
-                // accordItemsContent[0].classList.add('accordion__content--active');
-                // accordItemsTitle[0].classList.add('accordion__item--active');
-
                 item.addEventListener('click', () => {
                     if (item.nextElementSibling.classList.contains('accordion__content--active')) {
                         hideText(item.nextElementSibling, item);
@@ -104,8 +100,8 @@
             item.classList.remove('accordion__item--active');
         }
 
-        window.addEventListener('resize', () => {
-            openCard();
-        });
+        // window.addEventListener('resize', () => {
+        //     openCard();
+        // });
     }
 })();

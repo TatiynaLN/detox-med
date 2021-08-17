@@ -1,5 +1,4 @@
 .cost {
-    padding-top: 5rem;
     .accordion-second {
         margin: 0 auto;
         margin: 3rem 0 1rem 0;
@@ -57,28 +56,21 @@
                 }
             }
 
+            transform: scale(1);
+            transition: all 0.8s;
             &:hover,
             &:focus {
-                text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
-                    rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px,
-                    rgba(17, 192, 171, 0.7) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px,
-                    rgba(1, 18, 15, 0.7) 0.5px 0.5px;
-                i {
-                    text-shadow: #f04242 0.5px 0.5px, #f04242 0.5px 0.5px, #f04242 0.5px 0.5px,
-                        rgba(1, 18, 15, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px, rgba(1, 18, 15, 0.7) 0.5px 0px,
-                        rgba(1, 18, 15, 0.7) 0.5px 0.5px;
-                }
+                transform: scale(1.03, 1.03);
+                transition: all 0.8s;
             }
         }
         i {
             display: inline-block;
-            // font-size: 1.4rem;
             text-align: right;
             color: #f04242;
             border: none;
             margin-bottom: 0;
             @media (min-width: 411px) {
-                //     font-size: 2rem;
                 font-weight: bold;
                 transform: scale(1.2);
             }
@@ -86,26 +78,18 @@
     }
     .accordion__item--active h3 {
         position: relative;
-        text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
-            rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px,
-            rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+        transform: scale(1.03, 1.03);
+        transition: all 0.8s;
         &::after {
             top: calc(40% - 0.3rem);
 
             transition: all 0s;
             transform: rotate(-90deg);
-            // align-items: flex-start;
             @media (min-width: 960px) {
                 top: calc(40% - 0.5rem);
             }
         }
     }
-
-    .accordion__item--active i {
-        text-shadow: #f04242 0.5px 0.5px, #f04242 0.5px 0.5px, #f04242 0.5px 0.5px, rgba(1, 18, 15, 0.7) 0.5px 0px,
-            rgba(1, 18, 15, 0.7) 0.5px 0.5px, rgba(1, 18, 15, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
-    }
-
     .accordion__item {
         transition: all 0.8s linear;
         h3 {
@@ -170,29 +154,14 @@
                 background-color: rgba(17, 192, 171, 0.7);
                 transform: scale(0);
                 transition: all 0.9s;
-                // @media (min-width: 460px) {
-                //     width: 91%;
-                // }
-                // @media (min-width: 560px) {
-                //     width: 92%;
-                // }
-                // @media (min-width: 660px) {
-                //     width: 94%;
-                // }
-                // @media (min-width: 760px) {
-                //     width: 95%;
-                // }
             }
         }
 
         .accordion__item--active {
             margin-bottom: 1.5rem;
             position: relative;
-            transition: all 0.3s;
-            // align-items: flex-start;
-            text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
-                rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px,
-                rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+            transform: scale(1.03, 1.03);
+            transition: all 0.8s;
             &::after {
                 top: calc(40% - 0.3rem);
 

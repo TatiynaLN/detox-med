@@ -1,5 +1,5 @@
 .reviews {
-    padding: 10rem 0;
+    padding: 0rem 0 10rem 0;
 
     &__flex {
         width: 100%;
@@ -71,7 +71,8 @@
 // стили для слайдера
 .reviews-top {
     width: 100%;
-    padding: 0rem 0 10rem 0;
+    padding: 10rem 0;
+
     .container {
         position: relative;
     }

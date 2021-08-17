@@ -107,32 +107,6 @@
             transform: rotate(180deg);
         }
     }
-    // button {
-    // }
-
-    // .block-img {
-    //     &::before {
-    //         position: absolute;
-    //         content: "";
-    //         width: 100%;
-    //         height: 80%;
-    //         right: 0;
-    //         bottom: 0;
-    //         max-height: 29rem;
-    //         background: url("../img/icons/marc.svg");
-    //         z-index: -1;
-    //         transform: translateY(20%);
-    //         @media (min-width: 460px) {
-    //             max-width: 31rem;
-    //             transform: translate(5%, 20%);
-    //         }
-    //         @media (min-width: 520px) {
-    //             max-width: 31rem;
-    //             transform: translate(15%, 20%);
-    //         }
-    //     }
-    // }
-
     &:nth-child(odd) {
         .doctors__block-img {
             margin-bottom: 5rem;

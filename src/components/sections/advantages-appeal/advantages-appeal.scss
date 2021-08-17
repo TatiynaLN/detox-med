@@ -128,6 +128,11 @@
                     margin-right: 0rem;
                 }
             }
+            &:last-child {
+                @media (min-width: 1200px) {
+                    margin-right: 0;
+                }
+            }
             p {
                 &:last-child {
                     @media (min-width: 411px) {
@@ -300,7 +305,7 @@
         @media (min-width: 852px) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
         }
     }
     li {
@@ -457,5 +462,4 @@
     p {
         width: 100%;
     }
-
 }

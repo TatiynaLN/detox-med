@@ -32,7 +32,7 @@
                 },
                 // when window width is <= 640px
                 1200: {
-                    initialSlide: 1,
+                    initialSlide: 0,
                     centeredSlides: false,
                     slidesPerView: 3,
                     spaceBetween: 38

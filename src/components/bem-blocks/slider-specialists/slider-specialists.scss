@@ -78,7 +78,6 @@
 .slider-specialists__content {
     background: #ebf7f5;
     /* Для карточек */
-
     box-shadow: 0px 5px 10px rgba(1, 18, 15, 0.05);
     border-radius: 20px 70px 20px 19px;
     @media (min-width: 900px) {
@@ -88,8 +87,6 @@
         border-radius: 20px 20px 20px 70px;
     }
 }
-// .swiper-slide.slider-specialists__slide {
-// }
 .prev,
 .next {
     color: #11c0ab;
@@ -111,8 +108,7 @@
     @media (min-width: 1160px) {
         bottom: 38%;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         color: #01120f;
         transform: scale(1.1);
         text-shadow: rgba(17, 192, 171, 0.4) 0px 2px, rgba(17, 192, 171, 0.4) -2px 2px, rgba(17, 192, 171, 0.4) -2px 0px,
@@ -130,8 +126,7 @@
     @media (min-width: 1160px) {
         left: 0;
     }
-    &:hover,
-    &:focus {
+    &:hover {
         transform: scale(1.1) rotate(180deg);
 
         transition: all 0.3s;
@@ -147,48 +142,3 @@
         right: 0;
     }
 }
-
-// .swiper-first,
-// .swiper-second,
-// .swiper-third,
-// .swiper-fourth,
-// .swiper-fifth {
-//     max-width: 28rem;
-//     margin: 0 auto;
-
-//     @media screen and (min-width: 414px) {
-//         max-width: 31.6rem;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         max-width: 33rem;
-//     }
-
-//     @media screen and (min-width: 900px) {
-//         max-width: 68.5rem;
-//     }
-
-//     @media screen and (min-width: 1024px) {
-//         max-width: 80rem;
-//     }
-
-//     @media screen and (min-width: 1320px) {
-//         max-width: 99.1rem;
-//     }
-
-//     .swiper-wrapper {
-//         @media screen and (min-width: 1320px) {
-//             flex-wrap: wrap;
-//         }
-//     }
-
-//     .slide-licenses {
-//         overflow: hidden;
-
-//         @media screen and (min-width: 1320px) {
-//             width: calc(100% / 12 * 4);
-//             max-width: 31rem;
-//             margin: 0 1rem 1rem 1rem;
-//         }
-//     }
-// }

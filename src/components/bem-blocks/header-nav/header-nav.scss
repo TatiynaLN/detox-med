@@ -1,10 +1,4 @@
 .header {
-    .item-link-active {
-        // вот он
-        text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
-            rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px,
-            rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(1, 18, 15, 0.7) 0.5px 0.5px;
-    }
     /* .header__nav */
     &__nav {
         width: 100%;
@@ -22,8 +16,8 @@
 
         ul {
             a {
-                color: #11c0ab;
-
+                // color: #11c0ab;
+                color: #01120f;
                 transition: all 0.5s;
                 @include Nunito-Regular();
                 font-size: 1.4rem;
@@ -62,20 +56,22 @@
                 li {
                     position: relative;
                     height: 100%;
+
                     @media (min-width: 1200px) {
                         margin-right: 2.4rem;
-                    }
-                    &:hover,
-                    &:focus {
-                        ul {
-                            background-color: #ebf7f5;
-                            opacity: 1;
-                            visibility: visible;
-                            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
-                            animation-name: swingdown;
-                            animation-duration: 1s;
-                            animation-timing-function: ease;
-                            z-index: 8;
+
+                        &:hover,
+                        &:focus {
+                            ul {
+                                background-color: #ebf7f5;
+                                opacity: 1;
+                                visibility: visible;
+                                box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+                                animation-name: swingdown;
+                                animation-duration: 1s;
+                                animation-timing-function: ease;
+                                z-index: 8;
+                            }
                         }
                     }
                     ul {
@@ -126,13 +122,22 @@
         width: 100%;
     }
 }
-
+.item-link-active .nav__link--active {
+    // вот он
+    text-shadow: rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px, rgba(1, 18, 15, 0.1) 0.5px 0.5px,
+        rgba(17, 192, 171, 0.7) 0.5px 0px, rgba(17, 192, 171, 0.7) 0.5px 0.5px, rgba(17, 192, 171, 0.7) 0.5px 0px,
+        rgba(1, 18, 15, 0.7) 0.5px 0.5px;
+}
 .submenu-active {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
     animation-name: swingdown;
     animation-duration: 1s;
     animation-timing-function: ease;
+
+    background: #ebf7f5 !important;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+    z-index: 8;
 }
 
 @keyframes swingdown {
@@ -161,62 +166,6 @@
     }
 }
 
-// .header__btn-version {
-//     transition: all 0.5s;
-// }
-// .header__nav {
-//     ul {
-//         &:nth-child(1) {
-//             a {
-//                 @media (min-width: 1320px) {
-//                     transition: all 0.5s;
-//                 }
-//             }
-//             li ul a {
-//                 transition: all 0.5s;
-//             }
-//         }
-//     }
-// }
-
-// .sticky-menu ul {
-//     &:nth-child(1) {
-//         a {
-//             @media (min-width: 1200px) {
-//                 animation-name: sticy;
-//                 animation-duration: 1s;
-//                 animation-timing-function: ease;
-
-//                 transition: all 0.5s;
-//             }
-//         }
-//     }
-// }
-// .sticky-menu .header__btn-version {
-//     animation-name: sticys;
-//     animation-duration: 1s;
-//     animation-timing-function: ease;
-
-//     transition: all 0.5s;
-// }
-// @keyframes sticy {
-//     0% {
-//         padding: 2rem 1.6rem;
-//     }
-
-//     100% {
-//         padding: 1rem 1.6rem;
-//     }
-// }
-// @keyframes sticys {
-//     0% {
-//         padding: 0.5rem 1.5rem;
-//     }
-
-//     100% {
-//         padding: 0 1.5rem;
-//     }
-// }
 .header__item-logo {
     display: none;
     opacity: 0;

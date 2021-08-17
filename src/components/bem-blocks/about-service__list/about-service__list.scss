@@ -92,8 +92,12 @@
             }
         }
     }
-    svg {
+
+    svg,
+    object {
         width: 100%;
+    }
+    svg {
         fill: rgba(17, 192, 171, 1);
     }
 }
@@ -160,6 +164,8 @@
     }
     .about-service__video {
         width: 100%;
+        background-color: rgba(6, 91, 81, 0.15);
+        align-self: baseline;
         @media (min-width: 1190px) {
             max-width: 65.2rem;
             min-width: 65.2rem;

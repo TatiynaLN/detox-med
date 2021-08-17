@@ -70,14 +70,16 @@
                 max-height: 9.7rem;
                 min-height: 9.7rem;
             }
-            svg {
+            svg, object {
                 width: 4.2rem;
                 height: 4.2rem;
-                fill: #11c0ab;
                 @media (min-width: 411px) {
                     width: 6.2rem;
                     height: 6.2rem;
                 }
+            }
+            svg{
+                fill: #11c0ab;
             }
         }
     }

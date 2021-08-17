@@ -11,9 +11,13 @@
     }
     a {
         margin-right: 0.4rem;
-        color: rgba(1, 18, 15, 0.7);
-    }
-    .breadcrumbs-slash {
         color: rgba(1, 18, 15, 0.4);
+    }
+    // .breadcrumbs-slash {
+    //     color: rgba(1, 18, 15, 0.4);
+    // }
+    .breadcrumbs__item {
+        color: rgba(1, 18, 15, 0.4);
+        @include Nunito-Regular();
     }
 }
